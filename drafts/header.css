@@ -7,7 +7,7 @@
 .md-header .header-placeholder{height:80px!important;min-height:0!important}
 .md-header.mobile .header-placeholder{height:64px!important}
 .md-header .header-container,.md-header .header-container *{color:#3a4f6e!important;font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif!important}
-.md-header .header-container i.iconfont{font-family:iconfont!important}
+.md-header .header-container .iconfont{font-family:iconfont!important}
 /* logo: white icon -> black, wordmark beside it */
 .md-header .header-container .logo-menu{display:flex!important;align-items:center!important;gap:16px}
 .md-header .header-container .logo-menu a.logo:first-of-type{display:grid!important;grid-template-columns:auto auto;grid-template-rows:auto auto;column-gap:12px;align-items:center;text-decoration:none!important}
