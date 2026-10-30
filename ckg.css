@@ -115,6 +115,7 @@ body.home .page-content :is(h1,h2,h3,p) span{font-family:inherit!important}
 
 /* Shared section system (custom Embed blocks) */
 body.home .page-content>.md-custom-code{padding:0!important;margin:0!important;background:none!important}
+body.home .page-content>.md-custom-code .mg-container,body.home .page-content>.md-custom-code .custom-code-html-content{max-width:none!important;width:100%!important;margin:0!important;padding:0!important}
 body.home .ckg-sec{padding:48px 0}
 .ckg-cream{background:#f4f3f2}.ckg-white{background:#fff}.ckg-navy{background:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)}
 .ckg-wrap{max-width:1280px;margin:0 auto;padding:0 16px;box-sizing:border-box}
