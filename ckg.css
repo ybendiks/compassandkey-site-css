@@ -221,7 +221,9 @@ body.home .ckg-textlink:hover{color:#e8c97e!important}
 
 /* ===== 4. 2026-10-30: Site header = Vercel bar (white, icon + wordmark left, nav, phone + account right). Site-wide. ===== */
 /* Beats the critical-subset rules `.md-header *{color:#fff!important}` / `.md-header a{color:#fff!important}` on specificity */
-.md-header .header-container .header-bg{display:none!important}
+/* .header-bg stays full-width but invisible: Lofty sizes its menu split from header-bg.offsetWidth (calculateSlice) */
+.md-header .header-container .header-bg{display:block!important;opacity:0!important;pointer-events:none!important;background:transparent!important}
+@media(min-width:1024px){.md-header:not(.mobile) .header-container .header-bg{position:absolute!important;top:0!important;left:50%!important;width:100vw!important;height:100%!important;transform:translateX(-50%)!important}}
 .md-header{background:#fff!important;border-bottom:1px solid #f3f4f6!important;box-shadow:none!important;height:auto!important;min-height:0!important}
 .md-header .header-container{background:transparent!important;box-shadow:none!important}
 .md-header .header-placeholder{height:80px!important;min-height:0!important}
@@ -243,7 +245,10 @@ body.home .ckg-textlink:hover{color:#e8c97e!important}
 .md-header .header-container .submenu,.md-header .header-container .wrapper{background:#fff!important}
 .md-header .header-container .submenu a:hover{background:#f4f3f2!important;color:#22334b!important}
 /* phone + account buttons */
-.md-header .header-container .ckg-phone a{font-size:16px!important;font-weight:500!important;white-space:nowrap}
+.md-header .header-container .ckg-phone{display:flex;align-items:center;list-style:none;margin-left:8px}
+.md-header .header-container .ckg-phone a{font-size:16px!important;font-weight:500!important;white-space:nowrap;padding:8px 10px;border-radius:6px;text-decoration:none!important}
+.md-header .header-container .ckg-phone a:hover{background:#f4f3f2!important;color:#22334b!important}
+.md-header.mobile .header-container .ckg-phone{display:none!important}
 .md-header .header-container .head-account>li>a,.md-header .header-container .head-account .account-item{text-transform:none!important;letter-spacing:normal!important}
 .md-header .header-container .head-account .menu-item{background:none!important;border:0!important;padding:0 0 0 8px!important}
 .md-header .header-container .head-account .menu-item>span{display:inline-flex;align-items:center;padding:9px 18px!important;border-radius:6px;font-size:15px!important;font-weight:600!important;text-transform:none!important;letter-spacing:normal!important;line-height:1.2!important;cursor:pointer;transition:background-color .2s}

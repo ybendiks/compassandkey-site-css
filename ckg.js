@@ -4,11 +4,22 @@
   function headerPhone(){
     var ul=document.querySelector('.md-header .right-menu .head-account');
     if(!ul||document.querySelector('.md-header .ckg-phone'))return;
-    var li=document.createElement('li');li.className='menu-item ckg-phone';
+    /* no 'menu-item' class: Lofty's getCache() maps .menu-item widths to its menu list by index */
+    var li=document.createElement('li');li.className='ckg-phone';
     li.innerHTML='<a href="tel:+12707353897">(270) 735-3897</a>';
     ul.parentElement.insertBefore(li,ul);
   }
+  /* Lofty splits the nav (and fills its "More" menu) from measurements taken at mount, often before ckg.css arrives. Re-run its own calculation once our CSS is in. */
+  function relayoutNav(){
+    var hc=document.querySelector('.md-header .header-container');
+    var c=hc&&hc.__vueParentComponent&&hc.__vueParentComponent.ctx;
+    if(!c||typeof c.calculateSlice!=='function'||c.isMobileSize)return;
+    try{c.setDefaultSlice();setTimeout(function(){try{c.getCache();c.calculateSlice();}catch(e){}},60);}catch(e){}
+  }
   headerPhone();var ht=0,hiv=setInterval(function(){headerPhone();if(++ht>20)clearInterval(hiv);},250);
+  var css=document.getElementById('ckg-css');
+  if(css&&!css.sheet)css.addEventListener('load',relayoutNav);else relayoutNav();
+  setTimeout(relayoutNav,1500);window.addEventListener('load',function(){setTimeout(relayoutNav,200);});
 })();
 (function(){
   if(!document.body||!document.body.classList.contains('home'))return;
