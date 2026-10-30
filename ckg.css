@@ -287,3 +287,6 @@ body.home .ckg-textlink:hover{color:#e8c97e!important}
 .md-header.mobile .header-container .menu-icon-inner .menu-bar{background-color:#3a4f6e!important}
 .md-header .header-container .download-closely{display:none!important}
 .md-header.mobile .header-container .head-account{background:#fff!important;border-top:1px solid #f3f4f6!important}
+
+/* Reveal what the Style-field subset hides until this file arrives (no navy-header flash). Fallback in the subset reveals after 2.5s. */
+.md-header .left-menu,.md-header .right-menu,.md-header .menu-icon,body.home .md-hero .media-content{opacity:1!important;animation:none!important}
