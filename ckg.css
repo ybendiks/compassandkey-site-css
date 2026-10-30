@@ -195,5 +195,8 @@ body.home .md-testimonial .review-star i{color:#dfb766!important}
 body.home .page-content>.md-banner{background:#f4f3f2!important}
 body.home .page-content>.md-house{background:#fff!important;padding:48px 0!important}
 body.home .md-house .mg-title{margin-bottom:40px!important}
-body.home .md-house .view-all-listings{background:none!important;border:0!important;color:#dfb766!important;padding:0!important;font-size:16px!important;font-weight:600!important}
+body.home .md-house .house-info .view-all-listings{display:none!important}
+.ckg-more{text-align:center;margin-top:32px}
+body.home .ckg-textlink{display:inline-flex;align-items:center;gap:8px;color:#dfb766!important;font-weight:600;font-size:16px!important;text-decoration:none!important;transition:color .2s}
+body.home .ckg-textlink:hover{color:#e8c97e!important}
 @media(min-width:1024px){body.home .page-content>.md-testimonial,body.home .page-content>.md-testimonial.layout1,body.home .page-content>.md-house{padding:56px 0!important}body.home .md-testimonial .reviews-container{padding:0 32px}}
