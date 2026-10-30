@@ -16,7 +16,8 @@
     if(sw.params.slidesPerView===n)return;
     sw.params.slidesPerView=n;sw.params.spaceBetween=n>1?32:16;sw.params.autoHeight=n===1;
     if(n>1){var w=el.querySelector('.swiper-wrapper');if(w)w.style.height='auto';}
-    sw.update();if(n===1&&sw.updateAutoHeight)sw.updateAutoHeight();
+    if(sw.params.virtual&&sw.params.virtual.enabled&&sw.virtual)sw.virtual.update(true);
+    sw.update();sw.slideTo(0,0);if(n===1&&sw.updateAutoHeight)sw.updateAutoHeight();
   }
   function viewAll(){
     var h=document.querySelector('.md-house');if(!h||h.querySelector('.ckg-more'))return;
