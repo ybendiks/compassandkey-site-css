@@ -199,7 +199,10 @@ body.home .md-testimonial .swiper-wrapper{align-items:flex-start!important}
 
 /* Bio + Featured Properties grounds, alternating like the reference */
 body.home .page-content>.md-banner{background:#f4f3f2!important}
-body.home .page-content>.md-house{background:#fff!important;padding:48px 0!important}
+body.home .page-content>.md-house{background:#f4f3f2!important;padding:48px 0!important}
+/* Areas sits between the cream bio and the cream listings since Oct 30: white ground, cream pills (as on Vercel) */
+body.home .ckg-areas{background:#fff!important}
+body.home .ckg-areas .ckg-pills a{background:#f4f3f2;border-color:#f3f4f6}
 body.home .md-house .mg-title{margin-bottom:40px!important}
 body.home .md-house .house-info .view-all-listings{display:none!important}
 body.home .md-house .house-title,body.home .md-house .main-title{display:block!important;text-align:center!important}
