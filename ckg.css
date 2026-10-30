@@ -101,4 +101,5 @@ input:focus,select:focus,textarea:focus{border-color:var(--ck-gold);box-shadow:0
 .page-content>.md-sell-banner.broker,.page-content>.md-agent-contact.broker{padding-top:0!important}
 .page-content>.md-sell-banner.broker{padding-bottom:0!important}
 /* Sell hero heading/subtitle were navy (--g-primary-color via B2) on a dark photo */
-.md-sell-banner h1,.md-sell-banner h2,.md-sell-banner h3{color:#fff!important}
+/* B3 flips inline near-white rich text to navy; undo on this dark photo block (ties B3 at 0,4,0, wins on order) */
+.page-content>.md-sell-banner.broker :is([style*="color: #fff"],[style*="color:#fff"],[style*="color: #ecf0f1"],[style*="color:#ecf0f1"]){color:#fff!important}
