@@ -46,7 +46,7 @@
 }
 /* phone: icon + wordmark + real mark left, hamburger right */
 .md-header.mobile .header-container{height:64px!important;min-height:0!important}
-.md-header.mobile .header-container .menu-icon-inner,.md-header.mobile .header-container .menu-icon-inner *{background-color:#3a4f6e!important;color:#3a4f6e!important;border-color:#3a4f6e!important}
+.md-header.mobile .header-container .menu-icon-inner,.md-header.mobile .header-container .menu-icon-inner *{color:#3a4f6e!important;border-color:#3a4f6e!important}
 .md-header.mobile .header-container .logo-menu a.logo:first-of-type img{height:40px!important}
 .md-header.mobile .header-container .logo-menu a.logo:first-of-type::before{font-size:18px}
 .md-header.mobile .header-container .logo-menu a.logo:first-of-type::after{font-size:11px}
