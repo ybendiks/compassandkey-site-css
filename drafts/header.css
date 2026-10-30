@@ -40,6 +40,7 @@
  .md-header:not(.mobile) .header-container .menu-item:not(.more),.md-header:not(.mobile) .header-container .head-account{height:80px!important;display:flex!important;align-items:center}
  .md-header:not(.mobile) .header-container .menu-item>a{padding:8px 10px!important;margin:0!important;line-height:1.4!important;height:auto!important}
  .md-header:not(.mobile) .header-container .logo-menu a.logo{margin:0!important}
+ .md-header:not(.mobile) .header-container .left-menu>li,.md-header:not(.mobile) .header-container .right-menu>li{padding:0!important}
  .md-header:not(.mobile) .header-container .left-menu,.md-header:not(.mobile) .header-container .right-menu{gap:2px}
  .md-header:not(.mobile) .header-container .ckg-phone{margin-left:8px}
 }
