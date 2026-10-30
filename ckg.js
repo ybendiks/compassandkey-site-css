@@ -1,5 +1,16 @@
 /* compassandkeygroup.com site script, loaded by the Lofty Script field after ckg.css. */
 (function(){
+  /* Site-wide: phone number in the header, before Register / Sign In (desktop) */
+  function headerPhone(){
+    var ul=document.querySelector('.md-header .right-menu .head-account');
+    if(!ul||document.querySelector('.md-header .ckg-phone'))return;
+    var li=document.createElement('li');li.className='menu-item ckg-phone';
+    li.innerHTML='<a href="tel:+12707353897">(270) 735-3897</a>';
+    ul.parentElement.insertBefore(li,ul);
+  }
+  headerPhone();var ht=0,hiv=setInterval(function(){headerPhone();if(++ht>20)clearInterval(hiv);},250);
+})();
+(function(){
   if(!document.body||!document.body.classList.contains('home'))return;
   var PH='Enter an address, city, or ZIP code';
   function heroButtons(){
