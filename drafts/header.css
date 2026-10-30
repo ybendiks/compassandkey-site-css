@@ -1,0 +1,45 @@
+
+/* ===== 4. 2026-10-30: Site header = Vercel bar (white, icon + wordmark left, nav, phone + account right). Site-wide. ===== */
+/* Beats the critical-subset rules `.md-header *{color:#fff!important}` / `.md-header a{color:#fff!important}` on specificity */
+.md-header .header-container .header-bg{background:rgba(255,255,255,.97)!important;border-bottom:1px solid #f3f4f6!important;box-shadow:none!important}
+.md-header,.md-header .header-container{background:transparent!important}
+.md-header .header-container,.md-header .header-container *{color:#3a4f6e!important;font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif!important}
+.md-header .header-container i.iconfont{font-family:iconfont!important}
+/* logo: white icon -> black, wordmark beside it */
+.md-header .header-container .logo-menu{display:flex!important;align-items:center!important;gap:16px}
+.md-header .header-container .logo-menu a.logo:first-of-type{display:grid!important;grid-template-columns:auto auto;grid-template-rows:auto auto;column-gap:12px;align-items:center;text-decoration:none!important}
+.md-header .header-container .logo-menu a.logo:first-of-type img{grid-row:1 / span 2;grid-column:1;height:48px!important;width:auto!important;max-height:none!important;filter:brightness(0)!important}
+.md-header .header-container .logo-menu a.logo:first-of-type::before{content:"Compass & Key";grid-row:1;grid-column:2;align-self:end;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:20px;line-height:1;font-weight:700;letter-spacing:-.025em;color:#22334b;white-space:nowrap}
+.md-header .header-container .logo-menu a.logo:first-of-type::after{content:"Group";grid-row:2;grid-column:2;align-self:start;margin-top:3px;font-family:"DM Sans",system-ui,sans-serif;font-size:12px;line-height:1;font-weight:600;text-transform:uppercase;letter-spacing:.15em;color:rgba(34,51,75,.6);white-space:nowrap}
+/* Real Broker mark: must stay visible above the fold (brokerage advertising rule) */
+.md-header .header-container .logo-menu a.logo:nth-of-type(2){display:flex!important;align-items:center;padding-left:16px;border-left:1px solid #e5e7eb;visibility:visible!important;opacity:1!important}
+.md-header .header-container .logo-menu a.logo:nth-of-type(2) img{filter:brightness(0)!important;height:22px!important;width:auto!important}
+/* nav links */
+.md-header .header-container .menu-item>a{text-transform:none!important;font-size:16px!important;font-weight:500!important;letter-spacing:normal!important;border-radius:6px;transition:background-color .2s,color .2s}
+.md-header .header-container .menu-item>a:hover,.md-header .header-container .menu-item:hover>a{background:#f4f3f2!important;color:#22334b!important}
+.md-header .header-container .submenu,.md-header .header-container .wrapper{background:#fff!important}
+.md-header .header-container .submenu a:hover{background:#f4f3f2!important;color:#22334b!important}
+/* phone + account buttons */
+.md-header .header-container .ckg-phone a{font-size:16px!important;font-weight:500!important;white-space:nowrap}
+.md-header .header-container .head-account>li>a,.md-header .header-container .head-account .account-item{text-transform:none!important;letter-spacing:normal!important}
+.md-header .header-container .head-account li:last-child,.md-header .header-container .head-account li:last-child *{background:#dfb766!important;border-color:#dfb766!important;color:#fff!important;border-radius:6px}
+.md-header .header-container .head-account li:first-child,.md-header .header-container .head-account li:first-child *{border-color:#d1d5db!important;border-radius:6px}
+/* desktop layout: logo left, menus to the right */
+@media(min-width:1024px){
+ .md-header:not(.mobile) .header-container{display:flex!important;align-items:center!important;justify-content:flex-start!important;max-width:1280px;margin:0 auto;padding:0 32px!important;height:80px!important;min-height:0!important;position:relative}
+ .md-header:not(.mobile) .header-container .header-bg{position:absolute;left:50%;transform:translateX(-50%);width:100vw;top:0;height:100%}
+ .md-header:not(.mobile) .header-container .logo-menu{order:0;position:static!important;transform:none!important;margin:0 auto 0 0!important;padding:0!important;width:auto!important}
+ .md-header:not(.mobile) .header-container .left-menu{order:1;position:static!important;width:auto!important;flex:0 0 auto}
+ .md-header:not(.mobile) .header-container .right-menu{order:2;position:static!important;width:auto!important;flex:0 0 auto;display:flex!important;align-items:center}
+ .md-header:not(.mobile) .header-container .menu-item,.md-header:not(.mobile) .header-container .head-account{height:80px!important;display:flex!important;align-items:center}
+ .md-header:not(.mobile) .header-container .menu-item>a{padding:8px 10px!important;line-height:1.4!important;height:auto!important}
+ .md-header:not(.mobile) .header-container .ckg-phone{margin-left:8px}
+}
+/* phone: icon + wordmark + real mark left, hamburger right */
+.md-header.mobile .header-container{height:64px!important;min-height:0!important}
+.md-header.mobile .header-container .menu-icon-inner,.md-header.mobile .header-container .menu-icon-inner *{background-color:#3a4f6e!important;color:#3a4f6e!important;border-color:#3a4f6e!important}
+.md-header.mobile .header-container .logo-menu a.logo:first-of-type img{height:40px!important}
+.md-header.mobile .header-container .logo-menu a.logo:first-of-type::before{font-size:18px}
+.md-header.mobile .header-container .logo-menu a.logo:first-of-type::after{font-size:11px}
+.md-header.mobile .header-container .logo-menu a.logo:nth-of-type(2){padding-left:12px}
+.md-header.mobile .header-container .logo-menu a.logo:nth-of-type(2) img{height:18px!important}
