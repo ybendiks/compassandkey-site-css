@@ -192,6 +192,8 @@ body.home .md-testimonial .review-slider-item{background:#fff!important;border:1
 body.home .md-testimonial .review-slider-item:hover{box-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1)}
 body.home .md-testimonial .comment{font-style:italic!important;font-size:18px!important;line-height:1.625!important;color:#4b5563!important}
 body.home .md-testimonial .review-star i{color:#dfb766!important}
+body.home .md-testimonial .swiper-wrapper{align-items:flex-start!important}
+@media(min-width:768px){body.home .md-testimonial .swiper-wrapper{height:auto!important}}
 
 /* Bio + Featured Properties grounds, alternating like the reference */
 body.home .page-content>.md-banner{background:#f4f3f2!important}
