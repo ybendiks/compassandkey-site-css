@@ -1,0 +1,104 @@
+/*
+ * compassandkeygroup.com — site stylesheet (Lofty CMS, Ember/template6)
+ * Source of truth since 2026-10-30, when Lofty began enforcing a 5,000-char
+ * server-side cap on Settings > Custom Style. Loaded via jsDelivr.
+ * Section 1 is the exact Lofty Style-field content as of 2026-10-30 (8,703 chars,
+ * order preserved — the cascade depends on it). Append new work below it.
+ * Change log: see claude/backlog.md in the Compass and Key Group project.
+ */
+
+/* ===== 1. Migrated from Lofty Custom Style field (2026-10-30) ===== */
+/*CKG CSS*/
+:root{
+--ck-navy:#22334b;--ck-slate:#3a4f6e;--ck-gold:#dfb766;--ck-gold-deep:#c9a04f;
+--ck-cream:#f4f3f2;--ck-white:#fff;--ck-text:#4a5568;--ck-text-light:#718096;
+--ck-border:#e3e1de;
+--font-normal:font-Figtree-400;
+--font-medium:font-Figtree-500;--font-bold:font-Figtree-600;
+--mg-title-font:font-PlayfairDisplay-700;
+--color-theme:var(--ck-gold);--color-title:var(--ck-navy);
+--color-text:var(--ck-text);
+--color-label:var(--ck-navy);--color-hover:var(--ck-gold-deep);
+--color-link:var(--ck-navy);--color-border:var(--ck-border);
+--g-btn-background:var(--ck-gold);--g-btn-color:var(--ck-white);
+--g-bg-color:var(--ck-white);--g-text-color:var(--ck-text);
+--g-primary-color:var(--ck-navy);--mg-button-background:var(--ck-gold);
+--mg-button-color:var(--ck-white);--mg-title-color:var(--ck-navy);
+--radius-input:6px}
+/* A1 type */
+body,.site{font-family:var(--font-normal);font-size:16px;line-height:1.5;color:var(--ck-text)}
+h1,h2,h3,h4,h5,h6,.title{font-family:var(--mg-title-font);color:var(--ck-navy);letter-spacing:normal}
+.md-hero h1{font-size:72px;line-height:1.08;font-weight:700}
+h2{font-size:36px;line-height:1.15;font-weight:400;margin-bottom:16px}
+h3{font-size:20px;line-height:1.35;font-weight:400}
+p,li{font-family:var(--font-normal)}
+@media(max-width:1024px){.md-hero h1{font-size:48px}h2{font-size:30px}}
+@media(max-width:640px){.md-hero h1{font-size:36px;line-height:1.15}h2{font-size:26px}h3{font-size:18px}.btn-item,.view-all-listings{font-size:16px;padding:14px 28px}}
+/* A2 buttons */
+.btn-item,.view-all-listings{font-family:var(--font-bold);font-size:18px;line-height:1.2;letter-spacing:normal;text-transform:none;border-radius:6px;padding:16px 40px;background-color:var(--ck-gold);color:var(--ck-white);border:1px solid var(--ck-gold)}
+.btn-item:hover,.view-all-listings:hover{background-color:var(--ck-gold-deep);border-color:var(--ck-gold-deep);color:var(--ck-white)}
+.md-hero .btn-item+.btn-item{background-color:transparent!important;color:var(--ck-white)!important;border-color:rgba(255,255,255,.85)!important}
+/* A3 links, forms, cards */
+a:hover{color:var(--ck-gold-deep)}
+input,select,textarea{font-family:var(--font-normal);font-size:16px;color:var(--ck-navy);background-color:var(--ck-white);border:1px solid var(--ck-border);border-radius:6px;padding:12px 16px}
+input:focus,select:focus,textarea:focus{border-color:var(--ck-gold);box-shadow:0 0 0 3px rgba(223,183,102,.25);outline:none}
+::placeholder{color:var(--ck-text-light);opacity:1}
+/* B1 grounds */
+.page-content{background-color:var(--ck-white)!important}
+.page-content>[class*=md-]:not(.md-hero,.md-footer){background-color:var(--ck-white)!important;background-image:none!important}
+.page-content>[class*=md-]:not(.md-hero,.md-footer):nth-of-type(even){background-color:var(--ck-cream)!important}
+/* B2 Lofty writes --g-* inline per block; redefining them flips the text */
+.page-content>[class*=md-]:not(.md-hero,.md-footer,[class*=evaluation]),
+.page-content>[class*=md-]:not(.md-hero,.md-footer,[class*=evaluation]) *{--g-primary-color:var(--ck-navy)!important;--g-text-color:var(--ck-text)!important;--g-bg-color:var(--ck-white)!important;--mg-title-color:var(--ck-navy)!important}
+.md-footer,.md-footer *{--g-primary-color:var(--ck-white)!important;--g-text-color:rgba(255,255,255,.78)!important}
+/* B3 near-white colors hard-coded in rich text */
+.page-content>[class*=md-]:not(.md-hero,.md-footer,[class*=evaluation]) :is([style*="color: #fff"],[style*="color:#fff"],[style*="color: #ecf0f1"],[style*="color:#ecf0f1"],[style*="color: rgba(255, 255, 255"]){color:var(--g-primary-color)!important}
+/* B4 hero: navy hidden behind the banner photo until it is replaced */
+.page-content>.md-hero{background-color:var(--ck-navy)!important;background-image:linear-gradient(135deg,var(--ck-navy),var(--ck-slate))!important}
+.md-hero h1,.md-hero h2,.md-hero p{color:var(--ck-white)!important}
+.md-hero .hero-border{border-color:var(--ck-gold)!important}
+/* B4b listing cards hard-code white text */
+.house-info,.house-basic,.house-info *,.house-basic *{color:var(--ck-text)!important}
+.house-price,.house-price *{color:var(--ck-navy)!important}
+.full-name,.user-name,.review-name,.comment{color:var(--ck-navy)!important}
+.sub-title,.sub-title *{color:var(--g-text-color)!important}
+/* B5 rhythm */
+.page-content>[class*=md-]:not(.md-hero,.md-footer,.md-header){padding-top:56px!important;padding-bottom:56px!important;margin-bottom:0!important}
+/* B6 footer: painted surface is .footer-container; TODO white logos */
+.md-footer,.md-footer>.footer-container{background-color:var(--ck-navy)!important;background-image:none!important}
+.md-footer a:hover{color:var(--ck-gold)!important}
+/* B7 header sits over the hero; links stay light on purpose */
+.md-header{background-color:var(--ck-white)!important}
+.logo-item{filter:brightness(0) invert(1)}
+.md-header a{color:#fff!important}
+.border-box{display:none}
+.md-hero .banner.single{align-items:flex-start}
+.md-hero .banner.single{min-height:460px!important}
+.md-hero .media-title{font-size:clamp(28px,3.6vw,52px)!important;line-height:1.25!important}
+.md-hero .media-subtitle{font-size:clamp(15px,1.3vw,20px)!important;line-height:1.5!important;margin-top:12px!important}
+.md-hero .search-bar{position:relative!important;inset:auto!important;transform:none!important;margin:28px auto 0!important;max-width:640px!important;background:#fff!important;border-radius:16px!important;box-shadow:0 14px 32px rgba(0,0,0,.25)!important;padding:8px!important}
+.md-hero .search-input{background:#fff!important;color:#22334b!important;border-radius:10px!important}
+.md-hero .search-input::placeholder{color:#8a94a3!important}
+.md-hero .keyword-submit{border-radius:10px!important}
+@media (max-width:600px){.md-hero .banner.single .media-title.media-title{font-size:20.8px!important;line-height:1.3!important}.md-hero .banner.single .media-subtitle.media-subtitle{font-size:15px!important;line-height:1.45!important}}@media (max-width:800px){.md-hero .banner.single .media-title.media-title,.md-hero .banner.single .media-subtitle.media-subtitle{display:block!important;position:static!important;left:auto!important;right:auto!important;float:none!important;width:100%!important;max-width:100%!important;margin-left:0!important;margin-right:0!important;text-align:center!important;box-sizing:border-box!important}}.reviews-wrap .swiper .swiper-slide{height:auto!important}.md-header *{color:rgb(255,255,255)!important}.md-featured-area.template6 .style-container .city-style{height:0px!important;padding-top:20%!important}.md-featured-area.template6 .style-container .city-style .style-title{font-size:30px!important;line-height:34px!important}@media(max-width:600px){.md-featured-area.template6 .style-container .city-style{height:200px!important;min-width:100%!important;padding-top:0!important}.md-featured-area.template6 .style-container .city-style .mask{background-color:rgba(25,25,25,.55)!important}.md-featured-area.template6 .style-container .city-style .style-title{font-size:22px!important;line-height:26px!important}}
+.md-hero{margin-bottom:0!important}
+.md-hero{height:auto!important}
+.md-hero .banner.single{min-height:400px!important}
+.md-testimonial{padding-top:16px!important}
+.page-content>.md-testimonial.layout1{padding-top:16px!important}
+.md-hero .search-bar .condition-search{display:none!important}
+.md-banner.template6[data-uuid="f376f993-bd84-4d66-9703-31d4d731d8c7"]:not(.mobile) .img-wrapper,.md-banner.template6[data-uuid="f376f993-bd84-4d66-9703-31d4d731d8c7"]:not(.mobile) .content-wrapper{height:760px!important}
+.md-banner.template6[data-uuid="f376f993-bd84-4d66-9703-31d4d731d8c7"] .img-wrapper img{object-position:center 30%!important}
+.md-banner.template6[data-uuid="f376f993-bd84-4d66-9703-31d4d731d8c7"] .content-wrapper .title::after{display:none!important}
+.md-banner.template6[data-uuid="f376f993-bd84-4d66-9703-31d4d731d8c7"]:not(.mobile) .content-wrapper .title h2{font-size:40px!important;line-height:1.15!important}
+.md-banner.template6[data-uuid="f376f993-bd84-4d66-9703-31d4d731d8c7"]:not(.mobile) .content-wrapper .sub-title p{font-size:18px!important;line-height:1.6!important}
+.md-banner.template6.mobile[data-uuid="f376f993-bd84-4d66-9703-31d4d731d8c7"] .content-wrapper .title h2{font-size:30px!important;line-height:1.2!important}
+.md-banner.template6.mobile[data-uuid="f376f993-bd84-4d66-9703-31d4d731d8c7"] .content-wrapper .sub-title p{font-size:16px!important;line-height:1.6!important}
+.md-banner.template6[data-uuid="f376f993-bd84-4d66-9703-31d4d731d8c7"]:not(.mobile) .img-wrapper,.md-banner.template6[data-uuid="f376f993-bd84-4d66-9703-31d4d731d8c7"]:not(.mobile) .content-wrapper{height:800px!important}
+
+/* ===== 2. 2026-10-30: Sell + Contact fixes ===== */
+/* Full-bleed top blocks skip the site-wide 56px section padding (B5). Ties B5's specificity, wins on order. */
+.page-content>.md-sell-banner.broker,.page-content>.md-agent-contact.broker{padding-top:0!important}
+.page-content>.md-sell-banner.broker{padding-bottom:0!important}
+/* Sell hero heading/subtitle were navy (--g-primary-color via B2) on a dark photo */
+.md-sell-banner h1,.md-sell-banner h2,.md-sell-banner h3{color:#fff!important}
