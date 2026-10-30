@@ -209,7 +209,8 @@ body.home .md-house .mg-more{display:none!important}
 body.home .md-house .desc p{font-size:18px!important;line-height:28px!important;color:#4b5563!important;max-width:672px;margin:0 auto!important;text-align:center!important}
 body.home .md-house>.ckg-more{padding-bottom:8px}
 /* grid-v3 cards put the details over the photo: undo B4b's navy text there */
-body.home .md-house .house-grid-item .house-info,body.home .md-house .house-grid-item .house-info *,body.home .md-house .house-grid-item .house-price,body.home .md-house .house-grid-item .house-price *,body.home .md-house .house-grid-item .house-basic,body.home .md-house .house-grid-item .house-basic *{color:#fff!important;text-shadow:0 1px 2px rgba(0,0,0,.35)}
+body.home .md-house .house-grid-item .house-info,body.home .md-house .house-grid-item .house-info *,body.home .md-house .house-grid-item .house-price,body.home .md-house .house-grid-item .house-price *,body.home .md-house .house-grid-item .house-basic,body.home .md-house .house-grid-item .house-basic *,body.home .md-house .house-grid-item .house-address,body.home .md-house .house-grid-item .house-address a,body.home .md-house .house-grid-item .house-detail *{color:#fff!important;text-shadow:0 1px 2px rgba(0,0,0,.35)}
+@media(max-width:400px){body.home .md-hero .banner.single .media-title.media-title::before{letter-spacing:.12em;font-size:13px}}
 .ckg-more{text-align:center;margin-top:32px}
 body.home .ckg-textlink{display:inline-flex;align-items:center;gap:8px;color:#dfb766!important;font-weight:600;font-size:16px!important;text-decoration:none!important;transition:color .2s}
 body.home .ckg-textlink:hover{color:#e8c97e!important}
