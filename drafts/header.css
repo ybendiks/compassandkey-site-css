@@ -60,3 +60,5 @@
 .md-header.mobile .header-container .right-menu .menu-item>a{font-size:17px!important;padding:12px 16px!important}
 .md-header.mobile .header-container .right-menu .menu-item{border-color:#f3f4f6!important}
 .md-header.mobile .header-container .menu-icon-inner .menu-bar{background-color:#3a4f6e!important}
+.md-header .header-container .download-closely{display:none!important}
+.md-header.mobile .header-container .head-account{background:#fff!important;border-top:1px solid #f3f4f6!important}
