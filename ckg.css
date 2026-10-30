@@ -147,9 +147,9 @@ body.home .ckg-btn-ghost:hover,body.home .ckg-btn-outline:hover{background:rgba(
 body.home .page-content>.md-hero{background:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)!important;padding:0!important;margin:0!important}
 body.home .md-hero .single-picture,body.home .md-hero .banner-mask,body.home .md-hero .hero-border,body.home .md-hero .media-shadow{display:none!important}
 body.home .md-hero .banner.single{min-height:0!important;height:auto!important;padding:40px 0!important;background:rgba(0,0,0,.2)!important;display:block!important}
-body.home .md-hero .banner.single .media-content{position:relative!important;inset:auto!important;transform:none!important;display:grid!important;grid-template-columns:1fr;gap:40px;max-width:1280px;width:100%;margin:0 auto;padding:0 16px;box-sizing:border-box;text-align:center;align-items:center}
+body.home .md-hero .banner.single .media-content{position:relative!important;inset:auto!important;transform:none!important;display:grid!important;grid-template-columns:1fr;gap:0;max-width:1280px;width:100%;margin:0 auto;padding:0 16px;box-sizing:border-box;text-align:center;align-items:center}
 body.home .md-hero .media-info,body.home .md-hero .media-content-box{grid-column:1;position:static!important;height:auto!important;width:100%!important;max-width:none!important;margin:0!important;padding:0!important;transform:none!important}
-body.home .md-hero .banner.single .media-content::after{content:"Compass & Key Group";grid-column:1;justify-self:center;width:280px;padding-top:290px;background:url("https://cdn.jsdelivr.net/gh/ybendiks/compassandkey-site-css@701abb8baac5853f4fbdca3ab99e840a8904e7f6/img/compass-white.png") no-repeat center top/auto 280px;font-family:var(--ck-head);font-size:24px;line-height:32px;color:#fff;letter-spacing:.025em;text-align:center}
+body.home .md-hero .banner.single .media-content::after{content:"Compass & Key Group";grid-column:1;justify-self:center;width:280px;padding-top:290px;background:url("https://cdn.jsdelivr.net/gh/ybendiks/compassandkey-site-css@701abb8baac5853f4fbdca3ab99e840a8904e7f6/img/compass-white.png") no-repeat center top/auto 280px;font-family:var(--ck-head);font-size:24px;line-height:32px;color:#fff;letter-spacing:.025em;text-align:center;margin-top:40px}
 body.home .md-hero .banner.single .media-title.media-title::before{content:"Veteran-Owned \00B7  Elizabethtown, KY";display:block;color:#e8c97e;font-family:var(--ck-sans);font-size:14px;line-height:20px;font-weight:400;text-transform:uppercase;letter-spacing:.2em;margin-bottom:16px}
 body.home .md-hero .banner.single .media-title.media-title,body.home .md-hero .banner.single .media-subtitle.media-subtitle{text-align:center!important;width:100%!important;max-width:none!important;margin:0!important}
 body.home .md-hero .banner.single .media-title.media-title h1,body.home .md-hero .banner.single .media-title.media-title h1 span{font-family:var(--ck-head)!important;font-weight:700!important;font-size:48px!important;line-height:1.25!important;color:#fff!important;margin:0!important}
@@ -172,8 +172,10 @@ body.home .md-hero .keyword-submit{border-radius:9999px!important;background:#df
  body.home .ckg-sec{padding:56px 0}
  .ckg-wrap,body.home .md-hero .banner.single .media-content{padding:0 32px}
  body.home .md-hero .banner.single{padding:48px 0!important}
- body.home .md-hero .banner.single .media-content{grid-template-columns:1fr 1fr;gap:48px;text-align:left}
- body.home .md-hero .banner.single .media-content::after{grid-column:2;grid-row:1 / span 2;font-size:30px;line-height:36px}
+ body.home .md-hero .banner.single .media-content{grid-template-columns:1fr 1fr;column-gap:48px;row-gap:0;text-align:left}
+ body.home .md-hero .media-info{align-self:end}
+ body.home .md-hero .media-content-box{align-self:start}
+ body.home .md-hero .banner.single .media-content::after{grid-column:2;grid-row:1 / span 2;font-size:30px;line-height:36px;margin-top:0}
  body.home .md-hero .banner.single .media-title.media-title,body.home .md-hero .banner.single .media-subtitle.media-subtitle{text-align:left!important}
  body.home .md-hero .banner.single .media-title.media-title h1,body.home .md-hero .banner.single .media-title.media-title h1 span{font-size:72px!important}
  body.home .md-hero .banner.single .media-title.media-title h1,body.home .md-hero .banner.single .media-subtitle.media-subtitle h3{margin-left:0!important}
