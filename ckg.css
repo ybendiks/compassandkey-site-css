@@ -534,3 +534,7 @@ body:has(.ckg-buyhero) .ckg-affordcard .ckg-btn{padding:16px 32px}
 @media(min-width:1024px){body:has(.ckg-buyhero) .ckg-affordcard{padding:56px}}
 body:has(.ckg-buyhero) .ckg-buyhero .ckg-kicker{margin:0 auto 16px!important;max-width:none!important;text-align:center!important}
 @media(min-width:1024px){.ckg-pstep:not(:last-child)::after{left:76px!important;width:calc(100% - 64px)!important}}
+/* Search heading lives on the block, not .search-content (which is the off-screen filter drawer on phones) */
+body:has(.ckg-buyhero) .md-listing-search>.search-content::before{content:none!important;display:none!important}
+body:has(.ckg-buyhero) .page-content>.md-listing-search::before{content:"Search Properties";display:block;text-align:center;font-family:var(--ck-head);font-weight:700;font-size:24px;line-height:32px;color:#22334b;margin:0 auto 24px;padding:0 16px}
+@media(min-width:640px){body:has(.ckg-buyhero) .page-content>.md-listing-search::before{font-size:30px;line-height:36px}}
