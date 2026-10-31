@@ -8,6 +8,7 @@
     var li=document.createElement('li');li.className='ckg-phone';
     li.innerHTML='<a href="tel:+12707353897">(270) 735-3897</a>';
     ul.parentElement.insertBefore(li,ul);
+    ul.parentElement.classList.add('ckg-ph');
   }
   /* Lofty splits the nav (and fills its "More" menu) from measurements taken at mount, often before ckg.css arrives. Re-run its own calculation once our CSS is in. */
   function relayoutNav(){
@@ -17,7 +18,7 @@
     try{c.setDefaultSlice();setTimeout(function(){try{c.getCache();c.calculateSlice();}catch(e){}},60);}catch(e){}
   }
   headerPhone();var ht=0,hiv=setInterval(function(){headerPhone();if(++ht>20)clearInterval(hiv);},250);
-  var css=document.getElementById('ckg-css');
+  var css=document.getElementById('ckg-css-head')||document.getElementById('ckg-css');
   if(css&&!css.sheet)css.addEventListener('load',relayoutNav);else relayoutNav();
   setTimeout(relayoutNav,1500);window.addEventListener('load',function(){setTimeout(relayoutNav,200);});
 })();
@@ -29,7 +30,7 @@
     if(!box||box.querySelector('.ckg-hero-btns'))return;
     var d=document.createElement('div');d.className='ckg-hero-btns';
     d.innerHTML='<a class="ckg-btn ckg-btn-gold" href="/listing">Buy a Home</a><a class="ckg-btn ckg-btn-outline" href="/sell">Sell Your Home</a>';
-    box.appendChild(d);
+    box.appendChild(d);box.classList.add('ckg-btns-in');
   }
   function placeholder(){var i=document.querySelector('.md-hero .search-input');if(i&&i.getAttribute('placeholder')!==PH)i.setAttribute('placeholder',PH);}
   var reviewsFiltered=false;

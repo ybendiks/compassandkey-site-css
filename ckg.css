@@ -99,11 +99,11 @@ input:focus,select:focus,textarea:focus{border-color:var(--ck-gold);box-shadow:0
 
 /* ===== 2. 2026-10-30: Sell + Contact fixes ===== */
 /* Full-bleed top blocks skip the site-wide 56px section padding (B5). Ties B5's specificity, wins on order. */
-.page-content>.md-sell-banner.broker,.page-content>.md-agent-contact.broker{padding-top:0!important}
-.page-content>.md-sell-banner.broker{padding-bottom:0!important}
+body .page-content>.md-sell-banner.broker,body .page-content>.md-agent-contact.broker{padding-top:0!important}
+body .page-content>.md-sell-banner.broker{padding-bottom:0!important}
 /* Sell hero heading/subtitle were navy (--g-primary-color via B2) on a dark photo */
 /* B3 flips inline near-white rich text to navy; undo on this dark photo block (ties B3 at 0,4,0, wins on order) */
-.page-content>.md-sell-banner.broker :is([style*="color: #fff"],[style*="color:#fff"],[style*="color: #ecf0f1"],[style*="color:#ecf0f1"]){color:#fff!important}
+body .page-content>.md-sell-banner.broker :is([style*="color: #fff"],[style*="color:#fff"],[style*="color: #ecf0f1"],[style*="color:#ecf0f1"]){color:#fff!important}
 
 
 /* ===== 3. 2026-10-30: Homepage = replica of the Vercel reference (scoped to body.home) ===== */
@@ -290,3 +290,10 @@ body.home .ckg-textlink:hover{color:#e8c97e!important}
 
 /* Reveal what the Style-field subset hides until this file arrives (no navy-header flash). Fallback in the subset reveals after 2.5s. */
 .md-header .left-menu,.md-header .right-menu,.md-header .menu-icon,body.home .md-hero .media-content{opacity:1!important;animation:none!important}
+
+/* ===== 5. 2026-10-31: no layout shift. ckg.css now loads render-blocking from <head> (Header Meta Tags); the Style-field subset sits AFTER it, so section-2 rules above carry an extra `body` to win their ties.
+   Reserve space for what ckg.js adds after Lofty boots, so nothing moves when it appears. ===== */
+body.home .md-hero .media-content-box:not(.ckg-btns-in){padding-bottom:144px!important}
+@media(min-width:640px){body.home .md-hero .media-content-box:not(.ckg-btns-in){padding-bottom:64px!important}}
+.md-header .header-container .ckg-phone{width:154px;justify-content:center}
+.md-header:not(.mobile) .header-container .right-menu:not(.ckg-ph) .head-account{margin-left:162px!important}
