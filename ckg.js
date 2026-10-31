@@ -19,6 +19,8 @@
   }
   /* Phones: every number on the site is a tel: link, and the old 735-3897 (stale Lofty agent snapshot) shows as the real number (270) 491-3450. */
   var OLD=/(\+?1\s*)?\(?270\)?[\s.-]*735[\s.-]*3897/g,NEW='(270) 491-3450',NEWTEL='tel:+12704913450';
+  /* Display: every variant of the main number (+1(270) 491-3450, 270-491-3450, ...) and the old one reads exactly as on the Google profile: (270) 491-3450 */
+  var OURS=/(\+?1[\s.-]*)?\(?270\)?[\s.-]*(?:735[\s.-]*3897|491[\s.-]*3450)/g;
   var PHONE=/(\+?1[\s.-]?)?\(\d{3}\)\s?\d{3}[\s.-]\d{4}|(\+?1[\s.-])?\b\d{3}[.-]\d{3}[.-]\d{4}\b/g;
   function telOf(s){var d=s.replace(/\D/g,'');if(d.length===11&&d[0]==='1')d=d.slice(1);return d.length===10?'tel:+1'+d:null;}
   function phones(){
@@ -26,8 +28,10 @@
     document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
       if(OLD.test(a.getAttribute('href'))||/7353897/.test(a.getAttribute('href').replace(/\D/g,''))){a.setAttribute('href',NEWTEL);}
       OLD.lastIndex=0;
-      if(OLD.test(a.textContent)){OLD.lastIndex=0;a.textContent=a.textContent.replace(OLD,NEW);}
       OLD.lastIndex=0;
+      if(/4913450$/.test(a.getAttribute('href').replace(/\D/g,'')))a.setAttribute('href',NEWTEL);
+      OURS.lastIndex=0;if(OURS.test(a.textContent)){OURS.lastIndex=0;var nt=a.textContent.replace(OURS,NEW);if(nt!==a.textContent)a.textContent=nt;}
+      OURS.lastIndex=0;
     });
     var w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT,{acceptNode:function(n){
       var p=n.parentElement;if(!p)return NodeFilter.FILTER_REJECT;
@@ -36,7 +40,7 @@
       return (PHONE.test(n.nodeValue)||OLD.test(n.nodeValue))?NodeFilter.FILTER_ACCEPT:NodeFilter.FILTER_REJECT;}});
     var nodes=[];while(w.nextNode())nodes.push(w.currentNode);
     nodes.forEach(function(n){
-      OLD.lastIndex=0;var txt=n.nodeValue.replace(OLD,NEW);PHONE.lastIndex=0;
+      OURS.lastIndex=0;var txt=n.nodeValue.replace(OURS,NEW);PHONE.lastIndex=0;
       var frag=document.createDocumentFragment(),last=0,m;
       while((m=PHONE.exec(txt))){var tel=telOf(m[0]);if(!tel)continue;
         frag.appendChild(document.createTextNode(txt.slice(last,m.index)));
