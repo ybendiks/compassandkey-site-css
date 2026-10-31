@@ -46,6 +46,22 @@
     });
     document.querySelectorAll('script[type="application/ld+json"]').forEach(function(s){OLD.lastIndex=0;if(OLD.test(s.textContent)){OLD.lastIndex=0;s.textContent=s.textContent.replace(OLD,'+1(270) 491-3450');}OLD.lastIndex=0;});
   }
+  /* Maps: the Google Business Profile (not an address pin) is the map and the address link everywhere. Footer map on every page except /contact (which has its own). */
+  var GBP='https://www.google.com/maps?cid=4625508582504720054';
+  var DIR='https://www.google.com/maps/dir/?api=1&destination=Compass+and+Key+Group+-+Real+Broker%2C+617+N+Mulberry+St+%23105B%2C+Elizabethtown%2C+KY+42701';
+  var EMB='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.803705090403!2d-85.8521225!3d37.7008088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x291f420f3c5b3461%3A0x40311b8c7db6e6b6!2sCompass%20and%20Key%20Group%20-%20Real%20Broker!5e0!3m2!1sen!2sus!4v1793412938143!5m2!1sen!2sus';
+  function linkAddr(el){if(!el||el.querySelector('a'))return;var t=el.textContent.trim();if(!t)return;var a=document.createElement('a');a.href=GBP;a.target='_blank';a.rel='noopener';a.className='ckg-addr';a.textContent=t;el.textContent='';el.appendChild(a);}
+  function maps(){
+    linkAddr(document.querySelector('.md-footer .detail-addr'));
+    if(document.body.classList.contains('contact'))linkAddr(document.querySelector('.md-form .info-agent .concat p:nth-child(3) span'));
+    var lc=document.querySelector('.md-footer .left-content');
+    if(lc&&!document.body.classList.contains('contact')&&!lc.querySelector('.ckg-footmap')){
+      var d=document.createElement('div');d.className='ckg-footmap';
+      d.innerHTML='<iframe src="'+EMB+'" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen title="Compass and Key Group - Real Broker on Google Maps"></iframe><a class="ckg-footdir" href="'+DIR+'" target="_blank" rel="noopener">Get Directions &rarr;</a>';
+      lc.appendChild(d);
+    }
+  }
+  maps();setTimeout(maps,1500);setTimeout(maps,4000);
   phones();setTimeout(phones,1500);setTimeout(phones,4000);window.addEventListener('load',function(){setTimeout(phones,300);});
   headerPhone();var ht=0,hiv=setInterval(function(){headerPhone();if(++ht>20)clearInterval(hiv);},250);
   var css=document.getElementById('ckg-css-head')||document.getElementById('ckg-css');

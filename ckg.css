@@ -441,3 +441,13 @@ body.contact .ckg-follow h3{font-family:var(--ck-head)!important;font-weight:700
 .ckg-social a:hover{background:rgba(223,183,102,.1);color:#dfb766!important}
 .ckg-social svg{width:20px;height:20px}
 @media(min-width:1024px){body.contact .ckg-mapsec{padding:24px 0 56px}}
+/* Google Business Profile map: contact page links + footer map (ckg.js) */
+.ckg-maplinks{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:24px;margin-top:24px}
+body.contact .ckg-maplinks .ckg-btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--ck-sans)!important;font-weight:600;padding:12px 28px;border-radius:6px;font-size:16px!important;text-decoration:none!important;background:#dfb766;color:#fff!important;border:2px solid #dfb766}
+body.contact .ckg-maplinks .ckg-btn:hover{background:#e8c97e;border-color:#e8c97e}
+a.ckg-addr{color:inherit!important;text-decoration:none}
+a.ckg-addr:hover{color:#dfb766!important;text-decoration:underline}
+.md-footer .ckg-footmap{margin-top:20px;max-width:420px}
+.md-footer .ckg-footmap iframe{display:block;width:100%;height:200px;border:0;border-radius:8px;background:#2d4060}
+.md-footer .ckg-footmap .ckg-footdir{display:inline-block;margin-top:10px;color:#dfb766!important;font-weight:600;font-size:14px;text-decoration:none}
+.md-footer .ckg-footmap .ckg-footdir:hover{color:#e8c97e!important}
