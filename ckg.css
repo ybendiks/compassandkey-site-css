@@ -223,7 +223,7 @@ body:is(.home,.sell) .ckg-textlink:hover{color:#e8c97e!important}
 /* Beats the critical-subset rules `.md-header *{color:#fff!important}` / `.md-header a{color:#fff!important}` on specificity */
 /* .header-bg stays full-width but invisible: Lofty sizes its menu split from header-bg.offsetWidth (calculateSlice) */
 .md-header .header-container .header-bg{display:block!important;opacity:0!important;pointer-events:none!important;background:transparent!important}
-@media(min-width:1024px){.md-header:not(.mobile) .header-container .header-bg{position:absolute!important;top:0!important;left:50%!important;width:100vw!important;height:100%!important;transform:translateX(-50%)!important}}
+@media(min-width:1024px){.md-header:not(.mobile) .header-container .header-bg{position:absolute!important;top:0!important;left:50%!important;width:100vw!important;height:100%!important;transform:translateX(-50%)!important;opacity:1!important;background:#fff!important;border-bottom:1px solid #f3f4f6!important;box-sizing:border-box!important}}
 .md-header{background:#fff!important;border-bottom:1px solid #f3f4f6!important;box-shadow:none!important;height:auto!important;min-height:0!important}
 .md-header .header-container{background:transparent!important;box-shadow:none!important}
 .md-header .header-placeholder{height:80px!important;min-height:0!important}
@@ -356,3 +356,5 @@ body.sell .ckg-cta h2{font-weight:700!important}
 @media(min-width:640px){.ckg-valcard{padding:48px}.ckg-grid4.ckg-why-grid{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:768px){.ckg-grid4.ckg-steps{grid-template-columns:repeat(2,1fr)}}
 @media(min-width:1024px){.ckg-grid4{grid-template-columns:repeat(4,1fr)!important}.ckg-grid4.ckg-steps{gap:24px}}
+body.sell .ckg-cta .ckg-btns{align-items:center}
+/* Header: keep the full-width bar white once the fixed header scrolls over content (was transparent: .md-header's white bg is not on the fixed layer) — see §4 line with header-bg opacity:1 */
