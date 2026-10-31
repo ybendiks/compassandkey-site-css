@@ -385,3 +385,5 @@ body.evaluation .md-evaluation-banner .step-label{font-family:ui-sans-serif,syst
 body.evaluation .md-evaluation-banner .step-desc{font-family:"DM Sans",system-ui,sans-serif!important}
 @media(min-width:640px){body.evaluation .md-evaluation-banner .main-title :is(h1,h2),body.evaluation .md-evaluation-banner .main-title :is(h1,h2) span{font-size:48px!important}body.evaluation .md-evaluation-banner .address-header p{font-size:20px!important}body.evaluation .md-evaluation-banner .cover{padding:0 24px!important}}
 @media(min-width:1024px){body.evaluation .md-evaluation-banner .banner.single{padding:64px 0!important}body.evaluation .md-evaluation-banner .main-title :is(h1,h2),body.evaluation .md-evaluation-banner .main-title :is(h1,h2) span{font-size:60px!important}body.evaluation .md-evaluation-banner .cover{padding:0 32px!important}}
+/* Phone numbers auto-linked by ckg.js keep the surrounding text style */
+a.ckg-tel{color:inherit!important;text-decoration:inherit;font:inherit}
