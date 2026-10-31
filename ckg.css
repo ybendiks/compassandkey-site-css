@@ -107,42 +107,42 @@ body .page-content>.md-sell-banner.broker :is([style*="color: #fff"],[style*="co
 
 
 /* ===== 3. 2026-10-30: Homepage = replica of the Vercel reference (scoped to body.home) ===== */
-body:is(.home,.sell){--ck-sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--ck-head:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--ck-gray:#4b5563;--ck-line:#f3f4f6;--ck-grad:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)}
+body:is(.home,.sell,.contact){--ck-sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--ck-head:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--ck-gray:#4b5563;--ck-line:#f3f4f6;--ck-grad:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)}
 /* Fonts: Vercel renders headings in the system sans (its DM Serif never loads) and body in DM Sans */
-body:is(.home,.sell) .page-content,body:is(.home,.sell) .page-content p,body:is(.home,.sell) .page-content li,body:is(.home,.sell) .page-content a,body:is(.home,.sell) .page-content input{font-family:var(--ck-sans)!important}
-body:is(.home,.sell) .page-content h1,body:is(.home,.sell) .page-content h2,body:is(.home,.sell) .page-content h3{font-family:var(--ck-head)!important;letter-spacing:normal!important;text-transform:none!important}
-body:is(.home,.sell) .page-content :is(h1,h2,h3,p) span{font-family:inherit!important}
+body:is(.home,.sell,.contact) .page-content,body:is(.home,.sell,.contact) .page-content p,body:is(.home,.sell,.contact) .page-content li,body:is(.home,.sell,.contact) .page-content a,body:is(.home,.sell,.contact) .page-content input{font-family:var(--ck-sans)!important}
+body:is(.home,.sell,.contact) .page-content h1,body:is(.home,.sell,.contact) .page-content h2,body:is(.home,.sell,.contact) .page-content h3{font-family:var(--ck-head)!important;letter-spacing:normal!important;text-transform:none!important}
+body:is(.home,.sell,.contact) .page-content :is(h1,h2,h3,p) span{font-family:inherit!important}
 
 /* Shared section system (custom Embed blocks) */
-body:is(.home,.sell) .page-content>.md-custom-code{padding:0!important;margin:0!important;background:none!important}
-body:is(.home,.sell) .page-content>.md-custom-code .mg-container,body:is(.home,.sell) .page-content>.md-custom-code .custom-code-html-content{max-width:none!important;width:100%!important;margin:0!important;padding:0!important}
-body:is(.home,.sell) .ckg-sec{padding:48px 0}
+body:is(.home,.sell,.contact) .page-content>.md-custom-code{padding:0!important;margin:0!important;background:none!important}
+body:is(.home,.sell,.contact) .page-content>.md-custom-code .mg-container,body:is(.home,.sell,.contact) .page-content>.md-custom-code .custom-code-html-content{max-width:none!important;width:100%!important;margin:0!important;padding:0!important}
+body:is(.home,.sell,.contact) .ckg-sec{padding:48px 0}
 .ckg-cream{background:#f4f3f2}.ckg-white{background:#fff}.ckg-navy{background:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)}
 .ckg-wrap{max-width:1280px;margin:0 auto;padding:0 16px;box-sizing:border-box}
 .ckg-narrow{max-width:896px;text-align:center}
 .ckg-head{text-align:center;margin-bottom:40px}
-body:is(.home,.sell) .ckg-head h2,body:is(.home,.sell) .ckg-cta h2,body:is(.home,.sell) .md-testimonial .site-title h2,body:is(.home,.sell) .md-house .mg-title h2{font-size:30px!important;line-height:36px!important;font-weight:400!important;color:#22334b!important;margin:0 0 16px!important;text-align:center!important}
-body:is(.home,.sell) .ckg-head p,body:is(.home,.sell) .md-testimonial .site-title p,body:is(.home,.sell) .md-house .mg-title p{font-size:18px!important;line-height:28px!important;color:#4b5563!important;max-width:672px;margin:0 auto!important;text-align:center!important}
+body:is(.home,.sell,.contact) .ckg-head h2,body:is(.home,.sell,.contact) .ckg-cta h2,body:is(.home,.sell,.contact) .md-testimonial .site-title h2,body:is(.home,.sell,.contact) .md-house .mg-title h2{font-size:30px!important;line-height:36px!important;font-weight:400!important;color:#22334b!important;margin:0 0 16px!important;text-align:center!important}
+body:is(.home,.sell,.contact) .ckg-head p,body:is(.home,.sell,.contact) .md-testimonial .site-title p,body:is(.home,.sell,.contact) .md-house .mg-title p{font-size:18px!important;line-height:28px!important;color:#4b5563!important;max-width:672px;margin:0 auto!important;text-align:center!important}
 .ckg-grid3{display:grid;gap:32px;grid-template-columns:1fr}
 .ckg-card{background:#fff;border-radius:12px;padding:32px;text-align:center;border:1px solid #f3f4f6;transition:box-shadow .2s}
 .ckg-card:hover{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
 .ckg-icon{width:64px;height:64px;background:#22334b;border-radius:9999px;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;color:#dfb766}
 .ckg-icon svg{width:32px;height:32px}
-body:is(.home,.sell) .ckg-card h3{font-size:20px!important;line-height:28px!important;font-weight:400!important;color:#22334b!important;margin:0 0 12px!important}
-body:is(.home,.sell) .ckg-card p{font-size:18px!important;line-height:1.625!important;color:#4b5563!important;margin:0!important}
+body:is(.home,.sell,.contact) .ckg-card h3{font-size:20px!important;line-height:28px!important;font-weight:400!important;color:#22334b!important;margin:0 0 12px!important}
+body:is(.home,.sell,.contact) .ckg-card p{font-size:18px!important;line-height:1.625!important;color:#4b5563!important;margin:0!important}
 .ckg-pills{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
-body:is(.home,.sell) .ckg-pills a{background:#fff;color:#22334b!important;font-size:14px!important;line-height:20px;font-weight:500;padding:10px 20px;border-radius:9999px;border:1px solid #e5e7eb;text-decoration:none;transition:background-color .2s,border-color .2s,color .2s}
-body:is(.home,.sell) .ckg-pills a:hover{background:rgba(223,183,102,.1);border-color:rgba(223,183,102,.3);color:#dfb766!important}
-body:is(.home,.sell) .ckg-cta h2{color:#fff!important;margin-bottom:24px!important}
-body:is(.home,.sell) .ckg-cta p{color:rgba(255,255,255,.9)!important;font-size:18px!important;line-height:1.625!important;max-width:672px;margin:0 auto 40px!important}
+body:is(.home,.sell,.contact) .ckg-pills a{background:#fff;color:#22334b!important;font-size:14px!important;line-height:20px;font-weight:500;padding:10px 20px;border-radius:9999px;border:1px solid #e5e7eb;text-decoration:none;transition:background-color .2s,border-color .2s,color .2s}
+body:is(.home,.sell,.contact) .ckg-pills a:hover{background:rgba(223,183,102,.1);border-color:rgba(223,183,102,.3);color:#dfb766!important}
+body:is(.home,.sell,.contact) .ckg-cta h2{color:#fff!important;margin-bottom:24px!important}
+body:is(.home,.sell,.contact) .ckg-cta p{color:rgba(255,255,255,.9)!important;font-size:18px!important;line-height:1.625!important;max-width:672px;margin:0 auto 40px!important}
 .ckg-btns,.ckg-hero-btns{display:flex;flex-direction:column;gap:16px;justify-content:center}
-body:is(.home,.sell) .ckg-btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--ck-sans)!important;font-weight:600;padding:16px 32px;border-radius:6px;font-size:18px!important;line-height:28px;text-decoration:none!important;transition:background-color .2s;box-sizing:border-box}
-body:is(.home,.sell) .ckg-hero-btns .ckg-btn{padding:16px 40px}
-body:is(.home,.sell) .ckg-btn-gold{background:#dfb766;color:#fff!important;border:2px solid #dfb766}
-body:is(.home,.sell) .ckg-btn-gold:hover{background:#e8c97e;border-color:#e8c97e}
-body:is(.home,.sell) .ckg-btn-ghost{border:2px solid rgba(255,255,255,.3);color:#fff!important}
-body:is(.home,.sell) .ckg-btn-outline{border:2px solid #fff;color:#fff!important}
-body:is(.home,.sell) .ckg-btn-ghost:hover,body:is(.home,.sell) .ckg-btn-outline:hover{background:rgba(255,255,255,.1)}
+body:is(.home,.sell,.contact) .ckg-btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--ck-sans)!important;font-weight:600;padding:16px 32px;border-radius:6px;font-size:18px!important;line-height:28px;text-decoration:none!important;transition:background-color .2s;box-sizing:border-box}
+body:is(.home,.sell,.contact) .ckg-hero-btns .ckg-btn{padding:16px 40px}
+body:is(.home,.sell,.contact) .ckg-btn-gold{background:#dfb766;color:#fff!important;border:2px solid #dfb766}
+body:is(.home,.sell,.contact) .ckg-btn-gold:hover{background:#e8c97e;border-color:#e8c97e}
+body:is(.home,.sell,.contact) .ckg-btn-ghost{border:2px solid rgba(255,255,255,.3);color:#fff!important}
+body:is(.home,.sell,.contact) .ckg-btn-outline{border:2px solid #fff;color:#fff!important}
+body:is(.home,.sell,.contact) .ckg-btn-ghost:hover,body:is(.home,.sell,.contact) .ckg-btn-outline:hover{background:rgba(255,255,255,.1)}
 
 /* Hero: Lofty md-hero (keeps its live MLS search) laid out like the Vercel hero */
 body.home .page-content>.md-hero{background:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)!important;padding:0!important;margin:0!important}
@@ -162,7 +162,7 @@ body.home .md-hero .search-input{border-radius:9999px!important;font-size:16px!i
 body.home .md-hero .search-input::placeholder{color:#9ca3af!important}
 body.home .md-hero .keyword-submit{border-radius:9999px!important;background:#dfb766!important}
 @media(min-width:640px){
- body:is(.home,.sell) .ckg-head h2,body:is(.home,.sell) .ckg-cta h2,body:is(.home,.sell) .md-testimonial .site-title h2,body:is(.home,.sell) .md-house .mg-title h2{font-size:36px!important;line-height:40px!important}
+ body:is(.home,.sell,.contact) .ckg-head h2,body:is(.home,.sell,.contact) .ckg-cta h2,body:is(.home,.sell,.contact) .md-testimonial .site-title h2,body:is(.home,.sell,.contact) .md-house .mg-title h2{font-size:36px!important;line-height:40px!important}
  .ckg-wrap,body.home .md-hero .banner.single .media-content{padding:0 24px}
  .ckg-btns,.ckg-hero-btns{flex-direction:row}
  body.home .md-hero .banner.single .media-title.media-title h1,body.home .md-hero .banner.single .media-title.media-title h1 span{font-size:60px!important}
@@ -170,7 +170,7 @@ body.home .md-hero .keyword-submit{border-radius:9999px!important;background:#df
 }
 @media(min-width:768px){.ckg-grid3{grid-template-columns:repeat(3,1fr)}}
 @media(min-width:1024px){
- body:is(.home,.sell) .ckg-sec{padding:56px 0}
+ body:is(.home,.sell,.contact) .ckg-sec{padding:56px 0}
  .ckg-wrap,body.home .md-hero .banner.single .media-content{padding:0 32px}
  body.home .md-hero .banner.single{padding:48px 0!important}
  body.home .md-hero .banner.single .media-content{grid-template-columns:1fr 1fr;column-gap:48px;row-gap:0;text-align:left}
@@ -215,8 +215,8 @@ body.home .md-house>.ckg-more{padding-bottom:8px}
 body.home .md-house .house-grid-item .house-info,body.home .md-house .house-grid-item .house-info *,body.home .md-house .house-grid-item .house-price,body.home .md-house .house-grid-item .house-price *,body.home .md-house .house-grid-item .house-basic,body.home .md-house .house-grid-item .house-basic *,body.home .md-house .house-grid-item .house-address,body.home .md-house .house-grid-item .house-address a,body.home .md-house .house-grid-item .house-detail *{color:#fff!important;text-shadow:0 1px 2px rgba(0,0,0,.35)}
 @media(max-width:480px){body.home .md-hero .banner.single .media-title.media-title::before{letter-spacing:.14em;font-size:min(14px,3.2vw);white-space:nowrap}}
 .ckg-more{text-align:center;margin-top:32px}
-body:is(.home,.sell) .ckg-textlink{display:inline-flex;align-items:center;gap:8px;color:#dfb766!important;font-weight:600;font-size:16px!important;text-decoration:none!important;transition:color .2s}
-body:is(.home,.sell) .ckg-textlink:hover{color:#e8c97e!important}
+body:is(.home,.sell,.contact) .ckg-textlink{display:inline-flex;align-items:center;gap:8px;color:#dfb766!important;font-weight:600;font-size:16px!important;text-decoration:none!important;transition:color .2s}
+body:is(.home,.sell,.contact) .ckg-textlink:hover{color:#e8c97e!important}
 @media(min-width:1024px){body.home .page-content>.md-testimonial,body.home .page-content>.md-testimonial.layout1,body.home .page-content>.md-house{padding:56px 0!important}body.home .md-testimonial .reviews-container{padding:0 32px}}
 
 /* ===== 4. 2026-10-30: Site header = Vercel bar (white, icon + wordmark left, nav, phone + account right). Site-wide. ===== */
@@ -387,3 +387,57 @@ body.evaluation .md-evaluation-banner .step-desc{font-family:"DM Sans",system-ui
 @media(min-width:1024px){body.evaluation .md-evaluation-banner .banner.single{padding:64px 0!important}body.evaluation .md-evaluation-banner .main-title :is(h1,h2),body.evaluation .md-evaluation-banner .main-title :is(h1,h2) span{font-size:60px!important}body.evaluation .md-evaluation-banner .cover{padding:0 32px!important}}
 /* Phone numbers auto-linked by ckg.js keep the surrounding text style */
 a.ckg-tel{color:inherit!important;text-decoration:inherit;font:inherit}
+
+/* ===== 9. 2026-10-31: /contact = replica of the Vercel Contact page (body.contact). Lofty md-form kept (real lead form); its agent panel is the Contact Information card ===== */
+body.contact .ckg-pagehero{text-align:center}
+body.contact .ckg-pagehero h1{font-family:var(--ck-head)!important;font-weight:700!important;font-size:36px!important;line-height:1.2!important;color:#fff!important;margin:0 0 24px!important;letter-spacing:normal!important;text-transform:none!important}
+body.contact .ckg-pagehero p{font-size:18px!important;line-height:1.625!important;color:rgba(255,255,255,.9)!important;max-width:672px;margin:0 auto!important}
+@media(min-width:640px){body.contact .ckg-pagehero h1{font-size:48px!important}body.contact .ckg-pagehero p{font-size:20px!important}}
+@media(min-width:1024px){body.contact .ckg-pagehero{padding:64px 0!important}body.contact .ckg-pagehero h1{font-size:60px!important}}
+/* Form section: cream ground, two white cards (form left, contact info right) */
+body.contact .page-content>.md-form{background:#f4f3f2!important;padding:48px 0 24px!important;margin:0!important}
+body.contact .md-form .form-container{max-width:1280px!important;width:100%!important;margin:0 auto!important;padding:0 16px!important;box-sizing:border-box;display:grid!important;grid-template-columns:1fr;gap:32px;background:none!important;box-shadow:none!important}
+body.contact .md-form .info-right,body.contact .md-form .info-agent{width:auto!important;max-width:none!important;margin:0!important;background:#fff!important;border-radius:12px!important;border:1px solid #f3f4f6!important;box-shadow:0 1px 2px rgba(0,0,0,.05)!important;padding:32px!important;box-sizing:border-box;height:auto!important;min-height:0!important;position:relative!important}
+body.contact .md-form .info-right{order:1}
+body.contact .md-form .info-agent{order:2;display:block!important;color:#4b5563!important}
+body.contact .md-form .info-right .top-border{display:none!important}
+body.contact .md-form .info-right .title{padding:0!important;margin:0 0 24px!important;height:auto!important;text-align:left!important}
+body.contact .md-form .info-right .title h2,body.contact .md-form .info-right .title h2 *{font-family:var(--ck-head)!important;font-weight:700!important;font-size:24px!important;line-height:32px!important;color:#22334b!important;text-transform:none!important;letter-spacing:normal!important;text-align:left!important}
+body.contact .md-form .info-form,body.contact .md-form .input-content,body.contact .md-form .basic-info{width:100%!important;padding:0!important;margin:0!important;box-sizing:border-box}
+body.contact .md-form .basic-info{display:grid!important;grid-template-columns:1fr;gap:16px}
+body.contact .md-form .basic-info>.input-box{width:100%!important;margin:0!important;padding:0!important}
+body.contact .md-form .input-container{position:relative;height:auto!important}
+body.contact .md-form .input-container input,body.contact .md-form .input-container textarea{width:100%!important;box-sizing:border-box;border:1px solid #e5e7eb!important;border-radius:6px!important;padding:10px 16px!important;font-size:16px!important;color:#1f2937!important;background:#fff!important;font-family:var(--ck-sans)!important;height:auto!important;min-height:44px}
+body.contact .md-form .input-container textarea{min-height:120px}
+body.contact .md-form .input-container input:focus,body.contact .md-form .input-container textarea:focus{border-color:#dfb766!important;box-shadow:0 0 0 2px rgba(223,183,102,.5)!important;outline:none!important}
+body.contact .md-form .submit-content{margin-top:20px!important;padding:0!important}
+body.contact .md-form .submit-box .submit{width:100%!important;height:auto!important;padding:14px 32px!important;border-radius:6px!important;background:#dfb766!important;border:0!important;color:#fff!important;font-family:var(--ck-sans)!important;font-weight:600!important;font-size:18px!important;text-transform:none!important;letter-spacing:normal!important;opacity:1!important}
+body.contact .md-form .submit-box .submit:hover{background:#e8c97e!important}
+body.contact .md-form .disclaimer-wrap,body.contact .md-form .disclaimer-wrap *{font-size:12px!important;line-height:1.5!important;color:#6b7280!important}
+/* Contact Information card (Lofty agent panel: phone, email, address from Austin's profile) */
+body.contact .md-form .info-agent .img,body.contact .md-form .info-agent .desc{display:none!important}
+body.contact .md-form .info-agent::before{content:"Contact Information";display:block;font-family:var(--ck-head);font-weight:700;font-size:24px;line-height:32px;color:#22334b;margin-bottom:24px}
+body.contact .md-form .info-agent::after{content:"KY Real Estate License #277797";display:block;font-size:12px;color:#9ca3af;margin-top:20px}
+body.contact .md-form .info-agent .concat{display:flex!important;flex-direction:column;gap:20px;width:auto!important;margin:0!important;padding:0!important;position:static!important}
+body.contact .md-form .info-agent .concat p{display:grid!important;grid-template-columns:40px 1fr;column-gap:16px;align-items:start;margin:0!important;height:auto!important;line-height:1.4!important}
+body.contact .md-form .info-agent .concat p:nth-child(3){order:-1}
+body.contact .md-form .info-agent .concat p i{grid-row:1 / span 2;width:40px;height:40px;border-radius:8px;background:rgba(223,183,102,.1);color:#dfb766!important;display:flex!important;align-items:center;justify-content:center;font-size:18px!important;margin:0!important}
+body.contact .md-form .info-agent .concat p::before{grid-column:2;font-weight:600;color:#22334b;font-size:16px;font-family:var(--ck-sans)}
+body.contact .md-form .info-agent .concat p:nth-child(1)::before{content:"Phone"}
+body.contact .md-form .info-agent .concat p:nth-child(2)::before{content:"Email"}
+body.contact .md-form .info-agent .concat p:nth-child(3)::before{content:"Office Address"}
+body.contact .md-form .info-agent .concat p span{grid-column:2;font-size:14px!important;color:#4b5563!important;white-space:normal!important;word-break:break-word}
+body.contact .md-form .info-agent .concat p span a{color:#4b5563!important;text-decoration:none!important}
+body.contact .md-form .info-agent .concat p span a:hover{color:#dfb766!important}
+@media(min-width:640px){body.contact .md-form .form-container{padding:0 24px!important}body.contact .md-form .basic-info{grid-template-columns:1fr 1fr}body.contact .md-form .basic-info>.phone,body.contact .md-form .basic-info>.question{grid-column:1 / -1}}
+@media(min-width:1024px){body.contact .page-content>.md-form{padding:56px 0 24px!important}body.contact .md-form .form-container{padding:0 32px!important;grid-template-columns:1fr 1fr;gap:48px;align-items:start}}
+/* Map + Follow Us */
+body.contact .ckg-mapsec{padding:24px 0 48px}
+.ckg-map{border-radius:12px;overflow:hidden;border:1px solid #e5e7eb;height:360px;background:#e5e7eb}
+.ckg-map iframe{display:block;width:100%;height:360px;border:0}
+body.contact .ckg-follow h3{font-family:var(--ck-head)!important;font-weight:700!important;font-size:20px!important;color:#22334b!important;margin:0 0 24px!important;text-transform:none!important;letter-spacing:normal!important}
+.ckg-social{display:flex;justify-content:center;gap:24px}
+.ckg-social a{width:48px;height:48px;border-radius:9999px;background:rgba(34,51,75,.05);color:#22334b!important;display:flex;align-items:center;justify-content:center;transition:background-color .2s,color .2s}
+.ckg-social a:hover{background:rgba(223,183,102,.1);color:#dfb766!important}
+.ckg-social svg{width:20px;height:20px}
+@media(min-width:1024px){body.contact .ckg-mapsec{padding:24px 0 56px}}
