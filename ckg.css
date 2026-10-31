@@ -297,3 +297,8 @@ body.home .md-hero .media-content-box:not(.ckg-btns-in){padding-bottom:144px!imp
 @media(min-width:640px){body.home .md-hero .media-content-box:not(.ckg-btns-in){padding-bottom:64px!important}}
 .md-header .header-container .ckg-phone{width:154px;justify-content:center}
 .md-header:not(.mobile) .header-container .right-menu:not(.ckg-ph) .head-account{margin-left:162px!important}
+
+/* §6 CLS: /contact map is injected client-side (SSR ships .agent-contact-container.no-map). Reserve its height until it lands; pin the map to the same height. */
+body .md-agent-contact:has(>.agent-contact-container.no-map){padding-top:800px!important}
+body .md-agent-contact>.site-map{height:800px!important}
+@media(max-width:799px){body .md-agent-contact:has(>.agent-contact-container.no-map){padding-top:500px!important}body .md-agent-contact>.site-map{height:500px!important}}
