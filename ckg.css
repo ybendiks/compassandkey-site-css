@@ -361,6 +361,6 @@ body.sell .ckg-cta .ckg-btns{align-items:center}
 /* Homepage hero buttons: Lofty sets pointer-events:none on the hero content, so the links weren't clickable */
 body.home .md-hero .ckg-hero-btns,body.home .md-hero .ckg-hero-btns a{pointer-events:auto!important;position:relative;z-index:2}
 /* Mobile, signed-in visitor: Lofty pins the avatar (header-container>ul.head-account, absolute) to the top-left over the logo. Move it next to the hamburger (menu-icon is 60px wide, right edge). */
-.md-header.mobile .header-container>.head-account{left:auto!important;right:58px!important;width:auto!important}
+.md-header.mobile .header-container>.head-account{left:auto!important;right:46px!important;width:auto!important}
 .md-header.mobile .header-container>.head-account>li{padding:0 4px!important;margin:0!important}
 .md-header.mobile .header-container>.head-account .wrapper{left:auto!important;right:0!important}
