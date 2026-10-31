@@ -1,5 +1,9 @@
 /* compassandkeygroup.com site script, loaded by the Lofty Script field after ckg.css. */
 (function(){
+  /* Redirects for pages Lofty won't let us delete (system pages). Google follows JS redirects; the URL is also no-indexed in Lofty SEO > Indexing. */
+  var REDIRECTS={'/house-listing':'/listing'};
+  var here=location.pathname.replace(/\/+$/,'')||'/';
+  if(REDIRECTS[here]){location.replace(REDIRECTS[here]+location.search+location.hash);return;}
   /* Site-wide: phone number in the header, before Register / Sign In (desktop) */
   function headerPhone(){
     var ul=document.querySelector('.md-header .right-menu .head-account');
