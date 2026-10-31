@@ -364,3 +364,24 @@ body.home .md-hero .ckg-hero-btns,body.home .md-hero .ckg-hero-btns a{pointer-ev
 .md-header.mobile .header-container>.head-account{left:auto!important;right:46px!important;width:auto!important}
 .md-header.mobile .header-container>.head-account>li{padding:0 4px!important;margin:0!important}
 .md-header.mobile .header-container>.head-account .wrapper{left:auto!important;right:0!important}
+
+/* ===== 8. 2026-10-31: /evaluation (Lofty md-evaluation-banner wizard) styled like the Sell hero ===== */
+body.evaluation .page-content>.md-evaluation-banner{padding-top:0!important;padding-bottom:0!important;margin:0!important;background:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)!important}
+body.evaluation .md-evaluation-banner .single-picture,body.evaluation .md-evaluation-banner .banner-mask{display:none!important}
+body.evaluation .md-evaluation-banner .banner.single{min-height:0!important;height:auto!important;background:none!important;padding:48px 0!important}
+body.evaluation .md-evaluation-banner .cover{position:relative!important;inset:auto!important;transform:none!important;max-width:1280px!important;width:100%!important;margin:0 auto!important;padding:0 16px!important;box-sizing:border-box;height:auto!important}
+body.evaluation .md-evaluation-banner .main-title :is(h1,h2),body.evaluation .md-evaluation-banner .main-title :is(h1,h2) span{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif!important;font-weight:700!important;font-size:36px!important;line-height:1.25!important;color:#fff!important;text-align:center!important;letter-spacing:normal!important;text-transform:none!important;margin:0 0 16px!important}
+body.evaluation .md-evaluation-banner .description p,body.evaluation .md-evaluation-banner .description p span{font-family:"DM Sans",system-ui,sans-serif!important;color:#e8c97e!important;font-size:14px!important;line-height:20px!important;letter-spacing:.2em!important;text-transform:uppercase!important;text-align:center!important}
+body.evaluation .md-evaluation-banner .address-header p{font-family:"DM Sans",system-ui,sans-serif!important;color:rgba(255,255,255,.9)!important;font-size:18px!important;line-height:1.6!important;text-align:center!important;margin:32px 0 16px!important}
+body.evaluation .md-evaluation-banner .address-body{max-width:600px!important;margin:0 auto!important;background:#fff!important;border-radius:9999px!important;padding:6px!important;box-sizing:border-box;display:flex!important;border:0!important;box-shadow:none!important;height:auto!important}
+body.evaluation .md-evaluation-banner .address-body .left-box{flex:1 1 auto!important;border:0!important;background:transparent!important}
+body.evaluation .md-evaluation-banner .address-body .input{height:48px!important;border:0!important;background:transparent!important;font-size:16px!important;color:#1f2937!important;padding:0 16px!important;border-radius:9999px!important}
+body.evaluation .md-evaluation-banner .address-body .icon-submit-btn{display:none!important}
+body.evaluation .md-evaluation-banner .address-body .right-box{flex:0 0 auto!important;width:auto!important;background:transparent!important}
+body.evaluation .md-evaluation-banner .address-body .submit-btn{height:48px!important;line-height:48px!important;padding:0 28px!important;border-radius:9999px!important;background:#dfb766!important;border:0!important;color:#fff!important;font-family:"DM Sans",system-ui,sans-serif!important;font-weight:600!important;font-size:16px!important;display:flex!important;align-items:center!important;justify-content:center!important}
+body.evaluation .md-evaluation-banner .address-body .submit-btn *{line-height:1!important;margin:0!important;padding:0!important;color:#fff!important}
+body.evaluation .md-evaluation-banner .evaluation-progress{margin-top:40px!important}
+body.evaluation .md-evaluation-banner .step-label{font-family:ui-sans-serif,system-ui,sans-serif!important;font-weight:700!important}
+body.evaluation .md-evaluation-banner .step-desc{font-family:"DM Sans",system-ui,sans-serif!important}
+@media(min-width:640px){body.evaluation .md-evaluation-banner .main-title :is(h1,h2),body.evaluation .md-evaluation-banner .main-title :is(h1,h2) span{font-size:48px!important}body.evaluation .md-evaluation-banner .address-header p{font-size:20px!important}body.evaluation .md-evaluation-banner .cover{padding:0 24px!important}}
+@media(min-width:1024px){body.evaluation .md-evaluation-banner .banner.single{padding:64px 0!important}body.evaluation .md-evaluation-banner .main-title :is(h1,h2),body.evaluation .md-evaluation-banner .main-title :is(h1,h2) span{font-size:60px!important}body.evaluation .md-evaluation-banner .cover{padding:0 32px!important}}
