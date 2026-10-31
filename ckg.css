@@ -532,3 +532,5 @@ body:has(.ckg-buyhero) .ckg-affordcard p{font-size:16px!important;line-height:1.
 body:has(.ckg-buyhero) .ckg-affordcard .ckg-btn{padding:16px 32px}
 @media(min-width:640px){body:has(.ckg-buyhero) .ckg-affordcard h2{font-size:36px!important;line-height:40px!important}}
 @media(min-width:1024px){body:has(.ckg-buyhero) .ckg-affordcard{padding:56px}}
+body:has(.ckg-buyhero) .ckg-buyhero .ckg-kicker{margin:0 auto 16px!important;max-width:none!important;text-align:center!important}
+@media(min-width:1024px){.ckg-pstep:not(:last-child)::after{left:76px!important;width:calc(100% - 64px)!important}}
