@@ -6,7 +6,7 @@
     if(!ul||document.querySelector('.md-header .ckg-phone'))return;
     /* no 'menu-item' class: Lofty's getCache() maps .menu-item widths to its menu list by index */
     var li=document.createElement('li');li.className='ckg-phone';
-    li.innerHTML='<a href="tel:+12707353897">(270) 735-3897</a>';
+    li.innerHTML='<a href="tel:+12704913450">(270) 491-3450</a>';
     ul.parentElement.insertBefore(li,ul);
     ul.parentElement.classList.add('ckg-ph');
   }

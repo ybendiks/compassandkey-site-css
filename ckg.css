@@ -358,3 +358,5 @@ body.sell .ckg-cta h2{font-weight:700!important}
 @media(min-width:1024px){.ckg-grid4{grid-template-columns:repeat(4,1fr)!important}.ckg-grid4.ckg-steps{gap:24px}}
 body.sell .ckg-cta .ckg-btns{align-items:center}
 /* Header: keep the full-width bar white once the fixed header scrolls over content (was transparent: .md-header's white bg is not on the fixed layer) — see §4 line with header-bg opacity:1 */
+/* Homepage hero buttons: Lofty sets pointer-events:none on the hero content, so the links weren't clickable */
+body.home .md-hero .ckg-hero-btns,body.home .md-hero .ckg-hero-btns a{pointer-events:auto!important;position:relative;z-index:2}
