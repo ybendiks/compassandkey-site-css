@@ -107,42 +107,42 @@ body .page-content>.md-sell-banner.broker :is([style*="color: #fff"],[style*="co
 
 
 /* ===== 3. 2026-10-30: Homepage = replica of the Vercel reference (scoped to body.home) ===== */
-body.home{--ck-sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--ck-head:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--ck-gray:#4b5563;--ck-line:#f3f4f6;--ck-grad:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)}
+body:is(.home,.sell){--ck-sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--ck-head:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--ck-gray:#4b5563;--ck-line:#f3f4f6;--ck-grad:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)}
 /* Fonts: Vercel renders headings in the system sans (its DM Serif never loads) and body in DM Sans */
-body.home .page-content,body.home .page-content p,body.home .page-content li,body.home .page-content a,body.home .page-content input{font-family:var(--ck-sans)!important}
-body.home .page-content h1,body.home .page-content h2,body.home .page-content h3{font-family:var(--ck-head)!important;letter-spacing:normal!important;text-transform:none!important}
-body.home .page-content :is(h1,h2,h3,p) span{font-family:inherit!important}
+body:is(.home,.sell) .page-content,body:is(.home,.sell) .page-content p,body:is(.home,.sell) .page-content li,body:is(.home,.sell) .page-content a,body:is(.home,.sell) .page-content input{font-family:var(--ck-sans)!important}
+body:is(.home,.sell) .page-content h1,body:is(.home,.sell) .page-content h2,body:is(.home,.sell) .page-content h3{font-family:var(--ck-head)!important;letter-spacing:normal!important;text-transform:none!important}
+body:is(.home,.sell) .page-content :is(h1,h2,h3,p) span{font-family:inherit!important}
 
 /* Shared section system (custom Embed blocks) */
-body.home .page-content>.md-custom-code{padding:0!important;margin:0!important;background:none!important}
-body.home .page-content>.md-custom-code .mg-container,body.home .page-content>.md-custom-code .custom-code-html-content{max-width:none!important;width:100%!important;margin:0!important;padding:0!important}
-body.home .ckg-sec{padding:48px 0}
+body:is(.home,.sell) .page-content>.md-custom-code{padding:0!important;margin:0!important;background:none!important}
+body:is(.home,.sell) .page-content>.md-custom-code .mg-container,body:is(.home,.sell) .page-content>.md-custom-code .custom-code-html-content{max-width:none!important;width:100%!important;margin:0!important;padding:0!important}
+body:is(.home,.sell) .ckg-sec{padding:48px 0}
 .ckg-cream{background:#f4f3f2}.ckg-white{background:#fff}.ckg-navy{background:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)}
 .ckg-wrap{max-width:1280px;margin:0 auto;padding:0 16px;box-sizing:border-box}
 .ckg-narrow{max-width:896px;text-align:center}
 .ckg-head{text-align:center;margin-bottom:40px}
-body.home .ckg-head h2,body.home .ckg-cta h2,body.home .md-testimonial .site-title h2,body.home .md-house .mg-title h2{font-size:30px!important;line-height:36px!important;font-weight:400!important;color:#22334b!important;margin:0 0 16px!important;text-align:center!important}
-body.home .ckg-head p,body.home .md-testimonial .site-title p,body.home .md-house .mg-title p{font-size:18px!important;line-height:28px!important;color:#4b5563!important;max-width:672px;margin:0 auto!important;text-align:center!important}
+body:is(.home,.sell) .ckg-head h2,body:is(.home,.sell) .ckg-cta h2,body:is(.home,.sell) .md-testimonial .site-title h2,body:is(.home,.sell) .md-house .mg-title h2{font-size:30px!important;line-height:36px!important;font-weight:400!important;color:#22334b!important;margin:0 0 16px!important;text-align:center!important}
+body:is(.home,.sell) .ckg-head p,body:is(.home,.sell) .md-testimonial .site-title p,body:is(.home,.sell) .md-house .mg-title p{font-size:18px!important;line-height:28px!important;color:#4b5563!important;max-width:672px;margin:0 auto!important;text-align:center!important}
 .ckg-grid3{display:grid;gap:32px;grid-template-columns:1fr}
 .ckg-card{background:#fff;border-radius:12px;padding:32px;text-align:center;border:1px solid #f3f4f6;transition:box-shadow .2s}
 .ckg-card:hover{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
 .ckg-icon{width:64px;height:64px;background:#22334b;border-radius:9999px;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;color:#dfb766}
 .ckg-icon svg{width:32px;height:32px}
-body.home .ckg-card h3{font-size:20px!important;line-height:28px!important;font-weight:400!important;color:#22334b!important;margin:0 0 12px!important}
-body.home .ckg-card p{font-size:18px!important;line-height:1.625!important;color:#4b5563!important;margin:0!important}
+body:is(.home,.sell) .ckg-card h3{font-size:20px!important;line-height:28px!important;font-weight:400!important;color:#22334b!important;margin:0 0 12px!important}
+body:is(.home,.sell) .ckg-card p{font-size:18px!important;line-height:1.625!important;color:#4b5563!important;margin:0!important}
 .ckg-pills{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
-body.home .ckg-pills a{background:#fff;color:#22334b!important;font-size:14px!important;line-height:20px;font-weight:500;padding:10px 20px;border-radius:9999px;border:1px solid #e5e7eb;text-decoration:none;transition:background-color .2s,border-color .2s,color .2s}
-body.home .ckg-pills a:hover{background:rgba(223,183,102,.1);border-color:rgba(223,183,102,.3);color:#dfb766!important}
-body.home .ckg-cta h2{color:#fff!important;margin-bottom:24px!important}
-body.home .ckg-cta p{color:rgba(255,255,255,.9)!important;font-size:18px!important;line-height:1.625!important;max-width:672px;margin:0 auto 40px!important}
+body:is(.home,.sell) .ckg-pills a{background:#fff;color:#22334b!important;font-size:14px!important;line-height:20px;font-weight:500;padding:10px 20px;border-radius:9999px;border:1px solid #e5e7eb;text-decoration:none;transition:background-color .2s,border-color .2s,color .2s}
+body:is(.home,.sell) .ckg-pills a:hover{background:rgba(223,183,102,.1);border-color:rgba(223,183,102,.3);color:#dfb766!important}
+body:is(.home,.sell) .ckg-cta h2{color:#fff!important;margin-bottom:24px!important}
+body:is(.home,.sell) .ckg-cta p{color:rgba(255,255,255,.9)!important;font-size:18px!important;line-height:1.625!important;max-width:672px;margin:0 auto 40px!important}
 .ckg-btns,.ckg-hero-btns{display:flex;flex-direction:column;gap:16px;justify-content:center}
-body.home .ckg-btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--ck-sans)!important;font-weight:600;padding:16px 32px;border-radius:6px;font-size:18px!important;line-height:28px;text-decoration:none!important;transition:background-color .2s;box-sizing:border-box}
-body.home .ckg-hero-btns .ckg-btn{padding:16px 40px}
-body.home .ckg-btn-gold{background:#dfb766;color:#fff!important;border:2px solid #dfb766}
-body.home .ckg-btn-gold:hover{background:#e8c97e;border-color:#e8c97e}
-body.home .ckg-btn-ghost{border:2px solid rgba(255,255,255,.3);color:#fff!important}
-body.home .ckg-btn-outline{border:2px solid #fff;color:#fff!important}
-body.home .ckg-btn-ghost:hover,body.home .ckg-btn-outline:hover{background:rgba(255,255,255,.1)}
+body:is(.home,.sell) .ckg-btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--ck-sans)!important;font-weight:600;padding:16px 32px;border-radius:6px;font-size:18px!important;line-height:28px;text-decoration:none!important;transition:background-color .2s;box-sizing:border-box}
+body:is(.home,.sell) .ckg-hero-btns .ckg-btn{padding:16px 40px}
+body:is(.home,.sell) .ckg-btn-gold{background:#dfb766;color:#fff!important;border:2px solid #dfb766}
+body:is(.home,.sell) .ckg-btn-gold:hover{background:#e8c97e;border-color:#e8c97e}
+body:is(.home,.sell) .ckg-btn-ghost{border:2px solid rgba(255,255,255,.3);color:#fff!important}
+body:is(.home,.sell) .ckg-btn-outline{border:2px solid #fff;color:#fff!important}
+body:is(.home,.sell) .ckg-btn-ghost:hover,body:is(.home,.sell) .ckg-btn-outline:hover{background:rgba(255,255,255,.1)}
 
 /* Hero: Lofty md-hero (keeps its live MLS search) laid out like the Vercel hero */
 body.home .page-content>.md-hero{background:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)!important;padding:0!important;margin:0!important}
@@ -162,7 +162,7 @@ body.home .md-hero .search-input{border-radius:9999px!important;font-size:16px!i
 body.home .md-hero .search-input::placeholder{color:#9ca3af!important}
 body.home .md-hero .keyword-submit{border-radius:9999px!important;background:#dfb766!important}
 @media(min-width:640px){
- body.home .ckg-head h2,body.home .ckg-cta h2,body.home .md-testimonial .site-title h2,body.home .md-house .mg-title h2{font-size:36px!important;line-height:40px!important}
+ body:is(.home,.sell) .ckg-head h2,body:is(.home,.sell) .ckg-cta h2,body:is(.home,.sell) .md-testimonial .site-title h2,body:is(.home,.sell) .md-house .mg-title h2{font-size:36px!important;line-height:40px!important}
  .ckg-wrap,body.home .md-hero .banner.single .media-content{padding:0 24px}
  .ckg-btns,.ckg-hero-btns{flex-direction:row}
  body.home .md-hero .banner.single .media-title.media-title h1,body.home .md-hero .banner.single .media-title.media-title h1 span{font-size:60px!important}
@@ -170,7 +170,7 @@ body.home .md-hero .keyword-submit{border-radius:9999px!important;background:#df
 }
 @media(min-width:768px){.ckg-grid3{grid-template-columns:repeat(3,1fr)}}
 @media(min-width:1024px){
- body.home .ckg-sec{padding:56px 0}
+ body:is(.home,.sell) .ckg-sec{padding:56px 0}
  .ckg-wrap,body.home .md-hero .banner.single .media-content{padding:0 32px}
  body.home .md-hero .banner.single{padding:48px 0!important}
  body.home .md-hero .banner.single .media-content{grid-template-columns:1fr 1fr;column-gap:48px;row-gap:0;text-align:left}
@@ -215,8 +215,8 @@ body.home .md-house>.ckg-more{padding-bottom:8px}
 body.home .md-house .house-grid-item .house-info,body.home .md-house .house-grid-item .house-info *,body.home .md-house .house-grid-item .house-price,body.home .md-house .house-grid-item .house-price *,body.home .md-house .house-grid-item .house-basic,body.home .md-house .house-grid-item .house-basic *,body.home .md-house .house-grid-item .house-address,body.home .md-house .house-grid-item .house-address a,body.home .md-house .house-grid-item .house-detail *{color:#fff!important;text-shadow:0 1px 2px rgba(0,0,0,.35)}
 @media(max-width:480px){body.home .md-hero .banner.single .media-title.media-title::before{letter-spacing:.14em;font-size:min(14px,3.2vw);white-space:nowrap}}
 .ckg-more{text-align:center;margin-top:32px}
-body.home .ckg-textlink{display:inline-flex;align-items:center;gap:8px;color:#dfb766!important;font-weight:600;font-size:16px!important;text-decoration:none!important;transition:color .2s}
-body.home .ckg-textlink:hover{color:#e8c97e!important}
+body:is(.home,.sell) .ckg-textlink{display:inline-flex;align-items:center;gap:8px;color:#dfb766!important;font-weight:600;font-size:16px!important;text-decoration:none!important;transition:color .2s}
+body:is(.home,.sell) .ckg-textlink:hover{color:#e8c97e!important}
 @media(min-width:1024px){body.home .page-content>.md-testimonial,body.home .page-content>.md-testimonial.layout1,body.home .page-content>.md-house{padding:56px 0!important}body.home .md-testimonial .reviews-container{padding:0 32px}}
 
 /* ===== 4. 2026-10-30: Site header = Vercel bar (white, icon + wordmark left, nav, phone + account right). Site-wide. ===== */
@@ -302,3 +302,57 @@ body.home .md-hero .media-content-box:not(.ckg-btns-in){padding-bottom:144px!imp
 body .md-agent-contact:has(>.agent-contact-container.no-map){padding-top:800px!important}
 body .md-agent-contact>.site-map{height:800px!important}
 @media(max-width:799px){body .md-agent-contact:has(>.agent-contact-container.no-map){padding-top:500px!important}body .md-agent-contact>.site-map{height:500px!important}}
+
+/* ===== 7. 2026-10-31: /sell = replica of the Vercel Sell page (body.sell). Shared .ckg-* system above now covers .home and .sell ===== */
+/* Hero: Lofty md-sell-banner (keeps its address-input seller lead form) laid out like Vercel's gradient hero */
+body.sell .page-content>.md-sell-banner{background:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)!important}
+body.sell .md-sell-banner .single-picture,body.sell .md-sell-banner .banner-mask,body.sell .md-sell-banner .media-shadow,body.sell .md-sell-banner .sell-agent{display:none!important}
+body.sell .md-sell-banner .banner.single{min-height:0!important;height:auto!important;padding:48px 0!important;display:block!important;background:none!important}
+body.sell .md-sell-banner .media-content{position:relative!important;inset:auto!important;transform:none!important;max-width:1280px!important;width:100%!important;margin:0 auto!important;padding:0 16px!important;box-sizing:border-box;text-align:center;display:block!important;height:auto!important}
+body.sell .md-sell-banner .media-info,body.sell .md-sell-banner .title-text{width:100%!important;max-width:none!important;margin:0!important;padding:0!important;position:static!important}
+body.sell .md-sell-banner .media-title h1,body.sell .md-sell-banner .media-title h1 span{font-family:var(--ck-head)!important;font-weight:700!important;font-size:36px!important;line-height:1.25!important;color:#fff!important;text-align:center!important;margin:0 0 24px!important;letter-spacing:normal!important;text-transform:none!important}
+body.sell .md-sell-banner .media-subtitle h3,body.sell .md-sell-banner .media-subtitle h3 span{font-family:var(--ck-sans)!important;font-weight:400!important;font-size:18px!important;line-height:1.625!important;color:rgba(255,255,255,.9)!important;text-align:center!important;max-width:672px;margin:0 auto!important}
+body.sell .md-sell-banner .address-input{max-width:600px!important;width:100%!important;margin:40px auto 0!important;background:#fff!important;border-radius:9999px!important;padding:6px!important;box-sizing:border-box;display:flex!important;height:auto!important;border:0!important}
+body.sell .md-sell-banner .address-input .left-box{flex:1 1 auto!important;width:auto!important;border:0!important;background:transparent!important}
+body.sell .md-sell-banner .address-input .input{height:48px!important;border:0!important;background:transparent!important;border-radius:9999px!important;font-size:16px!important;color:#1f2937!important;padding:0 16px!important}
+body.sell .md-sell-banner .address-input .input::placeholder{color:#9ca3af!important}
+body.sell .md-sell-banner .address-input .icon-search{display:none!important}
+body.sell .md-sell-banner .address-input .right-box{flex:0 0 auto!important;width:auto!important}
+body.sell .md-sell-banner .address-input .submit-btn{height:48px!important;width:auto!important;padding:0 24px!important;border-radius:9999px!important;background:#dfb766!important;border:0!important}
+body.sell .md-sell-banner .address-input .submit-btn,body.sell .md-sell-banner .address-input .submit-btn *{color:#fff!important;font-family:var(--ck-sans)!important;font-weight:600!important;font-size:16px!important}
+body.sell .md-sell-banner .address-input .empty-error{position:absolute}
+@media(min-width:640px){
+ body.sell .md-sell-banner .media-content{padding:0 24px!important}
+ body.sell .md-sell-banner .media-title h1,body.sell .md-sell-banner .media-title h1 span{font-size:48px!important}
+ body.sell .md-sell-banner .media-subtitle h3,body.sell .md-sell-banner .media-subtitle h3 span{font-size:20px!important}
+}
+@media(min-width:1024px){
+ body.sell .md-sell-banner .banner.single{padding:64px 0!important}
+ body.sell .md-sell-banner .media-content{padding:0 32px!important}
+ body.sell .md-sell-banner .media-title h1,body.sell .md-sell-banner .media-title h1 span{font-size:60px!important}
+}
+/* Valuation card */
+body.sell .ckg-val{border-top:4px solid #f5e6c8;border-bottom:4px solid #f5e6c8}
+.ckg-valcard{max-width:896px;margin:0 auto;background:#fff;border-radius:16px;box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);padding:32px;border:1px solid #f5e6c8;text-align:center;box-sizing:border-box}
+.ckg-valicon{width:64px;height:64px;border-radius:9999px;background:#f5e6c8;color:#dfb766;display:flex;align-items:center;justify-content:center;margin:0 auto 24px}
+.ckg-valicon svg{width:32px;height:32px}
+body.sell .ckg-valcard h2{font-family:var(--ck-head)!important;font-size:30px!important;line-height:36px!important;font-weight:700!important;color:#22334b!important;margin:0 0 16px!important}
+body.sell .ckg-valcard p{font-size:18px!important;line-height:1.625!important;color:#4b5563!important;max-width:576px;margin:0 auto 32px!important}
+body.sell .ckg-valcard .ckg-btn{padding:16px 40px;box-shadow:0 4px 6px -1px rgba(0,0,0,.1)}
+/* Selling process */
+.ckg-grid4{display:grid;gap:32px;grid-template-columns:1fr}
+.ckg-step-n{display:block;font-family:var(--ck-head);font-size:60px;line-height:1;font-weight:700;color:rgba(223,183,102,.2)}
+body.sell .ckg-step h3,body.sell .ckg-why4 h3{font-family:var(--ck-head)!important;font-weight:700!important;color:#22334b!important;letter-spacing:normal!important;text-transform:none!important}
+body.sell .ckg-step h3{font-size:20px!important;line-height:28px!important;margin:8px 0 12px!important}
+body.sell .ckg-step p,body.sell .ckg-why4 p{font-size:16px!important;line-height:1.625!important;color:#4b5563!important;margin:0!important;text-align:left!important}
+/* Why sell with us */
+.ckg-why4{background:#fff;border-radius:8px;padding:24px;border:1px solid #f3f4f6;height:100%;box-sizing:border-box;text-align:left;transition:box-shadow .2s}
+.ckg-why4:hover{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
+.ckg-why4 .ckg-wicon{color:#dfb766;margin-bottom:16px}
+.ckg-why4 .ckg-wicon svg{width:32px;height:32px;display:block}
+body.sell .ckg-why4 h3{font-size:18px!important;line-height:28px!important;margin:0 0 8px!important}
+body.sell .ckg-head h2{font-weight:700!important}
+body.sell .ckg-cta h2{font-weight:700!important}
+@media(min-width:640px){.ckg-valcard{padding:48px}.ckg-grid4.ckg-why-grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:768px){.ckg-grid4.ckg-steps{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.ckg-grid4{grid-template-columns:repeat(4,1fr)!important}.ckg-grid4.ckg-steps{gap:24px}}
