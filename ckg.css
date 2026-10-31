@@ -107,42 +107,42 @@ body .page-content>.md-sell-banner.broker :is([style*="color: #fff"],[style*="co
 
 
 /* ===== 3. 2026-10-30: Homepage = replica of the Vercel reference (scoped to body.home) ===== */
-body:is(.home,.sell,.contact){--ck-sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--ck-head:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--ck-gray:#4b5563;--ck-line:#f3f4f6;--ck-grad:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)}
+body:is(.home,.sell,.contact,.about){--ck-sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--ck-head:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--ck-gray:#4b5563;--ck-line:#f3f4f6;--ck-grad:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)}
 /* Fonts: Vercel renders headings in the system sans (its DM Serif never loads) and body in DM Sans */
-body:is(.home,.sell,.contact) .page-content,body:is(.home,.sell,.contact) .page-content p,body:is(.home,.sell,.contact) .page-content li,body:is(.home,.sell,.contact) .page-content a,body:is(.home,.sell,.contact) .page-content input{font-family:var(--ck-sans)!important}
-body:is(.home,.sell,.contact) .page-content h1,body:is(.home,.sell,.contact) .page-content h2,body:is(.home,.sell,.contact) .page-content h3{font-family:var(--ck-head)!important;letter-spacing:normal!important;text-transform:none!important}
-body:is(.home,.sell,.contact) .page-content :is(h1,h2,h3,p) span{font-family:inherit!important}
+body:is(.home,.sell,.contact,.about) .page-content,body:is(.home,.sell,.contact,.about) .page-content p,body:is(.home,.sell,.contact,.about) .page-content li,body:is(.home,.sell,.contact,.about) .page-content a,body:is(.home,.sell,.contact,.about) .page-content input{font-family:var(--ck-sans)!important}
+body:is(.home,.sell,.contact,.about) .page-content h1,body:is(.home,.sell,.contact,.about) .page-content h2,body:is(.home,.sell,.contact,.about) .page-content h3{font-family:var(--ck-head)!important;letter-spacing:normal!important;text-transform:none!important}
+body:is(.home,.sell,.contact,.about) .page-content :is(h1,h2,h3,p) span{font-family:inherit!important}
 
 /* Shared section system (custom Embed blocks) */
-body:is(.home,.sell,.contact) .page-content>.md-custom-code{padding:0!important;margin:0!important;background:none!important}
-body:is(.home,.sell,.contact) .page-content>.md-custom-code .mg-container,body:is(.home,.sell,.contact) .page-content>.md-custom-code .custom-code-html-content{max-width:none!important;width:100%!important;margin:0!important;padding:0!important}
-body:is(.home,.sell,.contact) .ckg-sec{padding:48px 0}
+body:is(.home,.sell,.contact,.about) .page-content>.md-custom-code{padding:0!important;margin:0!important;background:none!important}
+body:is(.home,.sell,.contact,.about) .page-content>.md-custom-code .mg-container,body:is(.home,.sell,.contact,.about) .page-content>.md-custom-code .custom-code-html-content{max-width:none!important;width:100%!important;margin:0!important;padding:0!important}
+body:is(.home,.sell,.contact,.about) .ckg-sec{padding:48px 0}
 .ckg-cream{background:#f4f3f2}.ckg-white{background:#fff}.ckg-navy{background:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)}
 .ckg-wrap{max-width:1280px;margin:0 auto;padding:0 16px;box-sizing:border-box}
 .ckg-narrow{max-width:896px;text-align:center}
 .ckg-head{text-align:center;margin-bottom:40px}
-body:is(.home,.sell,.contact) .ckg-head h2,body:is(.home,.sell,.contact) .ckg-cta h2,body:is(.home,.sell,.contact) .md-testimonial .site-title h2,body:is(.home,.sell,.contact) .md-house .mg-title h2{font-size:30px!important;line-height:36px!important;font-weight:400!important;color:#22334b!important;margin:0 0 16px!important;text-align:center!important}
-body:is(.home,.sell,.contact) .ckg-head p,body:is(.home,.sell,.contact) .md-testimonial .site-title p,body:is(.home,.sell,.contact) .md-house .mg-title p{font-size:18px!important;line-height:28px!important;color:#4b5563!important;max-width:672px;margin:0 auto!important;text-align:center!important}
+body:is(.home,.sell,.contact,.about) .ckg-head h2,body:is(.home,.sell,.contact,.about) .ckg-cta h2,body:is(.home,.sell,.contact,.about) .md-testimonial .site-title h2,body:is(.home,.sell,.contact,.about) .md-house .mg-title h2{font-size:30px!important;line-height:36px!important;font-weight:400!important;color:#22334b!important;margin:0 0 16px!important;text-align:center!important}
+body:is(.home,.sell,.contact,.about) .ckg-head p,body:is(.home,.sell,.contact,.about) .md-testimonial .site-title p,body:is(.home,.sell,.contact,.about) .md-house .mg-title p{font-size:18px!important;line-height:28px!important;color:#4b5563!important;max-width:672px;margin:0 auto!important;text-align:center!important}
 .ckg-grid3{display:grid;gap:32px;grid-template-columns:1fr}
 .ckg-card{background:#fff;border-radius:12px;padding:32px;text-align:center;border:1px solid #f3f4f6;transition:box-shadow .2s}
 .ckg-card:hover{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
 .ckg-icon{width:64px;height:64px;background:#22334b;border-radius:9999px;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;color:#dfb766}
 .ckg-icon svg{width:32px;height:32px}
-body:is(.home,.sell,.contact) .ckg-card h3{font-size:20px!important;line-height:28px!important;font-weight:400!important;color:#22334b!important;margin:0 0 12px!important}
-body:is(.home,.sell,.contact) .ckg-card p{font-size:18px!important;line-height:1.625!important;color:#4b5563!important;margin:0!important}
+body:is(.home,.sell,.contact,.about) .ckg-card h3{font-size:20px!important;line-height:28px!important;font-weight:400!important;color:#22334b!important;margin:0 0 12px!important}
+body:is(.home,.sell,.contact,.about) .ckg-card p{font-size:18px!important;line-height:1.625!important;color:#4b5563!important;margin:0!important}
 .ckg-pills{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
-body:is(.home,.sell,.contact) .ckg-pills a{background:#fff;color:#22334b!important;font-size:14px!important;line-height:20px;font-weight:500;padding:10px 20px;border-radius:9999px;border:1px solid #e5e7eb;text-decoration:none;transition:background-color .2s,border-color .2s,color .2s}
-body:is(.home,.sell,.contact) .ckg-pills a:hover{background:rgba(223,183,102,.1);border-color:rgba(223,183,102,.3);color:#dfb766!important}
-body:is(.home,.sell,.contact) .ckg-cta h2{color:#fff!important;margin-bottom:24px!important}
-body:is(.home,.sell,.contact) .ckg-cta p{color:rgba(255,255,255,.9)!important;font-size:18px!important;line-height:1.625!important;max-width:672px;margin:0 auto 40px!important}
+body:is(.home,.sell,.contact,.about) .ckg-pills a{background:#fff;color:#22334b!important;font-size:14px!important;line-height:20px;font-weight:500;padding:10px 20px;border-radius:9999px;border:1px solid #e5e7eb;text-decoration:none;transition:background-color .2s,border-color .2s,color .2s}
+body:is(.home,.sell,.contact,.about) .ckg-pills a:hover{background:rgba(223,183,102,.1);border-color:rgba(223,183,102,.3);color:#dfb766!important}
+body:is(.home,.sell,.contact,.about) .ckg-cta h2{color:#fff!important;margin-bottom:24px!important}
+body:is(.home,.sell,.contact,.about) .ckg-cta p{color:rgba(255,255,255,.9)!important;font-size:18px!important;line-height:1.625!important;max-width:672px;margin:0 auto 40px!important}
 .ckg-btns,.ckg-hero-btns{display:flex;flex-direction:column;gap:16px;justify-content:center}
-body:is(.home,.sell,.contact) .ckg-btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--ck-sans)!important;font-weight:600;padding:16px 32px;border-radius:6px;font-size:18px!important;line-height:28px;text-decoration:none!important;transition:background-color .2s;box-sizing:border-box}
-body:is(.home,.sell,.contact) .ckg-hero-btns .ckg-btn{padding:16px 40px}
-body:is(.home,.sell,.contact) .ckg-btn-gold{background:#dfb766;color:#fff!important;border:2px solid #dfb766}
-body:is(.home,.sell,.contact) .ckg-btn-gold:hover{background:#e8c97e;border-color:#e8c97e}
-body:is(.home,.sell,.contact) .ckg-btn-ghost{border:2px solid rgba(255,255,255,.3);color:#fff!important}
-body:is(.home,.sell,.contact) .ckg-btn-outline{border:2px solid #fff;color:#fff!important}
-body:is(.home,.sell,.contact) .ckg-btn-ghost:hover,body:is(.home,.sell,.contact) .ckg-btn-outline:hover{background:rgba(255,255,255,.1)}
+body:is(.home,.sell,.contact,.about) .ckg-btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--ck-sans)!important;font-weight:600;padding:16px 32px;border-radius:6px;font-size:18px!important;line-height:28px;text-decoration:none!important;transition:background-color .2s;box-sizing:border-box}
+body:is(.home,.sell,.contact,.about) .ckg-hero-btns .ckg-btn{padding:16px 40px}
+body:is(.home,.sell,.contact,.about) .ckg-btn-gold{background:#dfb766;color:#fff!important;border:2px solid #dfb766}
+body:is(.home,.sell,.contact,.about) .ckg-btn-gold:hover{background:#e8c97e;border-color:#e8c97e}
+body:is(.home,.sell,.contact,.about) .ckg-btn-ghost{border:2px solid rgba(255,255,255,.3);color:#fff!important}
+body:is(.home,.sell,.contact,.about) .ckg-btn-outline{border:2px solid #fff;color:#fff!important}
+body:is(.home,.sell,.contact,.about) .ckg-btn-ghost:hover,body:is(.home,.sell,.contact,.about) .ckg-btn-outline:hover{background:rgba(255,255,255,.1)}
 
 /* Hero: Lofty md-hero (keeps its live MLS search) laid out like the Vercel hero */
 body.home .page-content>.md-hero{background:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)!important;padding:0!important;margin:0!important}
@@ -162,7 +162,7 @@ body.home .md-hero .search-input{border-radius:9999px!important;font-size:16px!i
 body.home .md-hero .search-input::placeholder{color:#9ca3af!important}
 body.home .md-hero .keyword-submit{border-radius:9999px!important;background:#dfb766!important}
 @media(min-width:640px){
- body:is(.home,.sell,.contact) .ckg-head h2,body:is(.home,.sell,.contact) .ckg-cta h2,body:is(.home,.sell,.contact) .md-testimonial .site-title h2,body:is(.home,.sell,.contact) .md-house .mg-title h2{font-size:36px!important;line-height:40px!important}
+ body:is(.home,.sell,.contact,.about) .ckg-head h2,body:is(.home,.sell,.contact,.about) .ckg-cta h2,body:is(.home,.sell,.contact,.about) .md-testimonial .site-title h2,body:is(.home,.sell,.contact,.about) .md-house .mg-title h2{font-size:36px!important;line-height:40px!important}
  .ckg-wrap,body.home .md-hero .banner.single .media-content{padding:0 24px}
  .ckg-btns,.ckg-hero-btns{flex-direction:row}
  body.home .md-hero .banner.single .media-title.media-title h1,body.home .md-hero .banner.single .media-title.media-title h1 span{font-size:60px!important}
@@ -170,7 +170,7 @@ body.home .md-hero .keyword-submit{border-radius:9999px!important;background:#df
 }
 @media(min-width:768px){.ckg-grid3{grid-template-columns:repeat(3,1fr)}}
 @media(min-width:1024px){
- body:is(.home,.sell,.contact) .ckg-sec{padding:56px 0}
+ body:is(.home,.sell,.contact,.about) .ckg-sec{padding:56px 0}
  .ckg-wrap,body.home .md-hero .banner.single .media-content{padding:0 32px}
  body.home .md-hero .banner.single{padding:48px 0!important}
  body.home .md-hero .banner.single .media-content{grid-template-columns:1fr 1fr;column-gap:48px;row-gap:0;text-align:left}
@@ -215,8 +215,8 @@ body.home .md-house>.ckg-more{padding-bottom:8px}
 body.home .md-house .house-grid-item .house-info,body.home .md-house .house-grid-item .house-info *,body.home .md-house .house-grid-item .house-price,body.home .md-house .house-grid-item .house-price *,body.home .md-house .house-grid-item .house-basic,body.home .md-house .house-grid-item .house-basic *,body.home .md-house .house-grid-item .house-address,body.home .md-house .house-grid-item .house-address a,body.home .md-house .house-grid-item .house-detail *{color:#fff!important;text-shadow:0 1px 2px rgba(0,0,0,.35)}
 @media(max-width:480px){body.home .md-hero .banner.single .media-title.media-title::before{letter-spacing:.14em;font-size:min(14px,3.2vw);white-space:nowrap}}
 .ckg-more{text-align:center;margin-top:32px}
-body:is(.home,.sell,.contact) .ckg-textlink{display:inline-flex;align-items:center;gap:8px;color:#dfb766!important;font-weight:600;font-size:16px!important;text-decoration:none!important;transition:color .2s}
-body:is(.home,.sell,.contact) .ckg-textlink:hover{color:#e8c97e!important}
+body:is(.home,.sell,.contact,.about) .ckg-textlink{display:inline-flex;align-items:center;gap:8px;color:#dfb766!important;font-weight:600;font-size:16px!important;text-decoration:none!important;transition:color .2s}
+body:is(.home,.sell,.contact,.about) .ckg-textlink:hover{color:#e8c97e!important}
 @media(min-width:1024px){body.home .page-content>.md-testimonial,body.home .page-content>.md-testimonial.layout1,body.home .page-content>.md-house{padding:56px 0!important}body.home .md-testimonial .reviews-container{padding:0 32px}}
 
 /* ===== 4. 2026-10-30: Site header = Vercel bar (white, icon + wordmark left, nav, phone + account right). Site-wide. ===== */
@@ -389,11 +389,11 @@ body.evaluation .md-evaluation-banner .step-desc{font-family:"DM Sans",system-ui
 a.ckg-tel{color:inherit!important;text-decoration:inherit;font:inherit}
 
 /* ===== 9. 2026-10-31: /contact = replica of the Vercel Contact page (body.contact). Lofty md-form kept (real lead form); its agent panel is the Contact Information card ===== */
-body.contact .ckg-pagehero{text-align:center}
-body.contact .ckg-pagehero h1{font-family:var(--ck-head)!important;font-weight:700!important;font-size:36px!important;line-height:1.2!important;color:#fff!important;margin:0 0 24px!important;letter-spacing:normal!important;text-transform:none!important}
-body.contact .ckg-pagehero p{font-size:18px!important;line-height:1.625!important;color:rgba(255,255,255,.9)!important;max-width:672px;margin:0 auto!important}
-@media(min-width:640px){body.contact .ckg-pagehero h1{font-size:48px!important}body.contact .ckg-pagehero p{font-size:20px!important}}
-@media(min-width:1024px){body.contact .ckg-pagehero{padding:64px 0!important}body.contact .ckg-pagehero h1{font-size:60px!important}}
+body:is(.contact,.about) .ckg-pagehero{text-align:center}
+body:is(.contact,.about) .ckg-pagehero h1{font-family:var(--ck-head)!important;font-weight:700!important;font-size:36px!important;line-height:1.2!important;color:#fff!important;margin:0 0 24px!important;letter-spacing:normal!important;text-transform:none!important}
+body:is(.contact,.about) .ckg-pagehero p{font-size:18px!important;line-height:1.625!important;color:rgba(255,255,255,.9)!important;max-width:672px;margin:0 auto!important}
+@media(min-width:640px){body:is(.contact,.about) .ckg-pagehero h1{font-size:48px!important}body:is(.contact,.about) .ckg-pagehero p{font-size:20px!important}}
+@media(min-width:1024px){body:is(.contact,.about) .ckg-pagehero{padding:64px 0!important}body:is(.contact,.about) .ckg-pagehero h1{font-size:60px!important}}
 /* Form section: cream ground, two white cards (form left, contact info right) */
 body.contact .page-content>.md-form{background:#f4f3f2!important;padding:48px 0 24px!important;margin:0!important}
 body.contact .md-form .form-container{max-width:1280px!important;width:100%!important;margin:0 auto!important;padding:0 16px!important;box-sizing:border-box;display:grid!important;grid-template-columns:1fr;gap:32px;background:none!important;box-shadow:none!important}
@@ -456,3 +456,40 @@ body.contact .md-form .form-container{grid-template-columns:minmax(0,1fr)!import
 body.contact .md-form .info-right,body.contact .md-form .info-agent{min-width:0!important}
 body.contact .md-form .info-agent .concat p,body.contact .md-form .info-agent .concat p *{white-space:normal!important;overflow-wrap:anywhere;min-width:0}
 @media(min-width:1024px){body.contact .md-form .form-container{grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important}}
+
+/* ===== 10. 2026-10-31: /about = replica of the Vercel About page (body.about). Lofty md-team / services / reviews blocks replaced by Embeds ===== */
+body.about .ckg-head h2,body.about .ckg-cta h2{font-weight:700!important}
+/* Austin's story */
+.ckg-story-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:48px;align-items:center}
+.ckg-story-photo{display:block;border-radius:16px;overflow:hidden;aspect-ratio:1/1;background:#e5e7eb}
+.ckg-story-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+body.about .ckg-story .ckg-eyebrow{font-size:14px!important;font-weight:600!important;color:#dfb766!important;text-transform:uppercase!important;letter-spacing:.05em!important;margin:0 0 8px!important}
+body.about .ckg-story h2,body.about .ckg-story h2 a{font-family:var(--ck-head)!important;font-weight:700!important;font-size:30px!important;line-height:36px!important;color:#22334b!important;margin:0 0 24px!important;text-decoration:none!important;text-transform:none!important;letter-spacing:normal!important}
+body.about .ckg-story h2 a:hover{color:#dfb766!important}
+body.about .ckg-story-text>p{font-size:16px!important;line-height:1.625!important;color:#4b5563!important;margin:0 0 16px!important}
+body.about .ckg-quote{margin:32px 0 0;border-left:4px solid #dfb766;padding:8px 0 8px 24px}
+body.about .ckg-quote p{font-family:var(--ck-head)!important;font-size:18px!important;line-height:1.625!important;color:#22334b!important;font-style:italic!important;margin:0!important}
+body.about .ckg-quote cite{display:block;font-style:normal;font-size:14px;color:#6b7280;margin-top:8px}
+body.about .ckg-story .ckg-license{font-size:12px!important;color:#9ca3af!important;margin:16px 0 0!important}
+body.about .ckg-story .ckg-textlink,body.about .ckg-team .ckg-textlink{display:inline-flex;margin-top:16px;color:#dfb766!important;font-weight:600;font-size:14px!important;text-decoration:none!important}
+body.about .ckg-story .ckg-textlink:hover,body.about .ckg-team .ckg-textlink:hover{color:#e8c97e!important}
+/* Team cards */
+.ckg-team-card{background:#fff;border-radius:8px;overflow:hidden;border:1px solid #f3f4f6;transition:box-shadow .2s;display:flex;flex-direction:column}
+.ckg-team-card:hover{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
+.ckg-team-photo{display:block;height:288px;background:linear-gradient(135deg,rgba(58,79,110,.2),rgba(34,51,75,.3))}
+.ckg-team-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:top}
+.ckg-team-body{padding:20px;display:flex;flex-direction:column;flex:1}
+body.about .ckg-team-body h3,body.about .ckg-team-body h3 a{font-family:var(--ck-head)!important;font-weight:700!important;font-size:20px!important;line-height:28px!important;color:#22334b!important;margin:0 0 2px!important;text-decoration:none!important;text-transform:none!important;letter-spacing:normal!important}
+body.about .ckg-team-body h3 a:hover{color:#dfb766!important}
+body.about .ckg-team-body .ckg-team-role{font-size:14px!important;font-weight:500!important;color:#dfb766!important;margin:0 0 12px!important}
+body.about .ckg-team-body p{font-size:16px!important;line-height:1.625!important;color:#4b5563!important;margin:0 0 16px!important}
+body.about .ckg-team-body .ckg-team-phone{margin:auto 0 0!important;font-size:14px!important}
+body.about .ckg-team-body .ckg-team-phone a{color:#6b7280!important;text-decoration:none!important}
+body.about .ckg-team-body .ckg-team-phone a:hover{color:#dfb766!important}
+/* Mission values */
+.ckg-vicon{width:64px;height:64px;border-radius:9999px;background:#f5e6c8;color:#dfb766;display:flex;align-items:center;justify-content:center;margin:0 auto 24px}
+.ckg-vicon svg{width:32px;height:32px}
+body.about .ckg-value h3{font-weight:700!important}
+body.about .ckg-cta .ckg-btns{align-items:center}
+@media(min-width:640px){body.about .ckg-story h2,body.about .ckg-story h2 a{font-size:36px!important;line-height:40px!important}.ckg-team .ckg-grid3{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.ckg-story-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:64px}.ckg-team .ckg-grid3{grid-template-columns:repeat(3,1fr)}}
