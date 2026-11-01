@@ -22,6 +22,12 @@
     const c = fieldComp(() => true);
     if (c) { c.$emit('change', '<h1>' + CFG.h1 + '</h1>\n' + CFG.intro); try { c.triggerPreview() } catch (e) {} await sleep(1500); out.push('hero set'); } else out.push('HERO FIELD MISSING');
   }
+  // 2b. only swap the H1 text (pages with owner-written intro copy)
+  if (CFG.h1Only) {
+    openNth(names().indexOf('md-nbr-info')); await sleep(2500);
+    const c = fieldComp(() => true);
+    if (c) { const nv = String(c.$props.value).replace(/<h1>[\s\S]*?<\/h1>/, '<h1>' + CFG.h1 + '</h1>'); c.$emit('change', nv); try { c.triggerPreview() } catch (e) {} await sleep(1500); out.push('h1 swapped'); } else out.push('HERO FIELD MISSING');
+  }
   // 3. Title Case block titles
   const map = { 'LISTINGS': 'Listings', 'RECENTLY SOLD': 'Recently Sold', 'CONTACT US': 'Contact Us', 'MARKET TRENDS': 'Market Trends', 'TESTIMONIALS and REVIEWS': 'Testimonials and Reviews', 'GET MORE INFORMATION': 'Get More Information', 'demographics': CFG.city + ' Demographics' };
   for (let i = 0; i < LB.blocks.length; i++) {
