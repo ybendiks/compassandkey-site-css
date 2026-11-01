@@ -706,3 +706,25 @@ body.featured-area-intro .md-nbr-info .view-more-content:has(>p){white-space:nor
  /* Phones: first paragraph clamped to 4 lines until Read more */
  body.featured-area-intro .md-nbr-info .view-more:not(.ckg-open) .view-more-content>p:first-of-type{display:-webkit-box!important;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 }
+
+/* §12e Nov 1: one TOC control at every width = the "On this page" dropdown under the hero buttons (desktop pills retired: they sat below the fold). Desktop CTA block = buttons 52 + office 22 + dropdown 48 + gaps 24 = fixed 146px. */
+body.featured-area-intro .ckg-office-short{display:none}
+body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-toc)){padding-bottom:0!important}
+body.featured-area-intro .ckg-toc{display:none!important}
+@media(min-width:640px){
+ body.featured-area-intro .ckg-city-cta{height:auto;min-height:146px;gap:12px;margin:24px 0 0}
+ body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:170px!important}
+ body.featured-area-intro .ckg-city-btns .ckg-btn{height:52px;padding:0 28px!important}
+ body.featured-area-intro .ckg-office{height:22px;overflow:hidden}
+ body.featured-area-intro .ckg-toc-m{display:block;width:100%;max-width:440px;margin:0 auto;position:relative;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:10px;text-align:left}
+ body.featured-area-intro .ckg-toc-m summary{height:46px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;cursor:pointer;list-style:none;font-family:var(--ck-sans);font-size:15px;font-weight:600;color:#fff}
+ body.featured-area-intro .ckg-toc-m summary::-webkit-details-marker{display:none}
+ body.featured-area-intro .ckg-toc-m summary::after{content:"";width:9px;height:9px;border-right:2px solid #dfb766;border-bottom:2px solid #dfb766;transform:rotate(45deg) translateY(-3px)}
+ body.featured-area-intro .ckg-toc-m[open] summary::after{transform:rotate(-135deg) translateY(-3px)}
+ /* desktop: list opens as an overlay so the hero doesn't grow */
+ body.featured-area-intro .ckg-toc-m-list{position:absolute;left:-1px;right:-1px;top:100%;z-index:20;display:flex;flex-direction:column;padding:6px 8px 10px;background:#2a3d58;border:1px solid rgba(255,255,255,.25);border-top:0;border-radius:0 0 10px 10px;box-shadow:0 12px 24px rgba(0,0,0,.25)}
+ body.featured-area-intro .ckg-toc-m[open]{border-radius:10px 10px 0 0}
+ body.featured-area-intro .ckg-toc-m-list a{font-family:var(--ck-sans)!important;font-size:15px!important;line-height:20px;color:#fff!important;text-decoration:none!important;padding:9px 8px;border-top:1px solid rgba(255,255,255,.12)}
+ body.featured-area-intro .ckg-toc-m-list a:first-child{border-top:0}
+ body.featured-area-intro .ckg-toc-m-list a:hover{color:#dfb766!important}
+}
