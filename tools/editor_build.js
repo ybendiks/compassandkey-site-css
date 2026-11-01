@@ -47,7 +47,7 @@
   }
   const has = f => LB.blocks.some(b => b.name === 'md-custom-code' && JSON.stringify(b.data || {}).includes(f));
   if (!has('ckg-jump')) await add(names().indexOf('md-nbr-info'), CFG.slug + '-jump.html');
-  if (!has('living-in-' + CFG.slug)) { const last = names().lastIndexOf('md-house'); await add(last, CFG.slug + '-living.html'); }
-  if (!has(CFG.slug + '-faq')) { let i = names().indexOf('md-nbr-local'); if (i < 0) i = names().indexOf('md-testimonial'); if (i < 0) i = names().indexOf('md-nbr-form'); await add(i - 1, CFG.slug + '-faq.html'); }
+  if (!has('ckg-citysec ckg-white')) { const last = names().lastIndexOf('md-house'); await add(last, CFG.slug + '-living.html'); }
+  if (!has('ckg-citysec ckg-cream')) { let i = names().indexOf('md-nbr-local'); if (i < 0) i = names().indexOf('md-testimonial'); if (i < 0) i = names().indexOf('md-nbr-form'); await add(i - 1, CFG.slug + '-faq.html'); }
   window.__OUT = out.concat([names().map((n, i) => i + ':' + n).join(' ')]);
 })();
