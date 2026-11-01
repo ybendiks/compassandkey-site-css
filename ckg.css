@@ -551,7 +551,6 @@ body.featured-area-intro .md-nbr-info .nbr-desc p{margin:0 0 16px!important}
 body.featured-area-intro .md-nbr-info .view-more-content{text-align:left}
 /* Folded: H1 + first paragraph (Lofty pins the fold at an inline 96px, which cut the H1 in half) */
 body.featured-area-intro .md-nbr-info .view-more.fold .view-more-content{height:auto!important;max-height:none!important;overflow:visible!important}
-body.featured-area-intro .md-nbr-info .view-more.fold .view-more-content>:not(h1):not(p:first-of-type){display:none!important}
 body.featured-area-intro .md-nbr-info .view-more.fold .view-more-content::after{display:none!important}
 body.featured-area-intro .md-nbr-info .more-btn{color:#dfb766!important;font-family:var(--ck-sans)!important;font-weight:600!important;letter-spacing:.05em;margin-top:4px}
 body.featured-area-intro .md-nbr-info .md-nbr-info__number{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:40px 0 0!important;padding:0!important;border:0!important}
@@ -661,8 +660,6 @@ body.featured-area-intro .ckg-faq>div p{font-size:17px!important}
 /* §12d Nov 1 hero rework (Yuris: on phones the intro collapsed after load and the TOC was 2 screens down). Intro: H1 + first paragraph shown from first paint, the rest hidden by CSS (not by Lofty's late JS fold); our Read more toggle sits in space reserved up front. Lofty's More button hidden. */
 body.featured-area-intro .md-nbr-info .view-more .view-more-content{height:auto!important;max-height:none!important;overflow:visible!important}
 body.featured-area-intro .md-nbr-info .view-more .view-more-content::after{display:none!important}
-body.featured-area-intro .md-nbr-info .view-more:not(.ckg-open) .view-more-content>:not(h1):not(p:first-of-type){display:none!important}
-body.featured-area-intro .md-nbr-info .view-more.ckg-open .view-more-content>*{display:block!important}
 body.featured-area-intro .md-nbr-info .more-btn{display:none!important}
 body.featured-area-intro .md-nbr-info .nbr-desc{position:relative}
 body.featured-area-intro .md-nbr-info .nbr-desc:has(.view-more-content>p){padding-bottom:32px!important}
@@ -704,7 +701,6 @@ body.featured-area-intro .ckg-toc-m{display:none}
 body.featured-area-intro .md-nbr-info .view-more-content:has(>p){white-space:normal!important}
 @media(max-width:639px){
  /* Phones: first paragraph clamped to 4 lines until Read more */
- body.featured-area-intro .md-nbr-info .view-more:not(.ckg-open) .view-more-content>p:first-of-type{display:-webkit-box!important;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 }
 
 /* §12e Nov 1: one TOC control at every width = the "On this page" dropdown under the hero buttons (desktop pills retired: they sat below the fold). Desktop CTA block = buttons 52 + office 22 + dropdown 48 + gaps 24 = fixed 146px. */
