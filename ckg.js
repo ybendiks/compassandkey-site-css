@@ -73,6 +73,7 @@
   function cityH1(){
     if(!document.body.classList.contains('featured-area-intro'))return;
     document.querySelectorAll('h1.nbr-name').forEach(function(h){var p=document.createElement('p');p.className=h.className;p.innerHTML=h.innerHTML;h.parentNode.replaceChild(p,h);});
+    document.querySelectorAll('.md-content.richtext p').forEach(function(p){if(!p.textContent.replace(/\u00a0/g,'').trim()&&!p.querySelector('img,iframe,a'))p.classList.add('ckg-empty');});
   }
   cityH1();setTimeout(cityH1,1500);
   maps();setTimeout(maps,1500);setTimeout(maps,4000);

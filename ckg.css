@@ -586,3 +586,11 @@ body.featured-area-intro .page-content>:is(.md-house,.md-market-trends,.md-house
  body.featured-area-intro .md-nbr-info .nbr-desc h1,body.featured-area-intro .md-nbr-info .nbr-desc h1 *{font-size:56px!important}
  body.featured-area-intro .md-nbr-info .md-nbr-info__number{grid-template-columns:repeat(4,minmax(0,1fr))}
 }
+/* §12 polish: empty spacer paragraphs (flagged .ckg-empty by ckg.js), bold sub-heads, hero MORE spacing, testimonials on cream like the homepage */
+body.featured-area-intro .md-content.richtext p.ckg-empty{display:none!important}
+body.featured-area-intro .md-content.richtext p>strong:first-child,body.featured-area-intro .md-content.richtext p>b:first-child{font-size:20px!important;line-height:1.5!important}
+body.featured-area-intro .md-content.richtext h2+p,body.featured-area-intro .md-content.richtext ul+p{margin-top:0!important}
+body.featured-area-intro .md-content.richtext p:has(+ul){margin-bottom:4px!important}
+body.featured-area-intro .md-content.richtext p:not(.ckg-empty)+p:not(.ckg-empty){margin-top:20px!important}
+body.featured-area-intro .md-nbr-info .view-more.fold .view-more-content p:first-of-type{margin-bottom:8px!important}
+body.featured-area-intro .page-content>.md-testimonial .testimonial-frame{background:#f4f3f2!important;background-image:none!important}
