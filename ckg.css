@@ -759,3 +759,5 @@ body.featured-area-intro .ckg-tocbox li a:hover{color:#b8913f!important}
  body.featured-area-intro .ckg-tocbox ol{columns:1}
  body.featured-area-intro .ckg-tocbox li a{padding:10px 0}
 }
+/* Lofty stores some city-block titles in lowercase ("housing detail", "demographics") and the housing-detail title isn't editable; our headings drop Lofty's uppercase transform, so capitalize these */
+body.featured-area-intro .page-content>:is(.md-house-detail,.md-nbr-demographics) :is(.mg-title,.site-title) h2{text-transform:capitalize!important}
