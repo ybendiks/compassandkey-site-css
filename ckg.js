@@ -140,19 +140,21 @@
   function hero(){
     var box=document.querySelector('.md-nbr-info .md-nbr-info__box');if(!box||box.querySelector('.ckg-city-cta'))return;
     var d=document.createElement('div');d.className='ckg-city-cta';
-    d.innerHTML='<div class="ckg-city-btns"><a class="ckg-btn ckg-btn-gold" href="/contact">Talk to a '+esc(CITY)+' Agent</a><a class="ckg-btn ckg-btn-outline" href="tel:+12704913450">Call (270) 491-3450</a></div>'+
+    d.innerHTML='<div class="ckg-city-btns"><a class="ckg-btn ckg-btn-gold" href="/contact">Talk to '+(/^[AEIOU]/.test(CITY)?'an ':'a ')+esc(CITY)+' Agent</a><a class="ckg-btn ckg-btn-outline" href="tel:+12704913450">Call (270) 491-3450</a></div>'+
       '<p class="ckg-office">'+(ETOWN?'Our office':'Serving '+esc(CITY)+' from our Elizabethtown office')+': <a href="'+GBP+'" target="_blank" rel="noopener">617 N Mulberry St #105B, Elizabethtown, KY 42701</a> &middot; <a href="'+DIR+'" target="_blank" rel="noopener">Get directions</a></p>';
     var desc=box.querySelector('.nbr-desc'),num=box.querySelector('.md-nbr-info__number');
     if(desc&&desc.nextSibling)box.insertBefore(d,desc.nextSibling);else if(num)box.insertBefore(d,num);else box.appendChild(d);
   }
   var LABELS=[['md-house','Homes for Sale'],['md-market-trends','Market Trends'],['md-testimonial','Reviews'],['md-form','Contact Us']];
+  /* Short TOC labels for long section headings */
+  function short(t){t=t.replace(/\s+/g,' ');var r=[[/^why (choose|work with) .*/i,'Why Choose Us'],[/services/i,'Our Services'],[/market (insights|update|report|trends)/i,'Market Insights'],[/process/i,'Our Process'],[/(faq|frequently asked)/i,'FAQ'],[/neighbo(u)?rhoods?/i,'Neighborhoods'],[/schools?/i,'Schools']];for(var i=0;i<r.length;i++)if(r[i][0].test(t))return r[i][1];return t.length>32?t.slice(0,30).replace(/\s\S*$/,'')+'\u2026':t;}
   function slug(s){return s.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,48);}
   function toc(){
     var box=document.querySelector('.md-nbr-info .md-nbr-info__box');var pc=document.querySelector('.page-content');if(!box||!pc||box.querySelector('.ckg-toc'))return;
     var items=[],used={};
     Array.prototype.forEach.call(pc.children,function(sec){
       var cls=sec.className||'',label=null;
-      if(/\bmd-(content|custom-code)\b/.test(cls)){var h=sec.querySelector('h2');label=h&&h.textContent.trim();}
+      if(/\bmd-(content|custom-code)\b/.test(cls)){var h=sec.querySelector('h2');label=h&&short(h.textContent.trim());}
       else{for(var i=0;i<LABELS.length;i++){if(new RegExp('\\b'+LABELS[i][0]+'\\b').test(cls)){label=LABELS[i][1];break;}}}
       if(!label||used[label])return;used[label]=1;
       if(!sec.id)sec.id='ckg-'+slug(label);sec.classList.add('ckg-anchor');
