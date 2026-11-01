@@ -671,8 +671,7 @@ body.featured-area-intro .ckg-readmore{width:max-content}
 /* Mobile TOC (dropdown inside the CTA block) hidden on desktop; desktop pills hidden on phones */
 body.featured-area-intro .ckg-toc-m{display:none}
 @media(max-width:639px){
- body.featured-area-intro .ckg-toc,body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-toc)){display:none}
- body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-toc)){display:block;padding-bottom:0!important}
+ body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-toc)){padding-bottom:0!important}
  body.featured-area-intro .ckg-toc{display:none!important}
  /* CTA block = buttons 106 + office 40 + TOC summary 48 + gaps 24 = fixed 218px; reserved before injection */
  body.featured-area-intro .ckg-city-cta{height:auto;min-height:218px;gap:12px;margin:24px 0 0}
