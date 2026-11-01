@@ -729,3 +729,6 @@ body.featured-area-intro .ckg-toc{display:none!important}
  body.featured-area-intro .ckg-toc-m-list a:hover{color:#dfb766!important}
 }
 @media(max-width:639px){body.featured-area-intro .ckg-office-short{display:inline}}
+/* Reservation must include the stats' own top margin (it collapses into the reserved margin before injection): phone 24+218+24, desktop 24+146+40 */
+@media(max-width:639px){body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:266px!important}}
+@media(min-width:640px){body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:210px!important}}
