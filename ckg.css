@@ -770,7 +770,3 @@ body.featured-area-intro .page-content>:is(.md-house-detail,.md-nbr-demographics
 .md-form.layout4 .v-input textarea{height:auto!important;min-height:110px!important;padding:12px 14px!important}
 .md-form.layout4 .v-input input:focus,.md-form.layout4 .v-input textarea:focus{border-color:#dfb766!important;outline:2px solid rgba(223,183,102,.35)!important}
 body .page-content .md-form.layout4 .v-input span.label-top,body .page-content .md-form.layout4 .v-input .label-top *{color:#22334b!important;font-weight:600!important}
-/* City hero stats: hide ATTOM's "Population" (counts Lofty's area, ~ZIP-wide, not the city; e.g. Etown shows 51,809 vs ~34.5k city) — 3 stats left, 3 across at every width */
-body.featured-area-intro .md-nbr-info .md-nbr-info__number .item:has(.icon-Population1){display:none!important}
-body.featured-area-intro .md-nbr-info .md-nbr-info__number{grid-template-columns:repeat(3,minmax(0,1fr))!important;max-width:760px;margin-left:auto!important;margin-right:auto!important}
-@media(max-width:639px){body.featured-area-intro .md-nbr-info .md-nbr-info__number{gap:8px}body.featured-area-intro .md-nbr-info .md-nbr-info__number .label{font-size:18px!important}}
