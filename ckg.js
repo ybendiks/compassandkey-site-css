@@ -152,8 +152,26 @@
       if(!sec.id)sec.id='ckg-'+slug(label);
     });
   }
-  /* If a re-render dropped an id, restore it before following a TOC link */
-  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.ckg-tocbox a[href^="#"]');if(!a)return;var id=a.getAttribute('href').slice(1);if(!document.getElementById(id)){ids();agent();}var t=document.getElementById(id);if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});history.replaceState(null,'','#'+id);}});
+  /* TOC links: Lofty draws sections lazily as you scroll, so a smooth scroll aims at a moving target and lands short.
+     Jump instantly, then re-check and correct until the section sits under the fixed header. Capture phase so Lofty's own handlers can't swallow the click. */
+  function go(id){
+    var n=0;
+    (function step(){
+      var t=document.getElementById(id);
+      if(!t){ids();agent();t=document.getElementById(id);}
+      if(!t)return;
+      var off=(document.querySelector('.md-header .header-container')||{}).offsetHeight||80;
+      window.scrollTo({top:Math.max(0,t.getBoundingClientRect().top+window.pageYOffset-off-12),behavior:'instant'});
+      if(++n<8)setTimeout(function(){var d=t.getBoundingClientRect().top-(off+12);if(Math.abs(d)>6)step();},220);
+    })();
+  }
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('.ckg-tocbox a[href^="#"]');if(!a)return;
+    e.preventDefault();e.stopPropagation();
+    var id=a.getAttribute('href').slice(1);go(id);
+    try{history.replaceState(null,'','#'+id);}catch(x){}
+  },true);
+  if(location.hash&&location.hash.length>1){var h0=decodeURIComponent(location.hash.slice(1));setTimeout(function(){if(document.querySelector('.ckg-tocbox a[href="#'+h0+'"]'))go(h0);},1200);}
   function agent(){
     if(document.querySelector('.ckg-agent'))return;
     var host=document.querySelector('.page-content>.md-content.richtext .mg-container')||document.querySelector('.page-content>.md-house .mg-container');if(!host)return;

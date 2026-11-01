@@ -611,7 +611,6 @@ body.featured-area-intro .ckg-toc-links::-webkit-scrollbar{display:none}
 body.featured-area-intro .ckg-toc-links a{flex:0 0 auto;font-family:var(--ck-sans)!important;font-size:14px!important;line-height:20px;font-weight:500;color:#fff!important;padding:8px 16px;border-radius:9999px;border:1px solid rgba(255,255,255,.3);text-decoration:none!important;transition:background-color .2s,border-color .2s}
 body.featured-area-intro .ckg-toc-links a:hover{background:rgba(223,183,102,.15);border-color:#dfb766}
 body.featured-area-intro .ckg-anchor,body.featured-area-intro .ckg-agent{scroll-margin-top:96px}
-html:has(body.featured-area-intro){scroll-behavior:smooth}
 body.featured-area-intro .ckg-agent{display:flex;gap:28px;align-items:center;background:#f4f3f2;border:1px solid #ece9e4;border-radius:16px;padding:28px;margin:40px 0 0;text-align:left}
 body.featured-area-intro .page-content>.md-content.richtext:nth-of-type(even) .ckg-agent{background:#fff}
 body.featured-area-intro .ckg-agent img{width:140px;height:140px;border-radius:50%;object-fit:cover;flex:0 0 auto;border:3px solid #dfb766}
