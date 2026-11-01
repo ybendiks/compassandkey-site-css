@@ -148,7 +148,7 @@
   }
   function readMore(){
     var vm=document.querySelector('.md-nbr-info .nbr-desc');if(!vm||vm.querySelector('.ckg-readmore'))return;
-    var c=vm.querySelector('.view-more-content');if(!c||c.querySelectorAll('p').length<2)return;
+    var c=vm.querySelector('.view-more-content');if(!c||!c.querySelector('p'))return;
     var bt=document.createElement('button');bt.type='button';bt.className='ckg-readmore';bt.textContent='Read more';
     bt.addEventListener('click',function(){var o=vm.classList.toggle('ckg-open');bt.textContent=o?'Show less':'Read more';});
     vm.appendChild(bt);

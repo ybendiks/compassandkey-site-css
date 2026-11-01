@@ -665,7 +665,7 @@ body.featured-area-intro .md-nbr-info .view-more:not(.ckg-open) .view-more-conte
 body.featured-area-intro .md-nbr-info .view-more.ckg-open .view-more-content>*{display:block!important}
 body.featured-area-intro .md-nbr-info .more-btn{display:none!important}
 body.featured-area-intro .md-nbr-info .nbr-desc{position:relative}
-body.featured-area-intro .md-nbr-info .nbr-desc:has(.view-more-content>p:nth-of-type(2)){padding-bottom:32px!important}
+body.featured-area-intro .md-nbr-info .nbr-desc:has(.view-more-content>p){padding-bottom:32px!important}
 body.featured-area-intro .ckg-readmore{position:absolute;left:0;right:0;bottom:0;margin:0 auto;height:28px;background:none;border:0;padding:0;cursor:pointer;font-family:var(--ck-sans);font-size:15px;font-weight:600;color:#dfb766;text-decoration:underline;text-underline-offset:3px}
 body.featured-area-intro .ckg-readmore{width:max-content}
 /* Mobile TOC (dropdown inside the CTA block) hidden on desktop; desktop pills hidden on phones */
@@ -699,4 +699,10 @@ body.featured-area-intro .ckg-toc-m{display:none}
  body.featured-area-intro .md-nbr-info .nbr-desc h1,body.featured-area-intro .md-nbr-info .nbr-desc h1 *{font-size:30px!important;margin-bottom:16px!important}
  body.featured-area-intro .md-nbr-info .nbr-desc p,body.featured-area-intro .md-nbr-info .nbr-desc p *{font-size:16px!important}
  body.featured-area-intro .md-nbr-info .nbr-name{margin-bottom:10px!important}
+}
+/* Lofty sets pre-wrap on the intro, so the newlines between the hidden paragraphs rendered as ~60px of blank lines */
+body.featured-area-intro .md-nbr-info .view-more-content:has(>p){white-space:normal!important}
+@media(max-width:639px){
+ /* Phones: first paragraph clamped to 4 lines until Read more */
+ body.featured-area-intro .md-nbr-info .view-more:not(.ckg-open) .view-more-content>p:first-of-type{display:-webkit-box!important;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden}
 }
