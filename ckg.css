@@ -763,3 +763,9 @@ body.featured-area-intro .ckg-tocbox li a:hover{color:#b8913f!important}
 body.featured-area-intro .page-content>:is(.md-house-detail,.md-nbr-demographics) :is(.mg-title,.site-title) h2{text-transform:capitalize!important}
 /* Lofty "layout4" lead form (city pages) shows each field twice: a label above and the same word as a bold placeholder inside. Keep the labels (required asterisks, accessibility), hide the duplicate placeholders. */
 .md-form.layout4 input::placeholder,.md-form.layout4 textarea::placeholder{color:transparent!important;opacity:0!important}
+/* ...and make the fields read as fields: navy labels, white boxed inputs (were faint labels over a thin underline) */
+.md-form.layout4 .v-input .label-top{color:#22334b!important;background:none!important;font-weight:600!important;font-size:15px!important;padding:0 0 6px!important;display:block}
+.md-form.layout4 .v-input{height:auto!important;margin-bottom:16px!important}
+.md-form.layout4 .v-input input,.md-form.layout4 .v-input textarea{background:#fff!important;border:1px solid #d9d4cc!important;border-radius:8px!important;padding:0 14px!important;height:48px!important;box-sizing:border-box!important;color:#1f2937!important;font-size:16px!important}
+.md-form.layout4 .v-input textarea{height:auto!important;min-height:110px!important;padding:12px 14px!important}
+.md-form.layout4 .v-input input:focus,.md-form.layout4 .v-input textarea:focus{border-color:#dfb766!important;outline:2px solid rgba(223,183,102,.35)!important}
