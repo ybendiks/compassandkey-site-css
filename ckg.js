@@ -69,6 +69,12 @@
       lc.appendChild(d);
     }
   }
+  /* City pages: Lofty renders the city name as a second <h1> (h1.nbr-name) above the real H1 in the intro copy. Keep one H1 per page. */
+  function cityH1(){
+    if(!document.body.classList.contains('featured-area-intro'))return;
+    document.querySelectorAll('h1.nbr-name').forEach(function(h){var p=document.createElement('p');p.className=h.className;p.innerHTML=h.innerHTML;h.parentNode.replaceChild(p,h);});
+  }
+  cityH1();setTimeout(cityH1,1500);
   maps();setTimeout(maps,1500);setTimeout(maps,4000);
   phones();setTimeout(phones,1500);setTimeout(phones,4000);window.addEventListener('load',function(){setTimeout(phones,300);});
   headerPhone();var ht=0,hiv=setInterval(function(){headerPhone();if(++ht>20)clearInterval(hiv);},250);

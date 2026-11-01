@@ -548,14 +548,18 @@ body.featured-area-intro .md-nbr-info .nbr-name{font-family:var(--ck-sans)!impor
 body.featured-area-intro .md-nbr-info .nbr-desc h1,body.featured-area-intro .md-nbr-info .nbr-desc h1 *{font-family:var(--ck-head)!important;font-weight:700!important;font-size:36px!important;line-height:1.2!important;color:#fff!important;margin:0 0 24px!important;text-align:center!important}
 body.featured-area-intro .md-nbr-info .nbr-desc p,body.featured-area-intro .md-nbr-info .nbr-desc p *{font-size:18px!important;line-height:1.625!important;color:rgba(255,255,255,.9)!important;text-align:left}
 body.featured-area-intro .md-nbr-info .nbr-desc p{margin:0 0 16px!important}
-body.featured-area-intro .md-nbr-info .view-more.fold .view-more-content{text-align:left}
+body.featured-area-intro .md-nbr-info .view-more-content{text-align:left}
+/* Folded: H1 + first paragraph (Lofty pins the fold at an inline 96px, which cut the H1 in half) */
+body.featured-area-intro .md-nbr-info .view-more.fold .view-more-content{height:auto!important;max-height:none!important;overflow:visible!important}
+body.featured-area-intro .md-nbr-info .view-more.fold .view-more-content>:not(h1):not(p:first-of-type){display:none!important}
+body.featured-area-intro .md-nbr-info .view-more.fold .view-more-content::after{display:none!important}
 body.featured-area-intro .md-nbr-info .more-btn{color:#dfb766!important;font-family:var(--ck-sans)!important;font-weight:600!important;letter-spacing:.05em;margin-top:4px}
 body.featured-area-intro .md-nbr-info .md-nbr-info__number{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:40px 0 0!important;padding:0!important;border:0!important}
 body.featured-area-intro .md-nbr-info .md-nbr-info__number .item{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:20px 16px!important;margin:0!important;width:auto!important;display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px}
 body.featured-area-intro .md-nbr-info .md-nbr-info__number .icon{background:none!important;width:auto!important;height:auto!important;margin:0!important}
 body.featured-area-intro .md-nbr-info .md-nbr-info__number .icon .iconfont{color:#dfb766!important;font-size:24px!important}
 body.featured-area-intro .md-nbr-info .md-nbr-info__number .label{font-family:var(--ck-head)!important;font-size:26px!important;line-height:32px!important;font-weight:700!important;color:#fff!important;margin:0!important;text-align:center!important}
-body.featured-area-intro .md-nbr-info .md-nbr-info__number .title,body.featured-area-intro .md-nbr-info .md-nbr-info__number .title *{font-size:13px!important;line-height:18px!important;color:rgba(255,255,255,.75)!important;text-transform:uppercase;letter-spacing:.05em;text-align:center!important;justify-content:center}
+body.featured-area-intro .md-nbr-info .md-nbr-info__number .title,body.featured-area-intro .md-nbr-info .md-nbr-info__number .title *{font-family:var(--ck-sans)!important;font-size:13px!important;line-height:18px!important;color:rgba(255,255,255,.75)!important;text-transform:uppercase;letter-spacing:.05em;text-align:center!important;justify-content:center}
 /* Map: plain full-width band under the hero (was under a floating card) */
 body.featured-area-intro .page-content>.md-map{margin:0!important}
 /* Copy sections (Yuris's rich text): Vercel reading column, navy headings, alternating grounds */
