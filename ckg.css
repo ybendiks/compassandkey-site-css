@@ -728,3 +728,4 @@ body.featured-area-intro .ckg-toc{display:none!important}
  body.featured-area-intro .ckg-toc-m-list a:first-child{border-top:0}
  body.featured-area-intro .ckg-toc-m-list a:hover{color:#dfb766!important}
 }
+@media(max-width:639px){body.featured-area-intro .ckg-office-short{display:inline}}
