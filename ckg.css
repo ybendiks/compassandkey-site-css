@@ -761,3 +761,5 @@ body.featured-area-intro .ckg-tocbox li a:hover{color:#b8913f!important}
 }
 /* Lofty stores some city-block titles in lowercase ("housing detail", "demographics") and the housing-detail title isn't editable; our headings drop Lofty's uppercase transform, so capitalize these */
 body.featured-area-intro .page-content>:is(.md-house-detail,.md-nbr-demographics) :is(.mg-title,.site-title) h2{text-transform:capitalize!important}
+/* Lofty "layout4" lead form (city pages) shows each field twice: a label above and the same word as a bold placeholder inside. Keep the labels (required asterisks, accessibility), hide the duplicate placeholders. */
+.md-form.layout4 input::placeholder,.md-form.layout4 textarea::placeholder{color:transparent!important;opacity:0!important}
