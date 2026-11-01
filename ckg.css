@@ -732,3 +732,35 @@ body.featured-area-intro .ckg-toc{display:none!important}
 /* Reservation must include the stats' own top margin (it collapses into the reserved margin before injection): phone 24+218+24, desktop 24+146+40 */
 @media(max-width:639px){body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:266px!important}}
 @media(min-width:640px){body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:210px!important}}
+
+/* ===== §12f Nov 1 (v3): nothing is injected into the hero any more (Lofty re-renders md-nbr-info ~2s after load and wiped script-added nodes: flicker + dead dropdown). Hero = H1 + full intro + stats, all Lofty's own markup, no fold. Buttons + "On This Page" box live in an Embed block right after the hero (in the page HTML, readable by Google). ===== */
+body.featured-area-intro .md-nbr-info .view-more .view-more-content>*{display:block!important}
+body.featured-area-intro .md-nbr-info .view-more .view-more-content>p:first-of-type{display:block!important;-webkit-line-clamp:unset!important;overflow:visible!important}
+body.featured-area-intro .md-nbr-info .more-btn,body.featured-area-intro .ckg-readmore,body.featured-area-intro .ckg-city-cta,body.featured-area-intro .ckg-toc{display:none!important}
+body.featured-area-intro .md-nbr-info .nbr-desc,body.featured-area-intro .md-nbr-info .nbr-desc:has(.view-more-content>p){padding-bottom:0!important;margin-bottom:0!important}
+body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:0!important}
+body.featured-area-intro .md-nbr-info .nbr-desc p:last-child{margin-bottom:0!important}
+/* hero's bottom padding moves to the jump block so they read as one band */
+body.featured-area-intro .page-content>.md-nbr-info:has(+.md-custom-code .ckg-jump){padding-bottom:0!important}
+body.featured-area-intro .ckg-jump{background:var(--ck-grad);padding:32px 0 56px}
+body.featured-area-intro .ckg-jump-wrap{max-width:960px;margin:0 auto;padding:0 16px;box-sizing:border-box}
+body.featured-area-intro .ckg-jump-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+body.featured-area-intro .ckg-jump-cta .ckg-btn{padding:12px 28px!important;font-size:17px!important}
+body.featured-area-intro .ckg-jump-office,body.featured-area-intro .ckg-jump-office a{font-family:var(--ck-sans)!important;font-size:15px!important;line-height:22px!important;color:rgba(255,255,255,.8)!important;text-align:center!important;margin:14px 0 0!important}
+body.featured-area-intro .ckg-jump-office a{color:#dfb766!important;text-decoration:underline!important}
+body.featured-area-intro .ckg-tocbox{background:#fff;border-radius:14px;border-top:4px solid #dfb766;box-shadow:0 10px 30px rgba(0,0,0,.25);padding:24px 28px;margin:32px auto 0;max-width:760px;text-align:left}
+body.featured-area-intro .ckg-tocbox .ckg-tocbox-title{font-family:var(--ck-head)!important;font-size:22px!important;line-height:28px!important;font-weight:700!important;color:#22334b!important;margin:0 0 14px!important;text-align:left!important}
+body.featured-area-intro .ckg-tocbox ol{list-style:none;counter-reset:toc;margin:0;padding:0;columns:2;column-gap:32px}
+body.featured-area-intro .ckg-tocbox li{counter-increment:toc;break-inside:avoid;margin:0;padding:0}
+body.featured-area-intro .ckg-tocbox li a{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid #f0ede8;font-family:var(--ck-sans)!important;font-size:16px!important;line-height:22px!important;color:#22334b!important;text-decoration:none!important}
+body.featured-area-intro .ckg-tocbox li a::before{content:counter(toc);flex:0 0 22px;height:22px;border-radius:50%;background:#f4f3f2;color:#b8913f;font-size:12px;font-weight:700;line-height:22px;text-align:center}
+body.featured-area-intro .ckg-tocbox li a:hover{color:#b8913f!important}
+@media(max-width:639px){
+ body.featured-area-intro .ckg-jump{padding:24px 0 40px}
+ body.featured-area-intro .ckg-jump-cta{flex-direction:column;gap:10px}
+ body.featured-area-intro .ckg-jump-cta .ckg-btn{width:100%;font-size:16px!important}
+ body.featured-area-intro .ckg-jump-office,body.featured-area-intro .ckg-jump-office a{font-size:14px!important;line-height:20px!important}
+ body.featured-area-intro .ckg-tocbox{padding:20px 18px;margin-top:24px}
+ body.featured-area-intro .ckg-tocbox ol{columns:1}
+ body.featured-area-intro .ckg-tocbox li a{padding:10px 0}
+}

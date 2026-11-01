@@ -137,41 +137,23 @@
   var DIR='https://www.google.com/maps/dir/?api=1&destination=Compass+and+Key+Group+-+Real+Broker%2C+617+N+Mulberry+St+%23105B%2C+Elizabethtown%2C+KY+42701';
   var me=document.getElementById('ckg-js');var BASE=me&&me.src?me.src.replace(/ckg\.js(\?.*)?$/,''):'https://cdn.jsdelivr.net/gh/ybendiks/compassandkey-site-css/';
   function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-  function hero(){
-    var box=document.querySelector('.md-nbr-info .md-nbr-info__box');if(!box||box.querySelector('.ckg-city-cta'))return;
-    var d=document.createElement('div');d.className='ckg-city-cta';
-    d.innerHTML='<div class="ckg-city-btns"><a class="ckg-btn ckg-btn-gold" href="/contact">Talk to '+(/^[AEIOU]/.test(CITY)?'an ':'a ')+esc(CITY)+' Agent</a><a class="ckg-btn ckg-btn-outline" href="tel:+12704913450">Call (270) 491-3450</a></div>'+
-      '<p class="ckg-office"><span class="ckg-office-long">'+(ETOWN?'Our office':'Serving '+esc(CITY)+' from our Elizabethtown office')+': </span><span class="ckg-office-short">Office: </span><a href="'+GBP+'" target="_blank" rel="noopener">617 N Mulberry St #105B, Elizabethtown<span class="ckg-office-long">, KY 42701</span></a> &middot; <a href="'+DIR+'" target="_blank" rel="noopener">Directions</a></p>'+
-      '<details class="ckg-toc-m"><summary aria-label="On this page: jump to a section">On this page</summary><div class="ckg-toc-m-list"></div></details>';
-    var desc=box.querySelector('.nbr-desc'),num=box.querySelector('.md-nbr-info__number');
-    if(desc&&desc.nextSibling)box.insertBefore(d,desc.nextSibling);else if(num)box.insertBefore(d,num);else box.appendChild(d);
-  }
-  function readMore(){
-    var vm=document.querySelector('.md-nbr-info .nbr-desc');if(!vm||vm.querySelector('.ckg-readmore'))return;
-    var c=vm.querySelector('.view-more-content');if(!c||!c.querySelector('p'))return;
-    var bt=document.createElement('button');bt.type='button';bt.className='ckg-readmore';bt.textContent='Read more';
-    bt.addEventListener('click',function(){var o=vm.classList.toggle('ckg-open');bt.textContent=o?'Show less':'Read more';});
-    vm.appendChild(bt);
-  }
   var LABELS=[['md-house','Homes for Sale'],['md-market-trends','Market Trends'],['md-testimonial','Reviews'],['md-form','Contact Us']];
   /* Short TOC labels for long section headings */
   function short(t){t=t.replace(/\s+/g,' ');var r=[[/^why (choose|work with) .*/i,'Why Choose Us'],[/services/i,'Our Services'],[/market (insights|update|report|trends)/i,'Market Insights'],[/process/i,'Our Process'],[/(faq|frequently asked)/i,'FAQ'],[/neighbo(u)?rhoods?/i,'Neighborhoods'],[/schools?/i,'Schools']];for(var i=0;i<r.length;i++)if(r[i][0].test(t))return r[i][1];return t.length>32?t.slice(0,30).replace(/\s\S*$/,'')+'\u2026':t;}
   function slug(s){return s.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,48);}
-  function toc(){
-    var box=document.querySelector('.md-nbr-info .md-nbr-info__box');var pc=document.querySelector('.page-content');if(!box||!pc||!box.querySelector('.ckg-city-cta')||box.classList.contains('ckg-has-toc'))return;
-    var items=[],used={};
+  /* Section anchors for the "On This Page" box (an Embed block in the page itself): Lofty blocks have no ids, so give each a stable one from its heading */
+  function ids(){
+    var pc=document.querySelector('.page-content');if(!pc)return;var used={};
     Array.prototype.forEach.call(pc.children,function(sec){
       var cls=sec.className||'',label=null;
-      if(/\bmd-(content|custom-code)\b/.test(cls)){var h=sec.querySelector('h2');label=h&&short(h.textContent.trim());}
+      if(/\bmd-(content|custom-code)\b/.test(cls)){if(sec.querySelector('.ckg-jump'))return;var h=sec.querySelector('h2');label=h&&short(h.textContent.trim());}
       else{for(var i=0;i<LABELS.length;i++){if(new RegExp('\\b'+LABELS[i][0]+'\\b').test(cls)){label=LABELS[i][1];break;}}}
       if(!label||used[label])return;used[label]=1;
-      if(!sec.id)sec.id='ckg-'+slug(label);sec.classList.add('ckg-anchor');
-      items.push('<a href="#'+sec.id+'">'+esc(label)+'</a>');
+      if(!sec.id)sec.id='ckg-'+slug(label);
     });
-    var agent=document.querySelector('.ckg-agent');if(agent)items.splice(Math.min(2,items.length),0,'<a href="#ckg-agent">Meet Your Agent</a>');
-    if(items.length<2)return;
-    var ml=box.querySelector('.ckg-toc-m-list');if(ml&&!ml.children.length){ml.innerHTML=items.join('');box.classList.add('ckg-has-toc');}
   }
+  /* If a re-render dropped an id, restore it before following a TOC link */
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.ckg-tocbox a[href^="#"]');if(!a)return;var id=a.getAttribute('href').slice(1);if(!document.getElementById(id)){ids();agent();}var t=document.getElementById(id);if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});history.replaceState(null,'','#'+id);}});
   function agent(){
     if(document.querySelector('.ckg-agent'))return;
     var host=document.querySelector('.page-content>.md-content.richtext .mg-container')||document.querySelector('.page-content>.md-house .mg-container');if(!host)return;
@@ -194,7 +176,6 @@
       'mainEntityOfPage':location.origin+location.pathname});
     document.head.appendChild(s);
   }
-  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.ckg-toc-m a');if(a){var d=a.closest('details');if(d)d.open=false;}});
-  function all(){hero();readMore();agent();toc();schema();}
+  function all(){ids();agent();schema();}
   all();var t=0,iv=setInterval(function(){all();if(++t>16)clearInterval(iv);},250);
 })();
