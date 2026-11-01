@@ -833,3 +833,4 @@ body:has(.ckg-fk) .ckg-fk-cta p{color:rgba(255,255,255,.9)!important;font-size:1
 /* §13b hero + jump read as one band (no seam between the two gradients) */
 body:has(.ckg-fk) .ckg-fk-top{background:var(--ck-grad)}
 body:has(.ckg-fk) .ckg-fk-top>.ckg-fk-hero,body:has(.ckg-fk) .ckg-fk-top>.ckg-jump{background:transparent!important}
+body:has(.ckg-fk) .ckg-cream .ckg-agent{background:#fff}
