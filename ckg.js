@@ -127,3 +127,65 @@
   var hero=document.querySelector('.md-hero');
   if(hero&&window.MutationObserver)new MutationObserver(function(){heroButtons();placeholder();}).observe(hero,{subtree:true,childList:true,attributes:true,attributeFilter:['placeholder']});
 })();
+/* City pages (body.featured-area-intro, all Lofty area intro pages): hero contact buttons + office line, on-page table of contents, agent card, RealEstateAgent schema with the city as areaServed. City name comes from the URL (/vine-grove-KY -> Vine Grove). */
+(function(){
+  var b=document.body;if(!b||!b.classList.contains('featured-area-intro'))return;
+  var m=location.pathname.match(/^\/([A-Za-z-]+)-KY\/?$/);if(!m)return;
+  var CITY=m[1].split('-').map(function(w){return w.charAt(0).toUpperCase()+w.slice(1).toLowerCase();}).join(' ');
+  var ETOWN=CITY==='Elizabethtown';
+  var GBP='https://www.google.com/maps?cid=4625508582504720054';
+  var DIR='https://www.google.com/maps/dir/?api=1&destination=Compass+and+Key+Group+-+Real+Broker%2C+617+N+Mulberry+St+%23105B%2C+Elizabethtown%2C+KY+42701';
+  var me=document.getElementById('ckg-js');var BASE=me&&me.src?me.src.replace(/ckg\.js(\?.*)?$/,''):'https://cdn.jsdelivr.net/gh/ybendiks/compassandkey-site-css/';
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function hero(){
+    var box=document.querySelector('.md-nbr-info .md-nbr-info__box');if(!box||box.querySelector('.ckg-city-cta'))return;
+    var d=document.createElement('div');d.className='ckg-city-cta';
+    d.innerHTML='<div class="ckg-city-btns"><a class="ckg-btn ckg-btn-gold" href="/contact">Talk to a '+esc(CITY)+' Agent</a><a class="ckg-btn ckg-btn-outline" href="tel:+12704913450">Call (270) 491-3450</a></div>'+
+      '<p class="ckg-office">'+(ETOWN?'Our office':'Serving '+esc(CITY)+' from our Elizabethtown office')+': <a href="'+GBP+'" target="_blank" rel="noopener">617 N Mulberry St #105B, Elizabethtown, KY 42701</a> &middot; <a href="'+DIR+'" target="_blank" rel="noopener">Get directions</a></p>';
+    var desc=box.querySelector('.nbr-desc'),num=box.querySelector('.md-nbr-info__number');
+    if(desc&&desc.nextSibling)box.insertBefore(d,desc.nextSibling);else if(num)box.insertBefore(d,num);else box.appendChild(d);
+  }
+  var LABELS=[['md-house','Homes for Sale'],['md-market-trends','Market Trends'],['md-testimonial','Reviews'],['md-form','Contact Us']];
+  function slug(s){return s.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,48);}
+  function toc(){
+    var box=document.querySelector('.md-nbr-info .md-nbr-info__box');var pc=document.querySelector('.page-content');if(!box||!pc||box.querySelector('.ckg-toc'))return;
+    var items=[],used={};
+    Array.prototype.forEach.call(pc.children,function(sec){
+      var cls=sec.className||'',label=null;
+      if(/\bmd-(content|custom-code)\b/.test(cls)){var h=sec.querySelector('h2');label=h&&h.textContent.trim();}
+      else{for(var i=0;i<LABELS.length;i++){if(new RegExp('\\b'+LABELS[i][0]+'\\b').test(cls)){label=LABELS[i][1];break;}}}
+      if(!label||used[label])return;used[label]=1;
+      if(!sec.id)sec.id='ckg-'+slug(label);sec.classList.add('ckg-anchor');
+      items.push('<a href="#'+sec.id+'">'+esc(label)+'</a>');
+    });
+    var agent=document.querySelector('.ckg-agent');if(agent)items.splice(Math.min(2,items.length),0,'<a href="#ckg-agent">Meet Your Agent</a>');
+    if(items.length<2)return;
+    var n=document.createElement('nav');n.className='ckg-toc';n.setAttribute('aria-label','On this page');
+    n.innerHTML='<span class="ckg-toc-label">On this page</span><div class="ckg-toc-links">'+items.join('')+'</div>';
+    box.appendChild(n);
+  }
+  function agent(){
+    if(document.querySelector('.ckg-agent'))return;
+    var host=document.querySelector('.page-content>.md-content.richtext .mg-container')||document.querySelector('.page-content>.md-house .mg-container');if(!host)return;
+    var d=document.createElement('aside');d.className='ckg-agent';d.id='ckg-agent';
+    d.innerHTML='<img src="'+BASE+'img/team/austin-kutz.webp" width="160" height="160" alt="Austin Kutz, Owner / Realtor, Compass and Key Group" loading="lazy">'+
+      '<div class="ckg-agent-body"><p class="ckg-agent-kicker">Your '+esc(CITY)+' Realtor</p><p class="ckg-agent-name">Austin Kutz</p>'+
+      '<p class="ckg-agent-role">Owner / Realtor &middot; U.S. Marine Corps veteran &middot; KY Real Estate License #277797</p>'+
+      '<p class="ckg-agent-text">Austin founded Compass and Key Group to bring the values of his military service (integrity, accountability and putting others first) to every home sale and purchase in '+esc(CITY)+' and across Central Kentucky.</p>'+
+      '<div class="ckg-agent-links"><a class="ckg-btn ckg-btn-gold" href="/contact">Contact Austin</a><a class="ckg-textlink" href="/about">Meet the team &rarr;</a></div></div>';
+    host.appendChild(d);
+  }
+  function schema(){
+    if(document.getElementById('ckg-city-schema'))return;
+    var s=document.createElement('script');s.type='application/ld+json';s.id='ckg-city-schema';
+    s.textContent=JSON.stringify({'@context':'https://schema.org','@type':'RealEstateAgent','@id':'https://compassandkeygroup.com/#agency','name':'Compass and Key Group','alternateName':'Compass and Key Group - Real Broker','url':'https://compassandkeygroup.com/','telephone':'+1-270-491-3450','image':BASE+'img/team/austin-kutz.webp',
+      'address':{'@type':'PostalAddress','streetAddress':'617 N Mulberry St #105B','addressLocality':'Elizabethtown','addressRegion':'KY','postalCode':'42701','addressCountry':'US'},
+      'geo':{'@type':'GeoCoordinates','latitude':37.7008088,'longitude':-85.8521225},'hasMap':GBP,'sameAs':[GBP],
+      'areaServed':{'@type':'City','name':CITY+', KY'},
+      'founder':{'@type':'Person','name':'Austin Kutz','jobTitle':'Owner / Realtor'},
+      'mainEntityOfPage':location.origin+location.pathname});
+    document.head.appendChild(s);
+  }
+  function all(){hero();agent();toc();schema();}
+  all();var t=0,iv=setInterval(function(){all();if(++t>16)clearInterval(iv);},250);
+})();
