@@ -141,16 +141,24 @@
     var box=document.querySelector('.md-nbr-info .md-nbr-info__box');if(!box||box.querySelector('.ckg-city-cta'))return;
     var d=document.createElement('div');d.className='ckg-city-cta';
     d.innerHTML='<div class="ckg-city-btns"><a class="ckg-btn ckg-btn-gold" href="/contact">Talk to '+(/^[AEIOU]/.test(CITY)?'an ':'a ')+esc(CITY)+' Agent</a><a class="ckg-btn ckg-btn-outline" href="tel:+12704913450">Call (270) 491-3450</a></div>'+
-      '<p class="ckg-office">'+(ETOWN?'Our office':'Serving '+esc(CITY)+' from our Elizabethtown office')+': <a href="'+GBP+'" target="_blank" rel="noopener">617 N Mulberry St #105B, Elizabethtown, KY 42701</a> &middot; <a href="'+DIR+'" target="_blank" rel="noopener">Get directions</a></p>';
+      '<p class="ckg-office"><span class="ckg-office-long">'+(ETOWN?'Our office':'Serving '+esc(CITY)+' from our Elizabethtown office')+': </span><span class="ckg-office-short">Office: </span><a href="'+GBP+'" target="_blank" rel="noopener">617 N Mulberry St #105B, Elizabethtown<span class="ckg-office-long">, KY 42701</span></a> &middot; <a href="'+DIR+'" target="_blank" rel="noopener">Directions</a></p>'+
+      '<details class="ckg-toc-m"><summary>On this page</summary><div class="ckg-toc-m-list"></div></details>';
     var desc=box.querySelector('.nbr-desc'),num=box.querySelector('.md-nbr-info__number');
     if(desc&&desc.nextSibling)box.insertBefore(d,desc.nextSibling);else if(num)box.insertBefore(d,num);else box.appendChild(d);
+  }
+  function readMore(){
+    var vm=document.querySelector('.md-nbr-info .nbr-desc');if(!vm||vm.querySelector('.ckg-readmore'))return;
+    var c=vm.querySelector('.view-more-content');if(!c||c.querySelectorAll('p').length<2)return;
+    var bt=document.createElement('button');bt.type='button';bt.className='ckg-readmore';bt.textContent='Read more';
+    bt.addEventListener('click',function(){var o=vm.classList.toggle('ckg-open');bt.textContent=o?'Show less':'Read more';});
+    vm.appendChild(bt);
   }
   var LABELS=[['md-house','Homes for Sale'],['md-market-trends','Market Trends'],['md-testimonial','Reviews'],['md-form','Contact Us']];
   /* Short TOC labels for long section headings */
   function short(t){t=t.replace(/\s+/g,' ');var r=[[/^why (choose|work with) .*/i,'Why Choose Us'],[/services/i,'Our Services'],[/market (insights|update|report|trends)/i,'Market Insights'],[/process/i,'Our Process'],[/(faq|frequently asked)/i,'FAQ'],[/neighbo(u)?rhoods?/i,'Neighborhoods'],[/schools?/i,'Schools']];for(var i=0;i<r.length;i++)if(r[i][0].test(t))return r[i][1];return t.length>32?t.slice(0,30).replace(/\s\S*$/,'')+'\u2026':t;}
   function slug(s){return s.toLowerCase().replace(/&/g,'and').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,48);}
   function toc(){
-    var box=document.querySelector('.md-nbr-info .md-nbr-info__box');var pc=document.querySelector('.page-content');if(!box||!pc||box.querySelector('.ckg-toc'))return;
+    var box=document.querySelector('.md-nbr-info .md-nbr-info__box');var pc=document.querySelector('.page-content');if(!box||!pc||!box.querySelector('.ckg-city-cta')||box.querySelector('.ckg-toc'))return;
     var items=[],used={};
     Array.prototype.forEach.call(pc.children,function(sec){
       var cls=sec.className||'',label=null;
@@ -162,6 +170,7 @@
     });
     var agent=document.querySelector('.ckg-agent');if(agent)items.splice(Math.min(2,items.length),0,'<a href="#ckg-agent">Meet Your Agent</a>');
     if(items.length<2)return;
+    var ml=box.querySelector('.ckg-toc-m-list');if(ml&&!ml.children.length)ml.innerHTML=items.join('');
     var n=document.createElement('nav');n.className='ckg-toc';n.setAttribute('aria-label','On this page');
     n.innerHTML='<span class="ckg-toc-label">On this page</span><div class="ckg-toc-links">'+items.join('')+'</div>';
     box.appendChild(n);
@@ -188,6 +197,7 @@
       'mainEntityOfPage':location.origin+location.pathname});
     document.head.appendChild(s);
   }
-  function all(){hero();agent();toc();schema();}
+  document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('.ckg-toc-m a');if(a){var d=a.closest('details');if(d)d.open=false;}});
+  function all(){hero();readMore();agent();toc();schema();}
   all();var t=0,iv=setInterval(function(){all();if(++t>16)clearInterval(iv);},250);
 })();

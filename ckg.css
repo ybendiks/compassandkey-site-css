@@ -657,3 +657,47 @@ body.featured-area-intro .ckg-faq[open] summary::after{content:"\2212"}
 body.featured-area-intro .ckg-faq>div{padding:0 22px 6px}
 body.featured-area-intro .ckg-faq>div p{font-size:17px!important}
 @media(min-width:640px){body.featured-area-intro .ckg-citysec h2{font-size:36px!important}}
+
+/* §12d Nov 1 hero rework (Yuris: on phones the intro collapsed after load and the TOC was 2 screens down). Intro: H1 + first paragraph shown from first paint, the rest hidden by CSS (not by Lofty's late JS fold); our Read more toggle sits in space reserved up front. Lofty's More button hidden. */
+body.featured-area-intro .md-nbr-info .view-more .view-more-content{height:auto!important;max-height:none!important;overflow:visible!important}
+body.featured-area-intro .md-nbr-info .view-more .view-more-content::after{display:none!important}
+body.featured-area-intro .md-nbr-info .view-more:not(.ckg-open) .view-more-content>:not(h1):not(p:first-of-type){display:none!important}
+body.featured-area-intro .md-nbr-info .view-more.ckg-open .view-more-content>*{display:block!important}
+body.featured-area-intro .md-nbr-info .more-btn{display:none!important}
+body.featured-area-intro .md-nbr-info .nbr-desc{position:relative}
+body.featured-area-intro .md-nbr-info .nbr-desc:has(.view-more-content>p:nth-of-type(2)){padding-bottom:32px!important}
+body.featured-area-intro .ckg-readmore{position:absolute;left:0;right:0;bottom:0;margin:0 auto;height:28px;background:none;border:0;padding:0;cursor:pointer;font-family:var(--ck-sans);font-size:15px;font-weight:600;color:#dfb766;text-decoration:underline;text-underline-offset:3px}
+body.featured-area-intro .ckg-readmore{width:max-content}
+/* Mobile TOC (dropdown inside the CTA block) hidden on desktop; desktop pills hidden on phones */
+body.featured-area-intro .ckg-toc-m{display:none}
+@media(max-width:639px){
+ body.featured-area-intro .ckg-toc,body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-toc)){display:none}
+ body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-toc)){display:block;padding-bottom:0!important}
+ body.featured-area-intro .ckg-toc{display:none!important}
+ /* CTA block = buttons 106 + office 40 + TOC summary 48 + gaps 24 = fixed 218px; reserved before injection */
+ body.featured-area-intro .ckg-city-cta{height:auto;min-height:218px;gap:12px;margin:24px 0 0}
+ body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:242px!important}
+ body.featured-area-intro .ckg-city-btns{gap:10px}
+ body.featured-area-intro .ckg-city-btns .ckg-btn{height:48px;padding:0 20px!important;font-size:16px!important}
+ body.featured-area-intro .ckg-office{height:40px;overflow:hidden;font-size:14px!important;line-height:20px!important}
+ body.featured-area-intro .ckg-office a{font-size:14px!important;line-height:20px!important}
+ body.featured-area-intro .ckg-office-long{display:none}
+ body.featured-area-intro .ckg-toc-m{display:block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:10px;text-align:left}
+ body.featured-area-intro .ckg-toc-m summary{height:46px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;cursor:pointer;list-style:none;font-family:var(--ck-sans);font-size:15px;font-weight:600;color:#fff}
+ body.featured-area-intro .ckg-toc-m summary::-webkit-details-marker{display:none}
+ body.featured-area-intro .ckg-toc-m summary::after{content:"";width:9px;height:9px;border-right:2px solid #dfb766;border-bottom:2px solid #dfb766;transform:rotate(45deg) translateY(-3px)}
+ body.featured-area-intro .ckg-toc-m[open] summary::after{transform:rotate(-135deg) translateY(-3px)}
+ body.featured-area-intro .ckg-toc-m-list{display:flex;flex-direction:column;padding:4px 8px 10px}
+ body.featured-area-intro .ckg-toc-m-list a{font-family:var(--ck-sans)!important;font-size:16px!important;line-height:22px;color:#fff!important;text-decoration:none!important;padding:10px 8px;border-top:1px solid rgba(255,255,255,.12)}
+ body.featured-area-intro .ckg-toc-m-list a:first-child{border-top:0}
+ /* Compact stats on phones */
+ body.featured-area-intro .md-nbr-info .md-nbr-info__number{gap:10px;margin-top:24px!important}
+ body.featured-area-intro .md-nbr-info .md-nbr-info__number .item{padding:12px 8px!important;gap:2px}
+ body.featured-area-intro .md-nbr-info .md-nbr-info__number .icon{display:none!important}
+ body.featured-area-intro .md-nbr-info .md-nbr-info__number .label{font-size:20px!important;line-height:26px!important}
+ body.featured-area-intro .md-nbr-info .md-nbr-info__number .title,body.featured-area-intro .md-nbr-info .md-nbr-info__number .title *{font-size:11px!important;line-height:14px!important}
+ body.featured-area-intro .page-content>.md-nbr-info{padding:32px 0 28px!important}
+ body.featured-area-intro .md-nbr-info .nbr-desc h1,body.featured-area-intro .md-nbr-info .nbr-desc h1 *{font-size:30px!important;margin-bottom:16px!important}
+ body.featured-area-intro .md-nbr-info .nbr-desc p,body.featured-area-intro .md-nbr-info .nbr-desc p *{font-size:16px!important}
+ body.featured-area-intro .md-nbr-info .nbr-name{margin-bottom:10px!important}
+}
