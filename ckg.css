@@ -830,3 +830,6 @@ body:has(.ckg-fk) .ckg-fk-cta p{color:rgba(255,255,255,.9)!important;font-size:1
  body:has(.ckg-fk) .ckg-fk-compare th,body:has(.ckg-fk) .ckg-fk-compare td{font-size:15px!important;padding:11px 12px}
  .ckg-fk-cta .ckg-jump-cta{flex-direction:column}
 }
+/* §13b hero + jump read as one band (no seam between the two gradients) */
+body:has(.ckg-fk) .ckg-fk-top{background:var(--ck-grad)}
+body:has(.ckg-fk) .ckg-fk-top>.ckg-fk-hero,body:has(.ckg-fk) .ckg-fk-top>.ckg-jump{background:transparent!important}
