@@ -107,42 +107,42 @@ body .page-content>.md-sell-banner.broker :is([style*="color: #fff"],[style*="co
 
 
 /* ===== 3. 2026-10-30: Homepage = replica of the Vercel reference (scoped to body.home) ===== */
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)){--ck-sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--ck-head:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--ck-gray:#4b5563;--ck-line:#f3f4f6;--ck-grad:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)){--ck-sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--ck-head:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--ck-gray:#4b5563;--ck-line:#f3f4f6;--ck-grad:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)}
 /* Fonts: Vercel renders headings in the system sans (its DM Serif never loads) and body in DM Sans */
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .page-content,body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .page-content p,body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .page-content li,body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .page-content a,body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .page-content input{font-family:var(--ck-sans)!important}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .page-content h1,body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .page-content h2,body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .page-content h3{font-family:var(--ck-head)!important;letter-spacing:normal!important;text-transform:none!important}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .page-content :is(h1,h2,h3,p) span{font-family:inherit!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content p,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content li,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content a,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content input{font-family:var(--ck-sans)!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content h1,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content h3{font-family:var(--ck-head)!important;letter-spacing:normal!important;text-transform:none!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content :is(h1,h2,h3,p) span{font-family:inherit!important}
 
 /* Shared section system (custom Embed blocks) */
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .page-content>.md-custom-code{padding:0!important;margin:0!important;background:none!important}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .page-content>.md-custom-code .mg-container,body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .page-content>.md-custom-code .custom-code-html-content{max-width:none!important;width:100%!important;margin:0!important;padding:0!important}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-sec{padding:48px 0}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content>.md-custom-code{padding:0!important;margin:0!important;background:none!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content>.md-custom-code .mg-container,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content>.md-custom-code .custom-code-html-content{max-width:none!important;width:100%!important;margin:0!important;padding:0!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-sec{padding:48px 0}
 .ckg-cream{background:#f4f3f2}.ckg-white{background:#fff}.ckg-navy{background:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)}
 .ckg-wrap{max-width:1280px;margin:0 auto;padding:0 16px;box-sizing:border-box}
 .ckg-narrow{max-width:896px;text-align:center}
 .ckg-head{text-align:center;margin-bottom:40px}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-head h2,body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-cta h2,body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .md-testimonial .site-title h2,body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .md-house .mg-title h2{font-size:30px!important;line-height:36px!important;font-weight:400!important;color:#22334b!important;margin:0 0 16px!important;text-align:center!important}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-head p,body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .md-testimonial .site-title p,body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .md-house .mg-title p{font-size:18px!important;line-height:28px!important;color:#4b5563!important;max-width:672px;margin:0 auto!important;text-align:center!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-head h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-cta h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .md-testimonial .site-title h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .md-house .mg-title h2{font-size:30px!important;line-height:36px!important;font-weight:400!important;color:#22334b!important;margin:0 0 16px!important;text-align:center!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-head p,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .md-testimonial .site-title p,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .md-house .mg-title p{font-size:18px!important;line-height:28px!important;color:#4b5563!important;max-width:672px;margin:0 auto!important;text-align:center!important}
 .ckg-grid3{display:grid;gap:32px;grid-template-columns:1fr}
 .ckg-card{background:#fff;border-radius:12px;padding:32px;text-align:center;border:1px solid #f3f4f6;transition:box-shadow .2s}
 .ckg-card:hover{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
 .ckg-icon{width:64px;height:64px;background:#22334b;border-radius:9999px;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;color:#dfb766}
 .ckg-icon svg{width:32px;height:32px}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-card h3{font-size:20px!important;line-height:28px!important;font-weight:400!important;color:#22334b!important;margin:0 0 12px!important}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-card p{font-size:18px!important;line-height:1.625!important;color:#4b5563!important;margin:0!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-card h3{font-size:20px!important;line-height:28px!important;font-weight:400!important;color:#22334b!important;margin:0 0 12px!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-card p{font-size:18px!important;line-height:1.625!important;color:#4b5563!important;margin:0!important}
 .ckg-pills{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-pills a{background:#fff;color:#22334b!important;font-size:14px!important;line-height:20px;font-weight:500;padding:10px 20px;border-radius:9999px;border:1px solid #e5e7eb;text-decoration:none;transition:background-color .2s,border-color .2s,color .2s}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-pills a:hover{background:rgba(223,183,102,.1);border-color:rgba(223,183,102,.3);color:#dfb766!important}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-cta h2{color:#fff!important;margin-bottom:24px!important}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-cta p{color:rgba(255,255,255,.9)!important;font-size:18px!important;line-height:1.625!important;max-width:672px;margin:0 auto 40px!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-pills a{background:#fff;color:#22334b!important;font-size:14px!important;line-height:20px;font-weight:500;padding:10px 20px;border-radius:9999px;border:1px solid #e5e7eb;text-decoration:none;transition:background-color .2s,border-color .2s,color .2s}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-pills a:hover{background:rgba(223,183,102,.1);border-color:rgba(223,183,102,.3);color:#dfb766!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-cta h2{color:#fff!important;margin-bottom:24px!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-cta p{color:rgba(255,255,255,.9)!important;font-size:18px!important;line-height:1.625!important;max-width:672px;margin:0 auto 40px!important}
 .ckg-btns,.ckg-hero-btns{display:flex;flex-direction:column;gap:16px;justify-content:center}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--ck-sans)!important;font-weight:600;padding:16px 32px;border-radius:6px;font-size:18px!important;line-height:28px;text-decoration:none!important;transition:background-color .2s;box-sizing:border-box}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-hero-btns .ckg-btn{padding:16px 40px}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-btn-gold{background:#dfb766;color:#fff!important;border:2px solid #dfb766}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-btn-gold:hover{background:#e8c97e;border-color:#e8c97e}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-btn-ghost{border:2px solid rgba(255,255,255,.3);color:#fff!important}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-btn-outline{border:2px solid #fff;color:#fff!important}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-btn-ghost:hover,body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-btn-outline:hover{background:rgba(255,255,255,.1)}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--ck-sans)!important;font-weight:600;padding:16px 32px;border-radius:6px;font-size:18px!important;line-height:28px;text-decoration:none!important;transition:background-color .2s;box-sizing:border-box}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-hero-btns .ckg-btn{padding:16px 40px}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-btn-gold{background:#dfb766;color:#fff!important;border:2px solid #dfb766}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-btn-gold:hover{background:#e8c97e;border-color:#e8c97e}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-btn-ghost{border:2px solid rgba(255,255,255,.3);color:#fff!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-btn-outline{border:2px solid #fff;color:#fff!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-btn-ghost:hover,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-btn-outline:hover{background:rgba(255,255,255,.1)}
 
 /* Hero: Lofty md-hero (keeps its live MLS search) laid out like the Vercel hero */
 body.home .page-content>.md-hero{background:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)!important;padding:0!important;margin:0!important}
@@ -162,7 +162,7 @@ body.home .md-hero .search-input{border-radius:9999px!important;font-size:16px!i
 body.home .md-hero .search-input::placeholder{color:#9ca3af!important}
 body.home .md-hero .keyword-submit{border-radius:9999px!important;background:#dfb766!important}
 @media(min-width:640px){
- body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-head h2,body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-cta h2,body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .md-testimonial .site-title h2,body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .md-house .mg-title h2{font-size:36px!important;line-height:40px!important}
+ body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-head h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-cta h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .md-testimonial .site-title h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .md-house .mg-title h2{font-size:36px!important;line-height:40px!important}
  .ckg-wrap,body.home .md-hero .banner.single .media-content{padding:0 24px}
  .ckg-btns,.ckg-hero-btns{flex-direction:row}
  body.home .md-hero .banner.single .media-title.media-title h1,body.home .md-hero .banner.single .media-title.media-title h1 span{font-size:60px!important}
@@ -170,7 +170,7 @@ body.home .md-hero .keyword-submit{border-radius:9999px!important;background:#df
 }
 @media(min-width:768px){.ckg-grid3{grid-template-columns:repeat(3,1fr)}}
 @media(min-width:1024px){
- body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-sec{padding:56px 0}
+ body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-sec{padding:56px 0}
  .ckg-wrap,body.home .md-hero .banner.single .media-content{padding:0 32px}
  body.home .md-hero .banner.single{padding:48px 0!important}
  body.home .md-hero .banner.single .media-content{grid-template-columns:1fr 1fr;column-gap:48px;row-gap:0;text-align:left}
@@ -215,8 +215,8 @@ body.home .md-house>.ckg-more{padding-bottom:8px}
 body.home .md-house .house-grid-item .house-info,body.home .md-house .house-grid-item .house-info *,body.home .md-house .house-grid-item .house-price,body.home .md-house .house-grid-item .house-price *,body.home .md-house .house-grid-item .house-basic,body.home .md-house .house-grid-item .house-basic *,body.home .md-house .house-grid-item .house-address,body.home .md-house .house-grid-item .house-address a,body.home .md-house .house-grid-item .house-detail *{color:#fff!important;text-shadow:0 1px 2px rgba(0,0,0,.35)}
 @media(max-width:480px){body.home .md-hero .banner.single .media-title.media-title::before{letter-spacing:.14em;font-size:min(14px,3.2vw);white-space:nowrap}}
 .ckg-more{text-align:center;margin-top:32px}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-textlink{display:inline-flex;align-items:center;gap:8px;color:#dfb766!important;font-weight:600;font-size:16px!important;text-decoration:none!important;transition:color .2s}
-body:is(.home,.sell,.contact,.about,:has(.ckg-buyhero)) .ckg-textlink:hover{color:#e8c97e!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-textlink{display:inline-flex;align-items:center;gap:8px;color:#dfb766!important;font-weight:600;font-size:16px!important;text-decoration:none!important;transition:color .2s}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-textlink:hover{color:#e8c97e!important}
 @media(min-width:1024px){body.home .page-content>.md-testimonial,body.home .page-content>.md-testimonial.layout1,body.home .page-content>.md-house{padding:56px 0!important}body.home .md-testimonial .reviews-container{padding:0 32px}}
 
 /* ===== 4. 2026-10-30: Site header = Vercel bar (white, icon + wordmark left, nav, phone + account right). Site-wide. ===== */
@@ -538,3 +538,47 @@ body:has(.ckg-buyhero) .ckg-buyhero .ckg-kicker{margin:0 auto 16px!important;max
 body:has(.ckg-buyhero) .md-listing-search>.search-content::before{content:none!important;display:none!important}
 body:has(.ckg-buyhero) .page-content>.md-listing-search::before{content:"Search Properties";display:block;text-align:center;font-family:var(--ck-head);font-weight:700;font-size:24px;line-height:32px;color:#22334b;margin:0 auto 24px;padding:0 16px}
 @media(min-width:640px){body:has(.ckg-buyhero) .page-content>.md-listing-search::before{font-size:30px;line-height:36px}}
+
+/* ===== 12. 2026-11-01: City (Lofty "featured area" intro) pages, body.featured-area-intro. Visuals of the Vercel /areas pages; Yuris's Lofty copy kept as written (Vercel copy is placeholder, not SEO'd). Shared .ckg-* fonts/headings now include .featured-area-intro ===== */
+/* Hero: md-nbr-info (city name, H1 + intro copy, live stats) becomes the navy gradient band */
+body.featured-area-intro .page-content>.md-nbr-info{background:var(--ck-grad)!important;margin:0!important;padding:56px 0 48px!important;position:relative;z-index:1}
+body.featured-area-intro .md-nbr-info .md-nbr-info__box{background:none!important;box-shadow:none!important;border:0!important;border-radius:0!important;max-width:960px!important;width:100%!important;margin:0 auto!important;padding:0 16px!important;box-sizing:border-box;text-align:center;top:auto!important;transform:none!important}
+body.featured-area-intro .md-nbr-info .state-city{display:none!important}
+body.featured-area-intro .md-nbr-info .nbr-name{font-family:var(--ck-sans)!important;font-size:14px!important;line-height:20px!important;font-weight:600!important;letter-spacing:.2em!important;text-transform:uppercase!important;color:#dfb766!important;margin:0 0 16px!important}
+body.featured-area-intro .md-nbr-info .nbr-desc h1,body.featured-area-intro .md-nbr-info .nbr-desc h1 *{font-family:var(--ck-head)!important;font-weight:700!important;font-size:36px!important;line-height:1.2!important;color:#fff!important;margin:0 0 24px!important;text-align:center!important}
+body.featured-area-intro .md-nbr-info .nbr-desc p,body.featured-area-intro .md-nbr-info .nbr-desc p *{font-size:18px!important;line-height:1.625!important;color:rgba(255,255,255,.9)!important;text-align:left}
+body.featured-area-intro .md-nbr-info .nbr-desc p{margin:0 0 16px!important}
+body.featured-area-intro .md-nbr-info .view-more.fold .view-more-content{text-align:left}
+body.featured-area-intro .md-nbr-info .more-btn{color:#dfb766!important;font-family:var(--ck-sans)!important;font-weight:600!important;letter-spacing:.05em;margin-top:4px}
+body.featured-area-intro .md-nbr-info .md-nbr-info__number{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:40px 0 0!important;padding:0!important;border:0!important}
+body.featured-area-intro .md-nbr-info .md-nbr-info__number .item{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:20px 16px!important;margin:0!important;width:auto!important;display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px}
+body.featured-area-intro .md-nbr-info .md-nbr-info__number .icon{background:none!important;width:auto!important;height:auto!important;margin:0!important}
+body.featured-area-intro .md-nbr-info .md-nbr-info__number .icon .iconfont{color:#dfb766!important;font-size:24px!important}
+body.featured-area-intro .md-nbr-info .md-nbr-info__number .label{font-family:var(--ck-head)!important;font-size:26px!important;line-height:32px!important;font-weight:700!important;color:#fff!important;margin:0!important;text-align:center!important}
+body.featured-area-intro .md-nbr-info .md-nbr-info__number .title,body.featured-area-intro .md-nbr-info .md-nbr-info__number .title *{font-size:13px!important;line-height:18px!important;color:rgba(255,255,255,.75)!important;text-transform:uppercase;letter-spacing:.05em;text-align:center!important;justify-content:center}
+/* Map: plain full-width band under the hero (was under a floating card) */
+body.featured-area-intro .page-content>.md-map{margin:0!important}
+/* Copy sections (Yuris's rich text): Vercel reading column, navy headings, alternating grounds */
+body.featured-area-intro .page-content>.md-content.richtext{padding:56px 0!important;margin:0!important}
+body.featured-area-intro .page-content>.md-content.richtext .mg-container{max-width:896px!important;padding:0 16px!important;box-sizing:border-box}
+body.featured-area-intro .md-content.richtext h2,body.featured-area-intro .md-content.richtext h2 *{font-size:30px!important;line-height:1.2!important;font-weight:700!important;color:#22334b!important;margin:0 0 20px!important}
+body.featured-area-intro .md-content.richtext h3,body.featured-area-intro .md-content.richtext h3 *{font-size:22px!important;line-height:1.3!important;font-weight:700!important;color:#22334b!important;margin:28px 0 8px!important}
+body.featured-area-intro .md-content.richtext p,body.featured-area-intro .md-content.richtext li,body.featured-area-intro .md-content.richtext p *,body.featured-area-intro .md-content.richtext li *{font-size:18px!important;line-height:1.7!important;color:#4b5563!important}
+body.featured-area-intro .md-content.richtext p{margin:0 0 12px!important}
+body.featured-area-intro .md-content.richtext p:empty{display:none}
+body.featured-area-intro .md-content.richtext :is(strong,b),body.featured-area-intro .md-content.richtext p :is(strong,b) *{color:#22334b!important;font-weight:700!important}
+body.featured-area-intro .md-content.richtext ul{margin:8px 0 20px!important;padding-left:0!important;list-style:none!important}
+body.featured-area-intro .md-content.richtext li{position:relative;padding-left:28px!important;margin:0 0 10px!important;list-style:none!important}
+body.featured-area-intro .md-content.richtext li::before{content:"";position:absolute;left:4px;top:.62em;width:8px;height:8px;border-radius:50%;background:#dfb766}
+body.featured-area-intro .md-content.richtext a{color:#b8913f!important;text-decoration:underline!important}
+/* Listing / sold / market blocks: shared section heading style */
+body.featured-area-intro .page-content>:is(.md-house,.md-market-trends,.md-house-detail,.md-testimonial,.md-form,.md-map,.md-nbr-local,.md-nbr-demographics,.md-nbr-form) :is(.mg-title,.site-title) h2{font-family:var(--ck-head)!important;font-size:30px!important;line-height:36px!important;font-weight:700!important;color:#22334b!important;letter-spacing:normal!important;text-transform:none!important}
+@media(min-width:640px){
+ body.featured-area-intro .md-nbr-info .nbr-desc h1,body.featured-area-intro .md-nbr-info .nbr-desc h1 *{font-size:48px!important}
+ body.featured-area-intro .md-content.richtext h2,body.featured-area-intro .md-content.richtext h2 *{font-size:36px!important}
+}
+@media(min-width:1024px){
+ body.featured-area-intro .page-content>.md-nbr-info{padding:72px 0 64px!important}
+ body.featured-area-intro .md-nbr-info .nbr-desc h1,body.featured-area-intro .md-nbr-info .nbr-desc h1 *{font-size:56px!important}
+ body.featured-area-intro .md-nbr-info .md-nbr-info__number{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
