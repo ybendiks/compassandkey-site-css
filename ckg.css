@@ -769,3 +769,4 @@ body.featured-area-intro .page-content>:is(.md-house-detail,.md-nbr-demographics
 .md-form.layout4 .v-input input,.md-form.layout4 .v-input textarea{background:#fff!important;border:1px solid #d9d4cc!important;border-radius:8px!important;padding:0 14px!important;height:48px!important;box-sizing:border-box!important;color:#1f2937!important;font-size:16px!important}
 .md-form.layout4 .v-input textarea{height:auto!important;min-height:110px!important;padding:12px 14px!important}
 .md-form.layout4 .v-input input:focus,.md-form.layout4 .v-input textarea:focus{border-color:#dfb766!important;outline:2px solid rgba(223,183,102,.35)!important}
+body .page-content .md-form.layout4 .v-input span.label-top,body .page-content .md-form.layout4 .v-input .label-top *{color:#22334b!important;font-weight:600!important}
