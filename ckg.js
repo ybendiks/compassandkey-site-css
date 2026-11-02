@@ -4,6 +4,8 @@
   var REDIRECTS={'/house-listing':'/listing',
     /* Join the Team: old copy of the About page, retired Nov 2026 until the recruiting page is rebuilt on a clean URL (tracker: join) */
     '/about6-1':'/about',
+    /* Nov 2026: old Fort Knox overview post folded into the Fort Knox Housing & PCS Guide (internal links repointed) */
+    '/blog/homes-for-sale-fort-knox-ky':'/fort-knox-housing',
     /* Nov 2026 list C: dated 2024 posts with 0 clicks in 6 months of GSC (export 2026-11-01) */
     '/blog/smart-investment-strategies-in-elizabethtown--kentucky--a-2024-guide':'/blog/investing-central-kentucky-real-estate',
     '/blog/home-buying-and-selling-tips-for-2024--your-guide-to-success-in-elizabethtown--kentucky':'/elizabethtown-KY',
