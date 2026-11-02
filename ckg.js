@@ -2,6 +2,8 @@
 (function(){
   /* Redirects for pages Lofty won't let us delete (system pages). Google follows JS redirects; the URL is also no-indexed in Lofty SEO > Indexing. */
   var REDIRECTS={'/house-listing':'/listing',
+    /* Join the Team: old copy of the About page, retired Nov 2026 until the recruiting page is rebuilt on a clean URL (tracker: join) */
+    '/about6-1':'/about',
     /* Nov 2026 Elizabethtown consolidation (tracker city-pages, lists A and B): same-intent posts folded into the city page or a stronger post */
     '/blog/is-elizabethtown-ky-good-place-to-live':'/elizabethtown-KY',
     '/blog/charmed-by-elizabethtown--a-laid-back-kentucky-gem':'/elizabethtown-KY',
