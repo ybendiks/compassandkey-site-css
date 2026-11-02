@@ -6,6 +6,10 @@
     '/about6-1':'/about',
     /* Nov 2026: old Fort Knox overview post folded into the Fort Knox Housing & PCS Guide (internal links repointed) */
     '/blog/homes-for-sale-fort-knox-ky':'/fort-knox-housing',
+    /* Nov 2026: stale one-off posts (sold single-listing promos, dated weekly newsletter); 0 GSC clicks */
+    '/blog/discover-your-dream-home-at-216-ascension-way--a-modern-ranch-with-room-to-grow':'/elizabethtown-KY',
+    '/blog/discover-your-dream-home-at-405-sandy-circle--a-perfect-blend-of-style--comfort--and-functionality':'/elizabethtown-KY',
+    '/blog/weekly-newsletter':'/elizabethtown-KY',
     /* Nov 2026 list C: dated 2024 posts with 0 clicks in 6 months of GSC (export 2026-11-01) */
     '/blog/smart-investment-strategies-in-elizabethtown--kentucky--a-2024-guide':'/blog/investing-central-kentucky-real-estate',
     '/blog/home-buying-and-selling-tips-for-2024--your-guide-to-success-in-elizabethtown--kentucky':'/elizabethtown-KY',
