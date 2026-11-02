@@ -807,10 +807,10 @@ body:has(.ckg-fk) .ckg-fk-steps>li::after{content:"";position:absolute;left:19px
 body:has(.ckg-fk) .ckg-fk-steps h3{margin:6px 0 6px!important;font-size:20px!important}
 /* guides grid */
 .ckg-fk-guides{display:grid;grid-template-columns:1fr;gap:10px;margin:8px 0 0;padding:0;list-style:none}
-body:has(.ckg-fk) .ckg-fk-guides li{margin:0!important;padding:0!important;list-style:none}
-body:has(.ckg-fk) .ckg-fk-guides li::before{display:none!important}
-body:has(.ckg-fk) .ckg-fk-guides a{display:block;background:#fff;border:1px solid #ece9e4;border-radius:10px;padding:14px 16px;font-family:var(--ck-sans)!important;font-size:16px!important;font-weight:600;color:#22334b!important;text-decoration:none!important}
-body:has(.ckg-fk) .ckg-fk-guides a:hover{border-color:#dfb766;color:#b8913f!important}
+body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-fk-guides li{margin:0!important;padding:0!important;list-style:none}
+body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-fk-guides li::before{display:none!important}
+body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-fk-guides a{display:block;background:#fff;border:1px solid #ece9e4;border-radius:10px;padding:14px 16px;font-family:var(--ck-sans)!important;font-size:16px!important;font-weight:600;color:#22334b!important;text-decoration:none!important}
+body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-fk-guides a:hover{border-color:#dfb766;color:#b8913f!important}
 .ckg-fk-note{background:#fff8e8;border-left:4px solid #dfb766;border-radius:8px;padding:14px 18px;margin:8px 0 18px}
 body:has(.ckg-fk) .ckg-fk-note p{margin:0!important;font-size:16px!important}
 /* CTA band */

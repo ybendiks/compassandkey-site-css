@@ -1,8 +1,18 @@
 /* compassandkeygroup.com site script, loaded by the Lofty Script field after ckg.css. */
 (function(){
   /* Redirects for pages Lofty won't let us delete (system pages). Google follows JS redirects; the URL is also no-indexed in Lofty SEO > Indexing. */
-  var REDIRECTS={'/house-listing':'/listing'};
-  var here=location.pathname.replace(/\/+$/,'')||'/';
+  var REDIRECTS={'/house-listing':'/listing',
+    /* Nov 2026 Elizabethtown consolidation (tracker city-pages, lists A and B): same-intent posts folded into the city page or a stronger post */
+    '/blog/is-elizabethtown-ky-good-place-to-live':'/elizabethtown-KY',
+    '/blog/charmed-by-elizabethtown--a-laid-back-kentucky-gem':'/elizabethtown-KY',
+    '/blog/elizabethtown-ky-housing-market-update':'/elizabethtown-KY',
+    '/blog/elizabethtown--ky-housing-market-breakdown--what-you-need-to-know-in-2025':'/elizabethtown-KY',
+    '/blog/why-timing-matters-in-elizabethtown-s-market':'/elizabethtown-KY',
+    '/blog/what-every-first-time-homebuyer-in-elizabethtown-needs-to-know':'/blog/first-time-homebuyer-guide-elizabethtown-ky',
+    '/blog/rent-vs--buy-in-elizabethtown--what-makes-sense-right-now-':'/blog/renting-vs-buying-elizabethtown-ky',
+    '/blog/elementary-schools-in-elizabethtown-ky':'/blog/elizabethtown-ky-schools-guide'};
+  /* Lofty routes blog URLs case-insensitively, so match lowercase */
+  var here=location.pathname.replace(/\/+$/,'').toLowerCase()||'/';
   if(REDIRECTS[here]){location.replace(REDIRECTS[here]+location.search+location.hash);return;}
   /* Site-wide: phone number in the header, before Register / Sign In (desktop) */
   function headerPhone(){
