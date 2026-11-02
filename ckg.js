@@ -4,6 +4,13 @@
   var REDIRECTS={'/house-listing':'/listing',
     /* Join the Team: old copy of the About page, retired Nov 2026 until the recruiting page is rebuilt on a clean URL (tracker: join) */
     '/about6-1':'/about',
+    /* Nov 2026 list C: dated 2024 posts with 0 clicks in 6 months of GSC (export 2026-11-01) */
+    '/blog/smart-investment-strategies-in-elizabethtown--kentucky--a-2024-guide':'/blog/investing-central-kentucky-real-estate',
+    '/blog/home-buying-and-selling-tips-for-2024--your-guide-to-success-in-elizabethtown--kentucky':'/elizabethtown-KY',
+    '/blog/market-trends-and-forecasts-for-newlywed-couples-in-elizabethtown--kentucky--2024-guide':'/elizabethtown-KY',
+    '/blog/the-future-of-real-estate--how-technology-is-transforming-the-market-in-elizabethtown--kentucky':'/elizabethtown-KY',
+    '/blog/embracing-smart-home-technology--a-guide-for-seniors-in-elizabethtown--kentucky':'/blog/retiring-in-elizabethtown-ky',
+    '/blog/sustainable-and-eco-friendly-homes-in-elizabethtown--kentucky--a-green-living-guide':'/blog/new-construction-homes-elizabethtown-ky',
     /* Nov 2026 Elizabethtown consolidation (tracker city-pages, lists A and B): same-intent posts folded into the city page or a stronger post */
     '/blog/is-elizabethtown-ky-good-place-to-live':'/elizabethtown-KY',
     '/blog/charmed-by-elizabethtown--a-laid-back-kentucky-gem':'/elizabethtown-KY',
