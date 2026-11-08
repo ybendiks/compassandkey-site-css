@@ -109,6 +109,8 @@
   cityH1();setTimeout(cityH1,1500);
   maps();setTimeout(maps,1500);setTimeout(maps,4000);
   phones();setTimeout(phones,1500);setTimeout(phones,4000);window.addEventListener('load',function(){setTimeout(phones,300);});
+  /* pop-up forms (Register, Sign In, lead forms) render later: re-run phones() when new nodes appear */
+  try{var pt=0;new MutationObserver(function(){clearTimeout(pt);pt=setTimeout(phones,250);}).observe(document.body,{childList:true,subtree:true});}catch(e){}
   headerPhone();var ht=0,hiv=setInterval(function(){headerPhone();if(++ht>20)clearInterval(hiv);},250);
   var css=document.getElementById('ckg-css-head')||document.getElementById('ckg-css');
   if(css&&!css.sheet)css.addEventListener('load',relayoutNav);else relayoutNav();
