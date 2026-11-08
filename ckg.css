@@ -849,8 +849,7 @@ body.featured-area-intro-v2 .md-area-overview .view-more-content p{max-width:820
 /* §15 Lofty lead forms: Send stays disabled until the consent box is ticked (Lofty rule). Show the disabled state + a hint instead of a gold button that silently does nothing. */
 body button.submit.submit-disabled,body.contact .md-form .submit-box .submit.submit-disabled,body.contact .md-form .submit-box .submit.submit-disabled:hover{background:#d1d5db!important;border-color:#d1d5db!important;cursor:not-allowed!important}
 body button.submit.submit-disabled,body button.submit.submit-disabled *{color:#4b5563!important}
-.ckg-consent-hint{display:none;margin:8px 0 0!important;font-family:var(--ck-sans,system-ui)!important;font-size:14px!important;line-height:1.4!important;color:#4b5563!important;text-align:center}
-.submit-disabled~.ckg-consent-hint{display:block}
+:has(> button.submit.submit-disabled)::after{content:"To send, check the consent box.";display:block;flex-basis:100%;width:100%;order:1;margin:8px 0 0;font-family:var(--ck-sans,system-ui);font-size:14px;line-height:1.4;color:#4b5563;text-align:center}
 /* §16 Agent lead-form landing pages (body.landing-page, md-lead-form, e.g. /austin-): dark overlay so the headline and form text read on the photo */
 body.landing-page .md-lead-form .banner{position:relative}
 body.landing-page .md-lead-form .banner::before{content:"";position:absolute;inset:0;background:rgba(17,24,39,.58);z-index:1;pointer-events:none}
@@ -859,6 +858,7 @@ body.landing-page .md-lead-form .media-shadow{display:none!important}
 body.landing-page .md-lead-form .media-title,body.landing-page .md-lead-form .media-title *,body.landing-page .md-lead-form .media-subtitle,body.landing-page .md-lead-form .media-subtitle *{color:#fff!important;text-shadow:0 2px 12px rgba(0,0,0,.35)}
 body.landing-page .md-lead-form .disclaimer-wrap,body.landing-page .md-lead-form .disclaimer-wrap *{color:rgba(255,255,255,.9)!important}
 body.landing-page .md-lead-form .disclaimer-wrap a{text-decoration:underline!important}
-body.landing-page .md-lead-form .ckg-consent-hint{flex-basis:100%;width:100%;color:#fff!important;text-align:right}
+body.landing-page .md-lead-form .lead-form:has(> button.submit.submit-disabled)::after{color:#fff;text-align:right}
+body.landing-page .md-lead-form .lead-form .disclaimer-wrap{order:2}
 body.landing-page .md-lead-form button.submit:not(.submit-disabled){background:#dfb766!important;border-color:#dfb766!important}
 body.landing-page .md-lead-form button.submit:not(.submit-disabled),body.landing-page .md-lead-form button.submit:not(.submit-disabled) *{color:#fff!important}

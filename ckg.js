@@ -109,14 +109,12 @@
   cityH1();setTimeout(cityH1,1500);
   maps();setTimeout(maps,1500);setTimeout(maps,4000);
   phones();setTimeout(phones,1500);setTimeout(phones,4000);window.addEventListener('load',function(){setTimeout(phones,300);});
-  /* Lofty lead forms keep Send disabled until the consent box is ticked: add a hint under the button (shown by CSS only while disabled) */
-  function consentHints(){document.querySelectorAll('button.submit').forEach(function(btn){var n=btn.nextElementSibling;if(n&&n.classList.contains('ckg-consent-hint'))return;var form=btn.closest('form,.md-form,[class*=form]');if(!form||!form.querySelector('.check-box-container,[class*=checkbox]'))return;var p=document.createElement('p');p.className='ckg-consent-hint';p.textContent='To send, check the consent box.';btn.insertAdjacentElement('afterend',p);});}
-  consentHints();setTimeout(consentHints,1500);
+
   /* Agent lead-form landing pages (/austin- etc.): the site's Style-field heading/link colour (navy) outranks stylesheet rules, so set readable colours inline */
   function landingText(){if(!document.body.classList.contains('landing-page'))return;document.querySelectorAll('.md-lead-form .media-title, .md-lead-form .media-title *, .md-lead-form .media-subtitle, .md-lead-form .media-subtitle *, .md-lead-form .disclaimer-wrap, .md-lead-form .disclaimer-wrap *').forEach(function(e){e.style.setProperty('color','#fff','important');});}
   landingText();setTimeout(landingText,1500);
-  /* pop-up forms (Register, Sign In, lead forms) render later: re-run phones() and consentHints() when new nodes appear */
-  try{var pt=0;new MutationObserver(function(){clearTimeout(pt);pt=setTimeout(function(){phones();consentHints();landingText();},250);}).observe(document.body,{childList:true,subtree:true});}catch(e){}
+  /* pop-up forms (Register, Sign In, lead forms) render later: re-run phones() and landingText() when new nodes appear */
+  try{var pt=0;new MutationObserver(function(){clearTimeout(pt);pt=setTimeout(function(){phones();landingText();},250);}).observe(document.body,{childList:true,subtree:true});}catch(e){}
   headerPhone();var ht=0,hiv=setInterval(function(){headerPhone();if(++ht>20)clearInterval(hiv);},250);
   var css=document.getElementById('ckg-css-head')||document.getElementById('ckg-css');
   if(css&&!css.sheet)css.addEventListener('load',relayoutNav);else relayoutNav();
