@@ -29,12 +29,13 @@ SERP (DataForSEO, location "Kentucky,United States", 2026-11-08): one query, "li
 - Homestead exemption (65+ or totally disabled; apply with the PVA): https://revenue.ky.gov/Property/Residential-Farm-Commercial-Property/Pages/Homestead-Exemption.aspx
 
 ## Flags
-- FLAG: Incorporation dates conflict between sources (kyatlas says 1880, the KY Secretary of State says 1888 with re-incorporation in 1908, Wikipedia says April 23, 1908). No date is used in the copy.
-- FLAG: A Clarkson **city** property tax was not directly confirmed. The city site says "Our tax rates are among the lowest in the area," which implies city taxes, so the FAQ says homes inside limits "may also owe city tax; ask City Hall." Confirm with City Hall at (270) 242-6997 if you want firmer wording.
-- FLAG: The city site lists sewer and garbage but not water. Water provider isn't named in the copy.
-- FLAG: The Corps shoreline source is a 2016 web-archive copy of the Louisville District page. The current live SMP page wasn't opened. The copy only says docks/uses need a permit or license under the SMP; it doesn't describe specific rules.
-- FLAG: "Homes outside town may use a septic system" is a hedged, general statement and not verified for Clarkson specifically.
-- FLAG: No mileage is given for Clarkson to Elizabethtown. The exit numbers suggest about 25 parkway miles (Exit 112 to Exit 137), but no source stated a distance, so the FAQ only describes the route.
-- FLAG: The Clarkson Elementary attendance zone wasn't checked. The copy says only that the school is in town.
+- FLAG [REMOVED (Nov 8 caution rule): claim was not in copy; confirmed still absent]: Incorporation dates conflict between sources (kyatlas says 1880, the KY Secretary of State says 1888 with re-incorporation in 1908, Wikipedia says April 23, 1908). No date is used in the copy.
+- FLAG [REMOVED (Nov 8 caution rule): city-tax sentence deleted; FAQ gives only county PVA/sheriff/clerk + homestead facts]: A Clarkson **city** property tax was not directly confirmed. The city site says "Our tax rates are among the lowest in the area," which implies city taxes, so the FAQ says homes inside limits "may also owe city tax; ask City Hall." Confirm with City Hall at (270) 242-6997 if you want firmer wording.
+- FLAG [REMOVED (Nov 8 caution rule): claim was not in copy; confirmed still absent]: The city site lists sewer and garbage but not water. Water provider isn't named in the copy.
+- FLAG [REMOVED (Nov 8 caution rule): shoreline permit content deleted; lake FAQ deleted as too thin; 'shoreline rules' dropped from meta]: The Corps shoreline source is a 2016 web-archive copy of the Louisville District page. The current live SMP page wasn't opened. The copy only says docks/uses need a permit or license under the SMP; it doesn't describe specific rules.
+- FLAG [REMOVED (Nov 8 caution rule)]: "Homes outside town may use a septic system" is a hedged, general statement and not verified for Clarkson specifically.
+- FLAG [REMOVED (Nov 8 caution rule): claim was not in copy; confirmed still absent; Exit 112 directional (eastbound on / westbound off) detail also REMOVED (Nov 8 caution rule)]: No mileage is given for Clarkson to Elizabethtown. The exit numbers suggest about 25 parkway miles (Exit 112 to Exit 137), but no source stated a distance, so the FAQ only describes the route.
+- FLAG [REMOVED (Nov 8 caution rule): claim was not in copy; confirmed still absent]: The Clarkson Elementary attendance zone wasn't checked. The copy says only that the school is in town.
 - Left out: population, Zillow/Realtor.com counts and prices (banned), mayor/commission names (stale), 1926 spelling bee winner (trivia), "top notch elementary school" claim (overclaim).
 - Blocked: the first WebFetch attempts on Wikipedia timed out on permissions, but they succeeded after the search results surfaced them. The cityofclarkson.com site wasn't opened; the clarkson.ky.gov site was used instead.
+- Nov 8 caution rule, also REMOVED: 'quiet, rural town'; town-or-lake and parkway-drive bullets; Leitchfield shopping/county offices line (kept only that Twin Lakes Medical Center is in Leitchfield).

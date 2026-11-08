@@ -29,11 +29,12 @@ Raw SERP/PAA summary (DataForSEO, location "Kentucky,United States"): /home/clau
 - Schools SERP: no PAA; related searches Bullitt East High School, Eastside Middle school.
 
 ## Left out / unsure
-- FLAG: Wikipedia says "a new elementary school is under construction." Left out because it will go stale. Re-check the school list before publishing, since a new school can change attendance zones.
-- FLAG: "Older homes are mostly near the historic crossroads downtown" and "plenty of newer construction" are inferences from the town's history and suburban growth, not from a housing-stock source. Per the brief, no growth numbers, rankings or "fastest-growing" language is used.
-- FLAG: "A Mount Washington mailing address doesn't always mean a home is inside city limits" is a reasonable inference (the 40047 ZIP extends past the city), not directly sourced. It's possible some Mount Washington-address homes sit in Spencer or Jefferson County. Not verified, so it isn't stated.
-- FLAG: The city site says the city has "well over 21,000 residents" while Wikipedia gives the 2020 census figure. Neither is used (population is banned).
-- FLAG: No drive times or mileage to Elizabethtown or Fort Knox were verified, so only the routes are given.
-- FLAG: Mount Washington Water Company (mtwwater.com) is linked from the city site. Whether it is city-run or a separate district wasn't verified, so water isn't listed as a city service.
+- FLAG [REMOVED (Nov 8 caution rule): claim was not in copy; confirmed still absent]: Wikipedia says "a new elementary school is under construction." Left out because it will go stale. Re-check the school list before publishing, since a new school can change attendance zones.
+- FLAG [REMOVED (Nov 8 caution rule): older/newer housing bullet and intro wording deleted]: "Older homes are mostly near the historic crossroads downtown" and "plenty of newer construction" are inferences from the town's history and suburban growth, not from a housing-stock source. Per the brief, no growth numbers, rankings or "fastest-growing" language is used.
+- FLAG [REMOVED (Nov 8 caution rule): sentence deleted from living (it had been left in)]: "A Mount Washington mailing address doesn't always mean a home is inside city limits" is a reasonable inference (the 40047 ZIP extends past the city), not directly sourced. It's possible some Mount Washington-address homes sit in Spencer or Jefferson County. Not verified, so it isn't stated.
+- FLAG [REMOVED (Nov 8 caution rule): claim was not in copy; confirmed still absent]: The city site says the city has "well over 21,000 residents" while Wikipedia gives the 2020 census figure. Neither is used (population is banned).
+- FLAG [REMOVED (Nov 8 caution rule): claim was not in copy; confirmed still absent (routes only, each leg sourced)]: No drive times or mileage to Elizabethtown or Fort Knox were verified, so only the routes are given.
+- FLAG [REMOVED (Nov 8 caution rule): claim was not in copy; confirmed still absent]: Mount Washington Water Company (mtwwater.com) is linked from the city site. Whether it is city-run or a separate district wasn't verified, so water isn't listed as a city service.
 - Honeybee Festival not mentioned: not found on the city parks page.
 - Not opened (blocked): bullittpva.com. Shepherdsville-sourced facts above were reused, not re-fetched.
+- Nov 8 caution rule, also REMOVED: 'we can connect you with lenders' (FAQ 7); 'homes a few streets apart' school inference; 'right side of town' commute lines; 'Most Louisville commuters' wording.

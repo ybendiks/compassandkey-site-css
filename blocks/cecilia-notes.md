@@ -20,9 +20,10 @@ Raw SERP summary: /home/claude/city-research/cecilia/serp_summary.json. I ran on
 - None on "living in cecilia ky". FAQs were built from local angles: the unincorporated status and the mailing-address vs. city-limits trap, which is a genuinely Cecilia-specific point.
 
 ## Left out / flags
-- FLAG: Rural and acreage character ("rural homes outside town can come with acreage, wells or septic") is hedged general language. No source opened this session describes Cecilia's housing stock.
-- FLAG: I did not verify that US 62 is "Leitchfield Road" or that it leads to Elizabethtown. The page only says the two schools have Leitchfield Road addresses and that KY-86 ends at US-62.
-- FLAG: "Fort Knox and Louisville are usually reached through Elizabethtown" is geographic inference and not sourced. No drive times were verified.
-- FLAG: I did not verify Lakewood Elementary's location or how its zone overlaps Cecilia addresses. It's named only as another West Hardin/Central Hardin feeder.
-- FLAG: The page says Central Hardin HS is inside Elizabethtown city limits (per Wikipedia). If the owner knows otherwise, remove the example sentence in living + FAQ 2.
+- FLAG [REMOVED (Nov 8 caution rule)]: Rural and acreage character ("rural homes outside town can come with acreage, wells or septic") is hedged general language. No source opened this session describes Cecilia's housing stock.
+- FLAG [REMOVED (Nov 8 caution rule): Leitchfield Road references dropped]: I did not verify that US 62 is "Leitchfield Road" or that it leads to Elizabethtown. The page only says the two schools have Leitchfield Road addresses and that KY-86 ends at US-62.
+- FLAG [REMOVED (Nov 8 caution rule): route bullet and distance FAQ deleted]: "Fort Knox and Louisville are usually reached through Elizabethtown" is geographic inference and not sourced. No drive times were verified.
+- FLAG [REMOVED (Nov 8 caution rule): Lakewood mention dropped]: I did not verify Lakewood Elementary's location or how its zone overlaps Cecilia addresses. It's named only as another West Hardin/Central Hardin feeder.
+- FLAG [REMOVED (Nov 8 caution rule): city-limits example and the related 'Cecilia address inside Elizabethtown owes city tax' lines deleted from living, FAQ 2, FAQ 4]: The page says Central Hardin HS is inside Elizabethtown city limits (per Wikipedia). If the owner knows otherwise, remove the example sentence in living + FAQ 2.
 - Omitted: population (575 / 503 per Data Commons), crime stats (AreaVibes), Redfin, BHHS and rental prices, and the former congressman Ron Lewis (not useful to buyers).
+- Nov 8 caution rule, also REMOVED: lender-connection line; 'Cecilia is rural' USDA lead-in; 'quiet community' and shopping lines; distance FAQ (too thin after removals).

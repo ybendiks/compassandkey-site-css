@@ -18,15 +18,16 @@ SERP (DataForSEO, location "Kentucky,United States", 2026-11-08): "living in irv
 - KHC programs and approved lenders: https://www.kyhousing.org/Homeownership/Pages/default.aspx
 
 ## Flags
-- FLAG: The Irvington high school is **Breckinridge County High School in Harned**, not in Irvington. Verified.
-- FLAG: Brief mentioned KY-259 for Irvington. KY-259 does **not** reach Irvington: it meets US-60 at Harned. It's left out of the Irvington copy.
-- FLAG: US-60 east of Irvington to Fort Knox is stated from two pieces (the KY 79 page has US 60 through Irvington, and the US 60 page says it meets US 31W in Fort Knox). The road log in between wasn't opened. The Wikipedia US 60 page was blocked by permissions; the wikiwand mirror was used instead.
-- FLAG: "31W runs south through Radcliff to Elizabethtown" is general knowledge, consistent with the Radcliff and Etown pages, but no source was opened for it in this session.
-- FLAG: No mileage or drive time to Brandenburg, Fort Knox, Elizabethtown or Louisville was found in a source, so only routes are given.
-- FLAG: Who collects Irvington **city** tax bills (City Hall vs. sheriff) wasn't confirmed. The copy says "ask City Hall."
-- FLAG: The City Hall hours on irvington.ky.gov say "EDT" even though the county is on Central time. This doesn't affect the copy, but it may confuse readers who check.
-- FLAG: "Homes in the county may rely on different utility providers" is a hedged general statement. The city lists its own Electric service; county providers weren't checked.
-- FLAG: The year "1888–89" and "1889" appear in the "known for" FAQ. These are historical dates and evergreen, not stale data.
-- FLAG: The USDA statement mirrors the Etown and Leitchfield FAQs and wasn't re-verified on a USDA page.
+- FLAG [KEPT (Nov 8 caution rule): verification note, claim is directly sourced]: The Irvington high school is **Breckinridge County High School in Harned**, not in Irvington. Verified.
+- FLAG [REMOVED (Nov 8 caution rule): claim was not in copy; confirmed still absent]: Brief mentioned KY-259 for Irvington. KY-259 does **not** reach Irvington: it meets US-60 at Harned. It's left out of the Irvington copy.
+- FLAG [REMOVED (Nov 8 caution rule): Fort Knox bullet and Fort Knox FAQ deleted]: US-60 east of Irvington to Fort Knox is stated from two pieces (the KY 79 page has US 60 through Irvington, and the US 60 page says it meets US 31W in Fort Knox). The road log in between wasn't opened. The Wikipedia US 60 page was blocked by permissions; the wikiwand mirror was used instead.
+- FLAG [REMOVED (Nov 8 caution rule)]: "31W runs south through Radcliff to Elizabethtown" is general knowledge, consistent with the Radcliff and Etown pages, but no source was opened for it in this session.
+- FLAG [REMOVED (Nov 8 caution rule): claim was not in copy; confirmed still absent]: No mileage or drive time to Brandenburg, Fort Knox, Elizabethtown or Louisville was found in a source, so only routes are given.
+- FLAG [REMOVED (Nov 8 caution rule): claim was not in copy; confirmed still absent (copy says 'ask City Hall')]: Who collects Irvington **city** tax bills (City Hall vs. sheriff) wasn't confirmed. The copy says "ask City Hall."
+- FLAG [REMOVED (Nov 8 caution rule): claim was not in copy; confirmed still absent]: The City Hall hours on irvington.ky.gov say "EDT" even though the county is on Central time. This doesn't affect the copy, but it may confuse readers who check.
+- FLAG [REMOVED (Nov 8 caution rule)]: "Homes in the county may rely on different utility providers" is a hedged general statement. The city lists its own Electric service; county providers weren't checked.
+- FLAG [KEPT (Nov 8 caution rule): verification note, claim is directly sourced]: The year "1888–89" and "1889" appear in the "known for" FAQ. These are historical dates and evergreen, not stale data.
+- FLAG [REMOVED (Nov 8 caution rule): 'much of Breckinridge County is rural' wording deleted; kept only the general USDA fact that eligibility is set by address (rd.usda.gov/files/RD-SFH-PropertyEligibility1.pdf)]: The USDA statement mirrors the Etown and Leitchfield FAQs and wasn't re-verified on a USDA page.
 - Left out: population, income and poverty stats (banned), mayor name (stale), Project Zomboid video-game trivia, politics (BestPlaces snippet).
 - Blocked: https://en.wikipedia.org/wiki/US_60_(KY) and https://en.wikipedia.org/wiki/Irvington_Historic_District_(Irvington,_Kentucky) (WebFetch permission not answered); the 2021 property-tax hearing PDF on irvington.ky.gov returned an error.
+- Nov 8 caution rule, also REMOVED: 'straight shot toward Brandenburg and Fort Knox'; older/newer and commute bullets; shopping/county offices line; lender-connection line; Fort Knox mentions in meta.

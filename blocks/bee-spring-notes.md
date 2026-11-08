@@ -18,12 +18,13 @@ SERP (DataForSEO, location "Kentucky,United States", 2026-11-08): "bee spring ky
 - Hardin County = Eastern time: https://kaweah.freedombox.rocks/kiwix/wikipedia_en_all_maxi_2023-10/Time_in_Kentucky
 
 ## Flags
-- FLAG: Bee Spring is **unincorporated** (Wikipedia, plus the Google knowledge graph). The page says there is no city tax.
-- FLAG: Kyrock Elementary is in Sweeden, just south of Bee Spring on KY 259 (KY 259 log: Sweeden at mi 22.65, Bee Spring at mi 24.08). That it serves Bee Spring addresses is inferred from "northern part of the county" and wasn't checked against an attendance map.
-- FLAG: There are two sources for the district's middle grades: brownsville.ky.gov lists a 5/6 Center, while the ECHS page lists four schools without it. Both are named in the copy. Confirm the 5/6 Center is still operating.
-- FLAG: The Corps shoreline source is a 2016 archived page, so specific dock rules aren't stated in the copy.
-- FLAG: The Edmonson County Clerk delinquent-tax page was not opened; the clerk step relies on the statewide revenue.ky.gov page.
-- FLAG: No mileage or drive time to Leitchfield, Elizabethtown or Bowling Green came from a source, so only routes are given. The KY 259 log implies roughly 16 road miles from Bee Spring to the parkway, but that's not used.
-- FLAG: There's no "Choosing where to buy" city-limits angle because the community is unincorporated. That section uses lake/park/road, Corps rules and rural systems instead.
+- FLAG [KEPT (Nov 8 caution rule): verification note, claim is directly sourced (Wikipedia + knowledge graph)]: Bee Spring is **unincorporated** (Wikipedia, plus the Google knowledge graph). The page says there is no city tax.
+- FLAG [REMOVED (Nov 8 caution rule): copy no longer says Kyrock serves Bee Spring; names both district elementaries and says assignment depends on address]: Kyrock Elementary is in Sweeden, just south of Bee Spring on KY 259 (KY 259 log: Sweeden at mi 22.65, Bee Spring at mi 24.08). That it serves Bee Spring addresses is inferred from "northern part of the county" and wasn't checked against an attendance map.
+- FLAG [REMOVED (Nov 8 caution rule)]: There are two sources for the district's middle grades: brownsville.ky.gov lists a 5/6 Center, while the ECHS page lists four schools without it. Both are named in the copy. Confirm the 5/6 Center is still operating.
+- FLAG [REMOVED (Nov 8 caution rule): permit/dock content deleted; lake FAQ deleted as too thin]: The Corps shoreline source is a 2016 archived page, so specific dock rules aren't stated in the copy.
+- FLAG [REMOVED (Nov 8 caution rule): clerk step dropped from tax FAQ]: The Edmonson County Clerk delinquent-tax page was not opened; the clerk step relies on the statewide revenue.ky.gov page.
+- FLAG [REMOVED (Nov 8 caution rule): claim was not in copy; confirmed still absent]: No mileage or drive time to Leitchfield, Elizabethtown or Bowling Green came from a source, so only routes are given. The KY 259 log implies roughly 16 road miles from Bee Spring to the parkway, but that's not used.
+- FLAG [REMOVED (Nov 8 caution rule): lake/park/road preference and septic bullets replaced with verified-only bullets]: There's no "Choosing where to buy" city-limits angle because the community is unincorporated. That section uses lake/park/road, Corps rules and rural systems instead.
 - Left out: ZCTA population (banned), Zillow sold prices (banned), Bee Spring Park amenities (only a 2023 film-commission page; not opened), lodging/B&B listings, the Benton KY "Bee Spring" campground (wrong place).
 - Living section is about 330 words; 5 FAQs as allowed for a small place.
+- Nov 8 caution rule, also REMOVED: 'quiet, rural living near the water'; 'rural crossroads'; shopping inference; 'Most drivers' wording; rural homes/septic/shoreline in meta.

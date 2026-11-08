@@ -18,11 +18,12 @@ Raw SERP summary: /home/claude/city-research/rineyville/serp_summary.json. I ran
 - None. The "living in rineyville ky" SERP had no PAA box. FAQs come from local buyer angles in the brief, such as the city vs. unincorporated question, school split, taxes, Fort Knox and VA.
 
 ## Left out / flags
-- FLAG: The Rineyville–Elizabethtown route is described as "mainly on KY-1600 (Rineyville Road)." This is inferred from KY 1600's termini (KY 3005 near Etown) and its Rineyville Road name. No source states it as the main commute route.
-- FLAG: No source says which Fort Knox gate is closest to Rineyville. The page only describes the KY-220 → US-31W route and Chaffee's location on US-31W. It does not claim Chaffee is the closest.
-- FLAG: No drive times or Louisville distance were verified, so they're omitted.
-- FLAG: The street-level split between the North Hardin and John Hardin feeders is not detailed. The copy only says it depends on home location.
-- FLAG: "Everyday shopping and services are mostly in Elizabethtown and Radcliff" is a reasonable inference for an unincorporated CDP with no listed commercial center. It is not sourced.
-- FLAG: Sewer vs. septic availability in Rineyville is not verified. The copy only says we confirm it for each home.
+- FLAG [REMOVED (Nov 8 caution rule)]: The Rineyville–Elizabethtown route is described as "mainly on KY-1600 (Rineyville Road)." This is inferred from KY 1600's termini (KY 3005 near Etown) and its Rineyville Road name. No source states it as the main commute route.
+- FLAG [REMOVED (Nov 8 caution rule): claim was not in copy; confirmed still absent]: No source says which Fort Knox gate is closest to Rineyville. The page only describes the KY-220 → US-31W route and Chaffee's location on US-31W. It does not claim Chaffee is the closest.
+- FLAG [REMOVED (Nov 8 caution rule): claim was not in copy; confirmed still absent]: No drive times or Louisville distance were verified, so they're omitted.
+- FLAG [REMOVED (Nov 8 caution rule): middle/high school names and split removed; copy names district + Rineyville Elementary, says assignment depends on address]: The street-level split between the North Hardin and John Hardin feeders is not detailed. The copy only says it depends on home location.
+- FLAG [REMOVED (Nov 8 caution rule)]: "Everyday shopping and services are mostly in Elizabethtown and Radcliff" is a reasonable inference for an unincorporated CDP with no listed commercial center. It is not sourced.
+- FLAG [REMOVED (Nov 8 caution rule): septic wording removed; copy says only we confirm utilities]: Sewer vs. septic availability in Rineyville is not verified. The copy only says we confirm it for each home.
 - Omitted: population (3,039), Data Commons, Homes.com and Niche medians and rankings (rule 1), the fire department founding year, and the SERP's "homes on ~1 acre lots" claim from Melloan (snippet only, not opened).
 - Not used: no KHC/USDA FAQ for this town, to avoid padding. No best-time-to-sell FAQ, because the seasonal claim was not sourced this session.
+- Nov 8 caution rule, also REMOVED: 'buyers usually choose Rineyville for a rural setting'; 'Radcliff side of Hardin County'; KY-220 vs KY-1600 commute bullet; VA lender-connection line and 'many buyers have ties to Fort Knox'.
