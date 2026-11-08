@@ -31,10 +31,17 @@
       OLD.lastIndex = 0; p.content = p.content.replace(OLD, GUIDE); changed.push('repoint I-65 link');
     }
     OLD.lastIndex = 0;
-    if (C.mw && !/mount-washington-KY/i.test(p.content) && /Mount Washington/.test(p.content) && !p.slug.startsWith('commuting-i65')) {
-      // link the first plain-text mention that is inside a <p> and not already inside a link
-      const re = /(<p[^>]*>(?:(?!<\/p>)(?!<a\b).)*?)\bMount Washington\b/s;
-      if (re.test(p.content)) { p.content = p.content.replace(re, '$1<a href="/mount-washington-KY">Mount Washington</a>'); changed.push('link MW'); }
+    if (C.mw && !/mount-washington-KY/i.test(p.content) && /\b(Mount|Mt\.) Washington\b/.test(p.content) && !p.slug.startsWith('commuting-i65')) {
+      // link the first plain-text mention that is not inside a link or heading
+      const d = document.createElement('div'); d.innerHTML = p.content;
+      const w = document.createTreeWalker(d, NodeFilter.SHOW_TEXT); let n, done = false;
+      while (!done && (n = w.nextNode())) {
+        if (n.parentElement.closest('a,h1,h2,h3,h4,script')) continue;
+        const m = n.data.match(/\b(Mount|Mt\.) Washington\b/); if (!m) continue;
+        const after = n.splitText(m.index); after.data = after.data.slice(m[0].length);
+        const a = document.createElement('a'); a.href = '/mount-washington-KY'; a.textContent = m[0]; n.after(a); done = true;
+      }
+      if (done) { p.content = d.innerHTML; changed.push('link MW'); }
     }
     if (changed.length) out.push(p.slug + ': ' + changed.join(', ') + ' -> ' + await save(p));
   }
