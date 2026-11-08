@@ -7,6 +7,9 @@
     /* Nov 2026: old Fort Knox overview post folded into the Fort Knox Housing & PCS Guide (internal links repointed) */
     '/blog/homes-for-sale-fort-knox-ky':'/fort-knox-housing',
     '/blog/homes-for-sale-i-65-corridor-ky':'/blog/commuting-i65-corridor-louisville-elizabethtown',
+    /* Nov 8: past event pages (Pie Day 404s; New Year showcase is a dated event) */
+    '/pie-day':'/',
+    '/new-year-home-showcase':'/buy',
     /* Nov 2026: stale one-off posts (sold single-listing promos, dated weekly newsletter); 0 GSC clicks */
     '/blog/discover-your-dream-home-at-216-ascension-way--a-modern-ranch-with-room-to-grow':'/elizabethtown-KY',
     '/blog/discover-your-dream-home-at-405-sandy-circle--a-perfect-blend-of-style--comfort--and-functionality':'/elizabethtown-KY',
@@ -47,16 +50,16 @@
     if(!c||typeof c.calculateSlice!=='function'||c.isMobileSize)return;
     try{c.setDefaultSlice();setTimeout(function(){try{c.getCache();c.calculateSlice();}catch(e){}},60);}catch(e){}
   }
-  /* Phones: every number on the site is a tel: link, and the old 735-3897 (stale Lofty agent snapshot) shows as the real number (270) 491-3450. */
-  var OLD=/(\+?1\s*)?\(?270\)?[\s.-]*735[\s.-]*3897/g,NEW='(270) 491-3450',NEWTEL='tel:+12704913450';
+  /* Phones: every number on the site is a tel: link, and the old 735-3897 (stale Lofty agent snapshot) and Lofty's 270-900-6022 (form consent text) show as the real number (270) 491-3450. */
+  var OLD=/(\+?1\s*)?\(?270\)?[\s.-]*(?:735[\s.-]*3897|900[\s.-]*6022)/g,NEW='(270) 491-3450',NEWTEL='tel:+12704913450';
   /* Display: every variant of the main number (+1(270) 491-3450, 270-491-3450, ...) and the old one reads exactly as on the Google profile: (270) 491-3450 */
-  var OURS=/(\+?1[\s.-]*)?\(?270\)?[\s.-]*(?:735[\s.-]*3897|491[\s.-]*3450)/g;
+  var OURS=/(\+?1[\s.-]*)?\(?270\)?[\s.-]*(?:735[\s.-]*3897|900[\s.-]*6022|491[\s.-]*3450)/g;
   var PHONE=/(\+?1[\s.-]?)?\(\d{3}\)\s?\d{3}[\s.-]\d{4}|(\+?1[\s.-])?\b\d{3}[.-]\d{3}[.-]\d{4}\b/g;
   function telOf(s){var d=s.replace(/\D/g,'');if(d.length===11&&d[0]==='1')d=d.slice(1);return d.length===10?'tel:+1'+d:null;}
   function phones(){
     var root=document.body;if(!root)return;
     document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
-      if(OLD.test(a.getAttribute('href'))||/7353897/.test(a.getAttribute('href').replace(/\D/g,''))){a.setAttribute('href',NEWTEL);}
+      if(OLD.test(a.getAttribute('href'))||/7353897|9006022/.test(a.getAttribute('href').replace(/\D/g,''))){a.setAttribute('href',NEWTEL);}
       OLD.lastIndex=0;
       OLD.lastIndex=0;
       if(/4913450$/.test(a.getAttribute('href').replace(/\D/g,'')))a.setAttribute('href',NEWTEL);
