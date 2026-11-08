@@ -97,6 +97,8 @@
   }
   /* City pages: Lofty renders the city name as a second <h1> (h1.nbr-name) above the real H1 in the intro copy. Keep one H1 per page. */
   function cityH1(){
+    /* newer Lofty area template (md-area-overview): demote the city-name H1 when our description carries its own H1 */
+    document.querySelectorAll('.md-area-overview h1.site-title').forEach(function(h){var box=h.closest('.md-area-overview');if(!box||box.querySelectorAll('h1').length<2)return;var p=document.createElement('p');p.className=h.className;p.innerHTML=h.innerHTML;h.parentNode.replaceChild(p,h);});
     if(!document.body.classList.contains('featured-area-intro'))return;
     document.querySelectorAll('h1.nbr-name').forEach(function(h){var box=h.parentNode;if(!box||!box.querySelector('.nbr-desc h1'))return;var p=document.createElement('p');p.className=h.className;p.innerHTML=h.innerHTML;h.parentNode.replaceChild(p,h);});
     document.querySelectorAll('.md-content.richtext p').forEach(function(p){if(!p.textContent.replace(/\u00a0/g,'').trim()&&!p.querySelector('img,iframe,a'))p.classList.add('ckg-empty');});
