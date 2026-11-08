@@ -107,42 +107,42 @@ body .page-content>.md-sell-banner.broker :is([style*="color: #fff"],[style*="co
 
 
 /* ===== 3. 2026-10-30: Homepage = replica of the Vercel reference (scoped to body.home) ===== */
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)){--ck-sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--ck-head:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--ck-gray:#4b5563;--ck-line:#f3f4f6;--ck-grad:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)){--ck-sans:"DM Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;--ck-head:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--ck-gray:#4b5563;--ck-line:#f3f4f6;--ck-grad:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)}
 /* Fonts: Vercel renders headings in the system sans (its DM Serif never loads) and body in DM Sans */
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content p,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content li,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content a,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content input{font-family:var(--ck-sans)!important}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content h1,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content h3{font-family:var(--ck-head)!important;letter-spacing:normal!important;text-transform:none!important}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content :is(h1,h2,h3,p) span{font-family:inherit!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .page-content,body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .page-content p,body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .page-content li,body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .page-content a,body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .page-content input{font-family:var(--ck-sans)!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .page-content h1,body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .page-content h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .page-content h3{font-family:var(--ck-head)!important;letter-spacing:normal!important;text-transform:none!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .page-content :is(h1,h2,h3,p) span{font-family:inherit!important}
 
 /* Shared section system (custom Embed blocks) */
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content>.md-custom-code{padding:0!important;margin:0!important;background:none!important}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content>.md-custom-code .mg-container,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .page-content>.md-custom-code .custom-code-html-content{max-width:none!important;width:100%!important;margin:0!important;padding:0!important}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-sec{padding:48px 0}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .page-content>.md-custom-code{padding:0!important;margin:0!important;background:none!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .page-content>.md-custom-code .mg-container,body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .page-content>.md-custom-code .custom-code-html-content{max-width:none!important;width:100%!important;margin:0!important;padding:0!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-sec{padding:48px 0}
 .ckg-cream{background:#f4f3f2}.ckg-white{background:#fff}.ckg-navy{background:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)}
 .ckg-wrap{max-width:1280px;margin:0 auto;padding:0 16px;box-sizing:border-box}
 .ckg-narrow{max-width:896px;text-align:center}
 .ckg-head{text-align:center;margin-bottom:40px}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-head h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-cta h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .md-testimonial .site-title h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .md-house .mg-title h2{font-size:30px!important;line-height:36px!important;font-weight:400!important;color:#22334b!important;margin:0 0 16px!important;text-align:center!important}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-head p,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .md-testimonial .site-title p,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .md-house .mg-title p{font-size:18px!important;line-height:28px!important;color:#4b5563!important;max-width:672px;margin:0 auto!important;text-align:center!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-head h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-cta h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .md-testimonial .site-title h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .md-house .mg-title h2{font-size:30px!important;line-height:36px!important;font-weight:400!important;color:#22334b!important;margin:0 0 16px!important;text-align:center!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-head p,body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .md-testimonial .site-title p,body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .md-house .mg-title p{font-size:18px!important;line-height:28px!important;color:#4b5563!important;max-width:672px;margin:0 auto!important;text-align:center!important}
 .ckg-grid3{display:grid;gap:32px;grid-template-columns:1fr}
 .ckg-card{background:#fff;border-radius:12px;padding:32px;text-align:center;border:1px solid #f3f4f6;transition:box-shadow .2s}
 .ckg-card:hover{box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1)}
 .ckg-icon{width:64px;height:64px;background:#22334b;border-radius:9999px;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;color:#dfb766}
 .ckg-icon svg{width:32px;height:32px}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-card h3{font-size:20px!important;line-height:28px!important;font-weight:400!important;color:#22334b!important;margin:0 0 12px!important}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-card p{font-size:18px!important;line-height:1.625!important;color:#4b5563!important;margin:0!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-card h3{font-size:20px!important;line-height:28px!important;font-weight:400!important;color:#22334b!important;margin:0 0 12px!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-card p{font-size:18px!important;line-height:1.625!important;color:#4b5563!important;margin:0!important}
 .ckg-pills{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-pills a{background:#fff;color:#22334b!important;font-size:14px!important;line-height:20px;font-weight:500;padding:10px 20px;border-radius:9999px;border:1px solid #e5e7eb;text-decoration:none;transition:background-color .2s,border-color .2s,color .2s}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-pills a:hover{background:rgba(223,183,102,.1);border-color:rgba(223,183,102,.3);color:#dfb766!important}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-cta h2{color:#fff!important;margin-bottom:24px!important}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-cta p{color:rgba(255,255,255,.9)!important;font-size:18px!important;line-height:1.625!important;max-width:672px;margin:0 auto 40px!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-pills a{background:#fff;color:#22334b!important;font-size:14px!important;line-height:20px;font-weight:500;padding:10px 20px;border-radius:9999px;border:1px solid #e5e7eb;text-decoration:none;transition:background-color .2s,border-color .2s,color .2s}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-pills a:hover{background:rgba(223,183,102,.1);border-color:rgba(223,183,102,.3);color:#dfb766!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-cta h2{color:#fff!important;margin-bottom:24px!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-cta p{color:rgba(255,255,255,.9)!important;font-size:18px!important;line-height:1.625!important;max-width:672px;margin:0 auto 40px!important}
 .ckg-btns,.ckg-hero-btns{display:flex;flex-direction:column;gap:16px;justify-content:center}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--ck-sans)!important;font-weight:600;padding:16px 32px;border-radius:6px;font-size:18px!important;line-height:28px;text-decoration:none!important;transition:background-color .2s;box-sizing:border-box}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-hero-btns .ckg-btn{padding:16px 40px}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-btn-gold{background:#dfb766;color:#fff!important;border:2px solid #dfb766}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-btn-gold:hover{background:#e8c97e;border-color:#e8c97e}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-btn-ghost{border:2px solid rgba(255,255,255,.3);color:#fff!important}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-btn-outline{border:2px solid #fff;color:#fff!important}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-btn-ghost:hover,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-btn-outline:hover{background:rgba(255,255,255,.1)}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-btn{display:inline-flex;align-items:center;justify-content:center;font-family:var(--ck-sans)!important;font-weight:600;padding:16px 32px;border-radius:6px;font-size:18px!important;line-height:28px;text-decoration:none!important;transition:background-color .2s;box-sizing:border-box}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-hero-btns .ckg-btn{padding:16px 40px}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-btn-gold{background:#dfb766;color:#fff!important;border:2px solid #dfb766}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-btn-gold:hover{background:#e8c97e;border-color:#e8c97e}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-btn-ghost{border:2px solid rgba(255,255,255,.3);color:#fff!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-btn-outline{border:2px solid #fff;color:#fff!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-btn-ghost:hover,body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-btn-outline:hover{background:rgba(255,255,255,.1)}
 
 /* Hero: Lofty md-hero (keeps its live MLS search) laid out like the Vercel hero */
 body.home .page-content>.md-hero{background:linear-gradient(135deg,#22334b 0%,#3a4f6e 50%,#2d4060 100%)!important;padding:0!important;margin:0!important}
@@ -162,7 +162,7 @@ body.home .md-hero .search-input{border-radius:9999px!important;font-size:16px!i
 body.home .md-hero .search-input::placeholder{color:#9ca3af!important}
 body.home .md-hero .keyword-submit{border-radius:9999px!important;background:#dfb766!important}
 @media(min-width:640px){
- body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-head h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-cta h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .md-testimonial .site-title h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .md-house .mg-title h2{font-size:36px!important;line-height:40px!important}
+ body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-head h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-cta h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .md-testimonial .site-title h2,body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .md-house .mg-title h2{font-size:36px!important;line-height:40px!important}
  .ckg-wrap,body.home .md-hero .banner.single .media-content{padding:0 24px}
  .ckg-btns,.ckg-hero-btns{flex-direction:row}
  body.home .md-hero .banner.single .media-title.media-title h1,body.home .md-hero .banner.single .media-title.media-title h1 span{font-size:60px!important}
@@ -170,7 +170,7 @@ body.home .md-hero .keyword-submit{border-radius:9999px!important;background:#df
 }
 @media(min-width:768px){.ckg-grid3{grid-template-columns:repeat(3,1fr)}}
 @media(min-width:1024px){
- body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-sec{padding:56px 0}
+ body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-sec{padding:56px 0}
  .ckg-wrap,body.home .md-hero .banner.single .media-content{padding:0 32px}
  body.home .md-hero .banner.single{padding:48px 0!important}
  body.home .md-hero .banner.single .media-content{grid-template-columns:1fr 1fr;column-gap:48px;row-gap:0;text-align:left}
@@ -215,8 +215,8 @@ body.home .md-house>.ckg-more{padding-bottom:8px}
 body.home .md-house .house-grid-item .house-info,body.home .md-house .house-grid-item .house-info *,body.home .md-house .house-grid-item .house-price,body.home .md-house .house-grid-item .house-price *,body.home .md-house .house-grid-item .house-basic,body.home .md-house .house-grid-item .house-basic *,body.home .md-house .house-grid-item .house-address,body.home .md-house .house-grid-item .house-address a,body.home .md-house .house-grid-item .house-detail *{color:#fff!important;text-shadow:0 1px 2px rgba(0,0,0,.35)}
 @media(max-width:480px){body.home .md-hero .banner.single .media-title.media-title::before{letter-spacing:.14em;font-size:min(14px,3.2vw);white-space:nowrap}}
 .ckg-more{text-align:center;margin-top:32px}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-textlink{display:inline-flex;align-items:center;gap:8px;color:#dfb766!important;font-weight:600;font-size:16px!important;text-decoration:none!important;transition:color .2s}
-body:is(.home,.sell,.contact,.about,.featured-area-intro,:has(.ckg-buyhero)) .ckg-textlink:hover{color:#e8c97e!important}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-textlink{display:inline-flex;align-items:center;gap:8px;color:#dfb766!important;font-weight:600;font-size:16px!important;text-decoration:none!important;transition:color .2s}
+body:is(.home,.sell,.contact,.about,.featured-area-intro,.featured-area-intro-v2,:has(.ckg-buyhero)) .ckg-textlink:hover{color:#e8c97e!important}
 @media(min-width:1024px){body.home .page-content>.md-testimonial,body.home .page-content>.md-testimonial.layout1,body.home .page-content>.md-house{padding:56px 0!important}body.home .md-testimonial .reviews-container{padding:0 32px}}
 
 /* ===== 4. 2026-10-30: Site header = Vercel bar (white, icon + wordmark left, nav, phone + account right). Site-wide. ===== */
@@ -539,228 +539,228 @@ body:has(.ckg-buyhero) .md-listing-search>.search-content::before{content:none!i
 body:has(.ckg-buyhero) .page-content>.md-listing-search::before{content:"Search Properties";display:block;text-align:center;font-family:var(--ck-head);font-weight:700;font-size:24px;line-height:32px;color:#22334b;margin:0 auto 24px;padding:0 16px}
 @media(min-width:640px){body:has(.ckg-buyhero) .page-content>.md-listing-search::before{font-size:30px;line-height:36px}}
 
-/* ===== 12. 2026-11-01: City (Lofty "featured area" intro) pages, body.featured-area-intro. Visuals of the Vercel /areas pages; Yuris's Lofty copy kept as written (Vercel copy is placeholder, not SEO'd). Shared .ckg-* fonts/headings now include .featured-area-intro ===== */
+/* ===== 12. 2026-11-01: City (Lofty "featured area" intro) pages, body:is(.featured-area-intro,.featured-area-intro-v2). Visuals of the Vercel /areas pages; Yuris's Lofty copy kept as written (Vercel copy is placeholder, not SEO'd). Shared .ckg-* fonts/headings now include .featured-area-intro ===== */
 /* Hero: md-nbr-info (city name, H1 + intro copy, live stats) becomes the navy gradient band */
-body.featured-area-intro .page-content>.md-nbr-info{background:var(--ck-grad)!important;margin:0!important;padding:56px 0 48px!important;position:relative;z-index:1}
-body.featured-area-intro .md-nbr-info .md-nbr-info__box{background:none!important;box-shadow:none!important;border:0!important;border-radius:0!important;max-width:960px!important;width:100%!important;margin:0 auto!important;padding:0 16px!important;box-sizing:border-box;text-align:center;top:auto!important;transform:none!important}
-body.featured-area-intro .md-nbr-info .state-city{display:none!important}
-body.featured-area-intro .md-nbr-info .nbr-name{font-family:var(--ck-sans)!important;font-size:14px!important;line-height:20px!important;font-weight:600!important;letter-spacing:.2em!important;text-transform:uppercase!important;color:#dfb766!important;margin:0 0 16px!important}
-body.featured-area-intro .md-nbr-info .nbr-desc h1,body.featured-area-intro .md-nbr-info .nbr-desc h1 *{font-family:var(--ck-head)!important;font-weight:700!important;font-size:36px!important;line-height:1.2!important;color:#fff!important;margin:0 0 24px!important;text-align:center!important}
-body.featured-area-intro .md-nbr-info .nbr-desc p,body.featured-area-intro .md-nbr-info .nbr-desc p *{font-size:18px!important;line-height:1.625!important;color:rgba(255,255,255,.9)!important;text-align:left}
-body.featured-area-intro .md-nbr-info .nbr-desc p{margin:0 0 16px!important}
-body.featured-area-intro .md-nbr-info .view-more-content{text-align:left}
+body:is(.featured-area-intro,.featured-area-intro-v2) .page-content>.md-nbr-info{background:var(--ck-grad)!important;margin:0!important;padding:56px 0 48px!important;position:relative;z-index:1}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .md-nbr-info__box{background:none!important;box-shadow:none!important;border:0!important;border-radius:0!important;max-width:960px!important;width:100%!important;margin:0 auto!important;padding:0 16px!important;box-sizing:border-box;text-align:center;top:auto!important;transform:none!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .state-city{display:none!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-name{font-family:var(--ck-sans)!important;font-size:14px!important;line-height:20px!important;font-weight:600!important;letter-spacing:.2em!important;text-transform:uppercase!important;color:#dfb766!important;margin:0 0 16px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-desc h1,body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-desc h1 *{font-family:var(--ck-head)!important;font-weight:700!important;font-size:36px!important;line-height:1.2!important;color:#fff!important;margin:0 0 24px!important;text-align:center!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-desc p,body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-desc p *{font-size:18px!important;line-height:1.625!important;color:rgba(255,255,255,.9)!important;text-align:left}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-desc p{margin:0 0 16px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .view-more-content{text-align:left}
 /* Folded: H1 + first paragraph (Lofty pins the fold at an inline 96px, which cut the H1 in half) */
-body.featured-area-intro .md-nbr-info .view-more.fold .view-more-content{height:auto!important;max-height:none!important;overflow:visible!important}
-body.featured-area-intro .md-nbr-info .view-more.fold .view-more-content::after{display:none!important}
-body.featured-area-intro .md-nbr-info .more-btn{color:#dfb766!important;font-family:var(--ck-sans)!important;font-weight:600!important;letter-spacing:.05em;margin-top:4px}
-body.featured-area-intro .md-nbr-info .md-nbr-info__number{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:40px 0 0!important;padding:0!important;border:0!important}
-body.featured-area-intro .md-nbr-info .md-nbr-info__number .item{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:20px 16px!important;margin:0!important;width:auto!important;display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px}
-body.featured-area-intro .md-nbr-info .md-nbr-info__number .icon{background:none!important;width:auto!important;height:auto!important;margin:0!important}
-body.featured-area-intro .md-nbr-info .md-nbr-info__number .icon .iconfont{color:#dfb766!important;font-size:24px!important}
-body.featured-area-intro .md-nbr-info .md-nbr-info__number .label{font-family:var(--ck-head)!important;font-size:26px!important;line-height:32px!important;font-weight:700!important;color:#fff!important;margin:0!important;text-align:center!important}
-body.featured-area-intro .md-nbr-info .md-nbr-info__number .title,body.featured-area-intro .md-nbr-info .md-nbr-info__number .title *{font-family:var(--ck-sans)!important;font-size:13px!important;line-height:18px!important;color:rgba(255,255,255,.75)!important;text-transform:uppercase;letter-spacing:.05em;text-align:center!important;justify-content:center}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .view-more.fold .view-more-content{height:auto!important;max-height:none!important;overflow:visible!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .view-more.fold .view-more-content::after{display:none!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .more-btn{color:#dfb766!important;font-family:var(--ck-sans)!important;font-weight:600!important;letter-spacing:.05em;margin-top:4px}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .md-nbr-info__number{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:40px 0 0!important;padding:0!important;border:0!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .md-nbr-info__number .item{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:20px 16px!important;margin:0!important;width:auto!important;display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .md-nbr-info__number .icon{background:none!important;width:auto!important;height:auto!important;margin:0!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .md-nbr-info__number .icon .iconfont{color:#dfb766!important;font-size:24px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .md-nbr-info__number .label{font-family:var(--ck-head)!important;font-size:26px!important;line-height:32px!important;font-weight:700!important;color:#fff!important;margin:0!important;text-align:center!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .md-nbr-info__number .title,body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .md-nbr-info__number .title *{font-family:var(--ck-sans)!important;font-size:13px!important;line-height:18px!important;color:rgba(255,255,255,.75)!important;text-transform:uppercase;letter-spacing:.05em;text-align:center!important;justify-content:center}
 /* Map: plain full-width band under the hero (was under a floating card) */
-body.featured-area-intro .page-content>.md-map{margin:0!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .page-content>.md-map{margin:0!important}
 /* Copy sections (Yuris's rich text): Vercel reading column, navy headings, alternating grounds */
-body.featured-area-intro .page-content>.md-content.richtext{padding:56px 0!important;margin:0!important}
-body.featured-area-intro .page-content>.md-content.richtext .mg-container{max-width:896px!important;padding:0 16px!important;box-sizing:border-box}
-body.featured-area-intro .md-content.richtext h2,body.featured-area-intro .md-content.richtext h2 *{font-size:30px!important;line-height:1.2!important;font-weight:700!important;color:#22334b!important;margin:0 0 20px!important}
-body.featured-area-intro .md-content.richtext h3,body.featured-area-intro .md-content.richtext h3 *{font-size:22px!important;line-height:1.3!important;font-weight:700!important;color:#22334b!important;margin:28px 0 8px!important}
-body.featured-area-intro .md-content.richtext p,body.featured-area-intro .md-content.richtext li,body.featured-area-intro .md-content.richtext p *,body.featured-area-intro .md-content.richtext li *{font-size:18px!important;line-height:1.7!important;color:#4b5563!important}
-body.featured-area-intro .md-content.richtext p{margin:0 0 20px!important}
-body.featured-area-intro .md-content.richtext p:empty{display:none}
-body.featured-area-intro .md-content.richtext :is(strong,b),body.featured-area-intro .md-content.richtext p :is(strong,b) *{color:#22334b!important;font-weight:700!important}
-body.featured-area-intro .md-content.richtext ul{margin:8px 0 20px!important;padding-left:0!important;list-style:none!important}
-body.featured-area-intro .md-content.richtext li{position:relative;padding-left:28px!important;margin:0 0 10px!important;list-style:none!important}
-body.featured-area-intro .md-content.richtext li::before{content:"";position:absolute;left:4px;top:.62em;width:8px;height:8px;border-radius:50%;background:#dfb766}
-body.featured-area-intro .md-content.richtext a{color:#b8913f!important;text-decoration:underline!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .page-content>.md-content.richtext{padding:56px 0!important;margin:0!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .page-content>.md-content.richtext .mg-container{max-width:896px!important;padding:0 16px!important;box-sizing:border-box}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext h2,body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext h2 *{font-size:30px!important;line-height:1.2!important;font-weight:700!important;color:#22334b!important;margin:0 0 20px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext h3,body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext h3 *{font-size:22px!important;line-height:1.3!important;font-weight:700!important;color:#22334b!important;margin:28px 0 8px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext p,body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext li,body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext p *,body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext li *{font-size:18px!important;line-height:1.7!important;color:#4b5563!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext p{margin:0 0 20px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext p:empty{display:none}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext :is(strong,b),body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext p :is(strong,b) *{color:#22334b!important;font-weight:700!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext ul{margin:8px 0 20px!important;padding-left:0!important;list-style:none!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext li{position:relative;padding-left:28px!important;margin:0 0 10px!important;list-style:none!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext li::before{content:"";position:absolute;left:4px;top:.62em;width:8px;height:8px;border-radius:50%;background:#dfb766}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext a{color:#b8913f!important;text-decoration:underline!important}
 /* Listing / sold / market blocks: shared section heading style */
-body.featured-area-intro .page-content>:is(.md-house,.md-market-trends,.md-house-detail,.md-testimonial,.md-form,.md-map,.md-nbr-local,.md-nbr-demographics,.md-nbr-form) :is(.mg-title,.site-title) h2{font-family:var(--ck-head)!important;font-size:30px!important;line-height:36px!important;font-weight:700!important;color:#22334b!important;letter-spacing:normal!important;text-transform:none!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .page-content>:is(.md-house,.md-market-trends,.md-house-detail,.md-testimonial,.md-form,.md-map,.md-nbr-local,.md-nbr-demographics,.md-nbr-form) :is(.mg-title,.site-title) h2{font-family:var(--ck-head)!important;font-size:30px!important;line-height:36px!important;font-weight:700!important;color:#22334b!important;letter-spacing:normal!important;text-transform:none!important}
 @media(min-width:640px){
- body.featured-area-intro .md-nbr-info .nbr-desc h1,body.featured-area-intro .md-nbr-info .nbr-desc h1 *{font-size:48px!important}
- body.featured-area-intro .md-content.richtext h2,body.featured-area-intro .md-content.richtext h2 *{font-size:36px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-desc h1,body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-desc h1 *{font-size:48px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext h2,body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext h2 *{font-size:36px!important}
 }
 @media(min-width:1024px){
- body.featured-area-intro .page-content>.md-nbr-info{padding:72px 0 64px!important}
- body.featured-area-intro .md-nbr-info .nbr-desc h1,body.featured-area-intro .md-nbr-info .nbr-desc h1 *{font-size:56px!important}
- body.featured-area-intro .md-nbr-info .md-nbr-info__number{grid-template-columns:repeat(4,minmax(0,1fr))}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .page-content>.md-nbr-info{padding:72px 0 64px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-desc h1,body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-desc h1 *{font-size:56px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .md-nbr-info__number{grid-template-columns:repeat(4,minmax(0,1fr))}
 }
 /* §12 polish: empty spacer paragraphs (flagged .ckg-empty by ckg.js), bold sub-heads, hero MORE spacing, testimonials on cream like the homepage */
-body.featured-area-intro .md-content.richtext p.ckg-empty{display:none!important}
-body.featured-area-intro .md-content.richtext p>strong:first-child,body.featured-area-intro .md-content.richtext p>b:first-child{font-size:20px!important;line-height:1.5!important}
-body.featured-area-intro .md-content.richtext h2+p,body.featured-area-intro .md-content.richtext ul+p{margin-top:0!important}
-body.featured-area-intro .md-content.richtext p:has(+ul){margin-bottom:4px!important}
-body.featured-area-intro .md-nbr-info .view-more.fold .view-more-content p:first-of-type{margin-bottom:8px!important}
-body.featured-area-intro .page-content>.md-testimonial .testimonial-frame{background:#f4f3f2!important;background-image:none!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext p.ckg-empty{display:none!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext p>strong:first-child,body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext p>b:first-child{font-size:20px!important;line-height:1.5!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext h2+p,body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext ul+p{margin-top:0!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-content.richtext p:has(+ul){margin-bottom:4px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .view-more.fold .view-more-content p:first-of-type{margin-bottom:8px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .page-content>.md-testimonial .testimonial-frame{background:#f4f3f2!important;background-image:none!important}
 /* City pages whose intro copy has no H1 of its own keep Lofty's city-name H1 as the big white heading */
-body.featured-area-intro .md-nbr-info .md-nbr-info__box:not(:has(.nbr-desc h1)) .nbr-name{font-family:var(--ck-head)!important;font-size:44px!important;line-height:1.2!important;font-weight:700!important;letter-spacing:normal!important;text-transform:none!important;color:#fff!important;margin:0 0 24px!important}
-body.featured-area-intro .md-nbr-info .nbr-name{text-align:center!important;width:100%!important}
-body.featured-area-intro .md-nbr-info .view-more-content{color:rgba(255,255,255,.9)!important;font-size:18px!important;line-height:1.625!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .md-nbr-info__box:not(:has(.nbr-desc h1)) .nbr-name{font-family:var(--ck-head)!important;font-size:44px!important;line-height:1.2!important;font-weight:700!important;letter-spacing:normal!important;text-transform:none!important;color:#fff!important;margin:0 0 24px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-name{text-align:center!important;width:100%!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .view-more-content{color:rgba(255,255,255,.9)!important;font-size:18px!important;line-height:1.625!important}
 /* §12b City page template pieces injected by ckg.js: hero buttons + office line, table of contents, agent card. Fixed heights + space reserved before injection = no layout shift. */
-body.featured-area-intro .ckg-city-cta{height:128px;display:flex;flex-direction:column;justify-content:flex-start;gap:16px;margin:28px 0 0;box-sizing:border-box}
-body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:156px!important}
-body.featured-area-intro .ckg-city-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-body.featured-area-intro .ckg-city-btns .ckg-btn{padding:12px 28px!important;font-size:17px!important;line-height:28px}
-body.featured-area-intro .ckg-office,body.featured-area-intro .ckg-office a{font-family:var(--ck-sans)!important;font-size:15px!important;line-height:22px!important;color:rgba(255,255,255,.8)!important;text-align:center!important;margin:0!important}
-body.featured-area-intro .ckg-office a{color:#dfb766!important;text-decoration:underline!important}
-body.featured-area-intro .ckg-toc{min-height:56px;margin:32px 0 0;display:flex;align-items:center;justify-content:center;gap:12px;border-top:1px solid rgba(255,255,255,.15);padding-top:16px;box-sizing:content-box}
-body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-toc)){padding-bottom:105px!important}
-body.featured-area-intro .ckg-toc-label{flex:0 0 auto;font-family:var(--ck-sans);font-size:12px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#dfb766}
-body.featured-area-intro .ckg-toc-links{display:flex;flex-wrap:wrap;gap:8px;padding:4px 0}
-body.featured-area-intro .ckg-toc-links::-webkit-scrollbar{display:none}
-body.featured-area-intro .ckg-toc-links a{flex:0 0 auto;font-family:var(--ck-sans)!important;font-size:14px!important;line-height:20px;font-weight:500;color:#fff!important;padding:8px 16px;border-radius:9999px;border:1px solid rgba(255,255,255,.3);text-decoration:none!important;transition:background-color .2s,border-color .2s}
-body.featured-area-intro .ckg-toc-links a:hover{background:rgba(223,183,102,.15);border-color:#dfb766}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-anchor,body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-agent{scroll-margin-top:96px}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-agent{display:flex;gap:28px;align-items:center;background:#f4f3f2;border:1px solid #ece9e4;border-radius:16px;padding:28px;margin:40px 0 0;text-align:left}
-body:is(.featured-area-intro,:has(.ckg-fk)) .page-content>.md-content.richtext:nth-of-type(even) .ckg-agent{background:#fff}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-agent img{width:140px;height:140px;border-radius:50%;object-fit:cover;flex:0 0 auto;border:3px solid #dfb766}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-agent.ckg-agent .ckg-agent-kicker{font-size:12px!important;line-height:16px!important;font-weight:600!important;letter-spacing:.15em;text-transform:uppercase;color:#b8913f!important;margin:0 0 4px!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-agent.ckg-agent .ckg-agent-name{font-family:var(--ck-head)!important;font-size:26px!important;line-height:32px!important;font-weight:700!important;color:#22334b!important;margin:0 0 4px!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-agent.ckg-agent .ckg-agent-role{font-size:14px!important;line-height:20px!important;color:#6b7280!important;margin:0 0 12px!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-agent.ckg-agent .ckg-agent-text{font-size:17px!important;line-height:1.6!important;color:#4b5563!important;margin:0 0 16px!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-agent-links{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-agent.ckg-agent a.ckg-btn{color:#fff!important;text-decoration:none!important;padding:10px 24px!important;font-size:16px!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-agent.ckg-agent a.ckg-textlink{font-size:16px!important;color:#22334b!important;font-weight:600;text-decoration:none!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-city-cta{height:128px;display:flex;flex-direction:column;justify-content:flex-start;gap:16px;margin:28px 0 0;box-sizing:border-box}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:156px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-city-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-city-btns .ckg-btn{padding:12px 28px!important;font-size:17px!important;line-height:28px}
+body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-office,body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-office a{font-family:var(--ck-sans)!important;font-size:15px!important;line-height:22px!important;color:rgba(255,255,255,.8)!important;text-align:center!important;margin:0!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-office a{color:#dfb766!important;text-decoration:underline!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc{min-height:56px;margin:32px 0 0;display:flex;align-items:center;justify-content:center;gap:12px;border-top:1px solid rgba(255,255,255,.15);padding-top:16px;box-sizing:content-box}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info__box:not(:has(.ckg-toc)){padding-bottom:105px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-label{flex:0 0 auto;font-family:var(--ck-sans);font-size:12px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;color:#dfb766}
+body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-links{display:flex;flex-wrap:wrap;gap:8px;padding:4px 0}
+body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-links::-webkit-scrollbar{display:none}
+body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-links a{flex:0 0 auto;font-family:var(--ck-sans)!important;font-size:14px!important;line-height:20px;font-weight:500;color:#fff!important;padding:8px 16px;border-radius:9999px;border:1px solid rgba(255,255,255,.3);text-decoration:none!important;transition:background-color .2s,border-color .2s}
+body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-links a:hover{background:rgba(223,183,102,.15);border-color:#dfb766}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-anchor,body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-agent{scroll-margin-top:96px}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-agent{display:flex;gap:28px;align-items:center;background:#f4f3f2;border:1px solid #ece9e4;border-radius:16px;padding:28px;margin:40px 0 0;text-align:left}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .page-content>.md-content.richtext:nth-of-type(even) .ckg-agent{background:#fff}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-agent img{width:140px;height:140px;border-radius:50%;object-fit:cover;flex:0 0 auto;border:3px solid #dfb766}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-agent.ckg-agent .ckg-agent-kicker{font-size:12px!important;line-height:16px!important;font-weight:600!important;letter-spacing:.15em;text-transform:uppercase;color:#b8913f!important;margin:0 0 4px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-agent.ckg-agent .ckg-agent-name{font-family:var(--ck-head)!important;font-size:26px!important;line-height:32px!important;font-weight:700!important;color:#22334b!important;margin:0 0 4px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-agent.ckg-agent .ckg-agent-role{font-size:14px!important;line-height:20px!important;color:#6b7280!important;margin:0 0 12px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-agent.ckg-agent .ckg-agent-text{font-size:17px!important;line-height:1.6!important;color:#4b5563!important;margin:0 0 16px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-agent-links{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-agent.ckg-agent a.ckg-btn{color:#fff!important;text-decoration:none!important;padding:10px 24px!important;font-size:16px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-agent.ckg-agent a.ckg-textlink{font-size:16px!important;color:#22334b!important;font-weight:600;text-decoration:none!important}
 @media(max-width:639px){
- body.featured-area-intro .ckg-city-cta{height:196px}
- body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:224px!important}
- body.featured-area-intro .ckg-city-btns{flex-direction:column;gap:12px}
- body.featured-area-intro .ckg-city-btns .ckg-btn{width:100%}
- body.featured-area-intro .ckg-toc{flex-direction:column;align-items:flex-start;min-height:88px;gap:8px}
- body.featured-area-intro .ckg-toc-links{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent)}
- body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-toc)){padding-bottom:137px!important}
- body.featured-area-intro .ckg-toc-links{width:100%}
- body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-agent{flex-direction:column;text-align:center;padding:24px}
- body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-agent-links{justify-content:center}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-city-cta{height:196px}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:224px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-city-btns{flex-direction:column;gap:12px}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-city-btns .ckg-btn{width:100%}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc{flex-direction:column;align-items:flex-start;min-height:88px;gap:8px}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-links{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent)}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info__box:not(:has(.ckg-toc)){padding-bottom:137px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-links{width:100%}
+ body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-agent{flex-direction:column;text-align:center;padding:24px}
+ body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-agent-links{justify-content:center}
 }
-body.featured-area-intro .md-nbr-info .more-btn{margin:0!important;line-height:24px}
-body.featured-area-intro .md-nbr-info .view-more{margin-bottom:0!important;padding-bottom:0!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .more-btn{margin:0!important;line-height:24px}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .view-more{margin-bottom:0!important;padding-bottom:0!important}
 /* §12c City content blocks (Embed): local guide section + FAQ accordion. Same reading column as the rich-text sections. */
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-citysec{padding:56px 0}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-citywrap{max-width:896px;margin:0 auto;padding:0 16px;box-sizing:border-box;text-align:left}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-citysec h2{font-family:var(--ck-head)!important;font-size:30px!important;line-height:1.2!important;font-weight:700!important;color:#22334b!important;margin:0 0 20px!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-citysec h3{font-family:var(--ck-head)!important;font-size:22px!important;line-height:1.3!important;font-weight:700!important;color:#22334b!important;margin:32px 0 10px!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-citysec p,body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-citysec li{font-family:var(--ck-sans)!important;font-size:18px!important;line-height:1.7!important;color:#4b5563!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-citysec p{margin:0 0 16px!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-citysec strong{color:#22334b!important;font-weight:700}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-citysec ul{list-style:none!important;margin:0 0 16px!important;padding:0!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-citysec li{position:relative;padding-left:28px!important;margin:0 0 10px!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-citysec li::before{content:"";position:absolute;left:4px;top:.62em;width:8px;height:8px;border-radius:50%;background:#dfb766}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-citysec a{color:#b8913f!important;text-decoration:underline!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-faq{background:#fff;border:1px solid #ece9e4;border-radius:12px;margin:0 0 12px;overflow:hidden}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-faq summary{cursor:pointer;list-style:none;font-family:var(--ck-head);font-size:19px;line-height:1.4;font-weight:700;color:#22334b;padding:18px 56px 18px 22px;position:relative}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-faq summary::-webkit-details-marker{display:none}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-faq summary::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);font-size:26px;font-weight:400;color:#dfb766}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-faq[open] summary::after{content:"\2212"}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-faq>div{padding:0 22px 6px}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-faq>div p{font-size:17px!important}
-@media(min-width:640px){body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-citysec h2{font-size:36px!important}}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-citysec{padding:56px 0}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-citywrap{max-width:896px;margin:0 auto;padding:0 16px;box-sizing:border-box;text-align:left}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-citysec h2{font-family:var(--ck-head)!important;font-size:30px!important;line-height:1.2!important;font-weight:700!important;color:#22334b!important;margin:0 0 20px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-citysec h3{font-family:var(--ck-head)!important;font-size:22px!important;line-height:1.3!important;font-weight:700!important;color:#22334b!important;margin:32px 0 10px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-citysec p,body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-citysec li{font-family:var(--ck-sans)!important;font-size:18px!important;line-height:1.7!important;color:#4b5563!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-citysec p{margin:0 0 16px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-citysec strong{color:#22334b!important;font-weight:700}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-citysec ul{list-style:none!important;margin:0 0 16px!important;padding:0!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-citysec li{position:relative;padding-left:28px!important;margin:0 0 10px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-citysec li::before{content:"";position:absolute;left:4px;top:.62em;width:8px;height:8px;border-radius:50%;background:#dfb766}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-citysec a{color:#b8913f!important;text-decoration:underline!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-faq{background:#fff;border:1px solid #ece9e4;border-radius:12px;margin:0 0 12px;overflow:hidden}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-faq summary{cursor:pointer;list-style:none;font-family:var(--ck-head);font-size:19px;line-height:1.4;font-weight:700;color:#22334b;padding:18px 56px 18px 22px;position:relative}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-faq summary::-webkit-details-marker{display:none}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-faq summary::after{content:"+";position:absolute;right:22px;top:50%;transform:translateY(-50%);font-size:26px;font-weight:400;color:#dfb766}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-faq[open] summary::after{content:"\2212"}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-faq>div{padding:0 22px 6px}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-faq>div p{font-size:17px!important}
+@media(min-width:640px){body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-citysec h2{font-size:36px!important}}
 
 /* §12d Nov 1 hero rework (Yuris: on phones the intro collapsed after load and the TOC was 2 screens down). Intro: H1 + first paragraph shown from first paint, the rest hidden by CSS (not by Lofty's late JS fold); our Read more toggle sits in space reserved up front. Lofty's More button hidden. */
-body.featured-area-intro .md-nbr-info .view-more .view-more-content{height:auto!important;max-height:none!important;overflow:visible!important}
-body.featured-area-intro .md-nbr-info .view-more .view-more-content::after{display:none!important}
-body.featured-area-intro .md-nbr-info .more-btn{display:none!important}
-body.featured-area-intro .md-nbr-info .nbr-desc{position:relative}
-body.featured-area-intro .md-nbr-info .nbr-desc:has(.view-more-content>p){padding-bottom:32px!important}
-body.featured-area-intro .ckg-readmore{position:absolute;left:0;right:0;bottom:0;margin:0 auto;height:28px;background:none;border:0;padding:0;cursor:pointer;font-family:var(--ck-sans);font-size:15px;font-weight:600;color:#dfb766;text-decoration:underline;text-underline-offset:3px}
-body.featured-area-intro .ckg-readmore{width:max-content}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .view-more .view-more-content{height:auto!important;max-height:none!important;overflow:visible!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .view-more .view-more-content::after{display:none!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .more-btn{display:none!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-desc{position:relative}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-desc:has(.view-more-content>p){padding-bottom:32px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-readmore{position:absolute;left:0;right:0;bottom:0;margin:0 auto;height:28px;background:none;border:0;padding:0;cursor:pointer;font-family:var(--ck-sans);font-size:15px;font-weight:600;color:#dfb766;text-decoration:underline;text-underline-offset:3px}
+body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-readmore{width:max-content}
 /* Mobile TOC (dropdown inside the CTA block) hidden on desktop; desktop pills hidden on phones */
-body.featured-area-intro .ckg-toc-m{display:none}
+body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-m{display:none}
 @media(max-width:639px){
- body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-toc)){padding-bottom:0!important}
- body.featured-area-intro .ckg-toc{display:none!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info__box:not(:has(.ckg-toc)){padding-bottom:0!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc{display:none!important}
  /* CTA block = buttons 106 + office 40 + TOC summary 48 + gaps 24 = fixed 218px; reserved before injection */
- body.featured-area-intro .ckg-city-cta{height:auto;min-height:218px;gap:12px;margin:24px 0 0}
- body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:242px!important}
- body.featured-area-intro .ckg-city-btns{gap:10px}
- body.featured-area-intro .ckg-city-btns .ckg-btn{height:48px;padding:0 20px!important;font-size:16px!important}
- body.featured-area-intro .ckg-office{height:40px;overflow:hidden;font-size:14px!important;line-height:20px!important}
- body.featured-area-intro .ckg-office a{font-size:14px!important;line-height:20px!important}
- body.featured-area-intro .ckg-office-long{display:none}
- body.featured-area-intro .ckg-toc-m{display:block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:10px;text-align:left}
- body.featured-area-intro .ckg-toc-m summary{height:46px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;cursor:pointer;list-style:none;font-family:var(--ck-sans);font-size:15px;font-weight:600;color:#fff}
- body.featured-area-intro .ckg-toc-m summary::-webkit-details-marker{display:none}
- body.featured-area-intro .ckg-toc-m summary::after{content:"";width:9px;height:9px;border-right:2px solid #dfb766;border-bottom:2px solid #dfb766;transform:rotate(45deg) translateY(-3px)}
- body.featured-area-intro .ckg-toc-m[open] summary::after{transform:rotate(-135deg) translateY(-3px)}
- body.featured-area-intro .ckg-toc-m-list{display:flex;flex-direction:column;padding:4px 8px 10px}
- body.featured-area-intro .ckg-toc-m-list a{font-family:var(--ck-sans)!important;font-size:16px!important;line-height:22px;color:#fff!important;text-decoration:none!important;padding:10px 8px;border-top:1px solid rgba(255,255,255,.12)}
- body.featured-area-intro .ckg-toc-m-list a:first-child{border-top:0}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-city-cta{height:auto;min-height:218px;gap:12px;margin:24px 0 0}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:242px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-city-btns{gap:10px}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-city-btns .ckg-btn{height:48px;padding:0 20px!important;font-size:16px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-office{height:40px;overflow:hidden;font-size:14px!important;line-height:20px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-office a{font-size:14px!important;line-height:20px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-office-long{display:none}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-m{display:block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:10px;text-align:left}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-m summary{height:46px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;cursor:pointer;list-style:none;font-family:var(--ck-sans);font-size:15px;font-weight:600;color:#fff}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-m summary::-webkit-details-marker{display:none}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-m summary::after{content:"";width:9px;height:9px;border-right:2px solid #dfb766;border-bottom:2px solid #dfb766;transform:rotate(45deg) translateY(-3px)}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-m[open] summary::after{transform:rotate(-135deg) translateY(-3px)}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-m-list{display:flex;flex-direction:column;padding:4px 8px 10px}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-m-list a{font-family:var(--ck-sans)!important;font-size:16px!important;line-height:22px;color:#fff!important;text-decoration:none!important;padding:10px 8px;border-top:1px solid rgba(255,255,255,.12)}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-m-list a:first-child{border-top:0}
  /* Compact stats on phones */
- body.featured-area-intro .md-nbr-info .md-nbr-info__number{gap:10px;margin-top:24px!important}
- body.featured-area-intro .md-nbr-info .md-nbr-info__number .item{padding:12px 8px!important;gap:2px}
- body.featured-area-intro .md-nbr-info .md-nbr-info__number .icon{display:none!important}
- body.featured-area-intro .md-nbr-info .md-nbr-info__number .label{font-size:20px!important;line-height:26px!important}
- body.featured-area-intro .md-nbr-info .md-nbr-info__number .title,body.featured-area-intro .md-nbr-info .md-nbr-info__number .title *{font-size:11px!important;line-height:14px!important}
- body.featured-area-intro .page-content>.md-nbr-info{padding:32px 0 28px!important}
- body.featured-area-intro .md-nbr-info .nbr-desc h1,body.featured-area-intro .md-nbr-info .nbr-desc h1 *{font-size:30px!important;margin-bottom:16px!important}
- body.featured-area-intro .md-nbr-info .nbr-desc p,body.featured-area-intro .md-nbr-info .nbr-desc p *{font-size:16px!important}
- body.featured-area-intro .md-nbr-info .nbr-name{margin-bottom:10px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .md-nbr-info__number{gap:10px;margin-top:24px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .md-nbr-info__number .item{padding:12px 8px!important;gap:2px}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .md-nbr-info__number .icon{display:none!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .md-nbr-info__number .label{font-size:20px!important;line-height:26px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .md-nbr-info__number .title,body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .md-nbr-info__number .title *{font-size:11px!important;line-height:14px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .page-content>.md-nbr-info{padding:32px 0 28px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-desc h1,body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-desc h1 *{font-size:30px!important;margin-bottom:16px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-desc p,body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-desc p *{font-size:16px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-name{margin-bottom:10px!important}
 }
 /* Lofty sets pre-wrap on the intro, so the newlines between the hidden paragraphs rendered as ~60px of blank lines */
-body.featured-area-intro .md-nbr-info .view-more-content:has(>p){white-space:normal!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .view-more-content:has(>p){white-space:normal!important}
 @media(max-width:639px){
  /* Phones: first paragraph clamped to 4 lines until Read more */
 }
 
 /* §12e Nov 1: one TOC control at every width = the "On this page" dropdown under the hero buttons (desktop pills retired: they sat below the fold). Desktop CTA block = buttons 52 + office 22 + dropdown 48 + gaps 24 = fixed 146px. */
-body.featured-area-intro .ckg-office-short{display:none}
-body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-toc)){padding-bottom:0!important}
-body.featured-area-intro .ckg-toc{display:none!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-office-short{display:none}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info__box:not(:has(.ckg-toc)){padding-bottom:0!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc{display:none!important}
 @media(min-width:640px){
- body.featured-area-intro .ckg-city-cta{height:auto;min-height:146px;gap:12px;margin:24px 0 0}
- body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:170px!important}
- body.featured-area-intro .ckg-city-btns .ckg-btn{height:52px;padding:0 28px!important}
- body.featured-area-intro .ckg-office{height:22px;overflow:hidden}
- body.featured-area-intro .ckg-toc-m{display:block;width:100%;max-width:440px;margin:0 auto;position:relative;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:10px;text-align:left}
- body.featured-area-intro .ckg-toc-m summary{height:46px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;cursor:pointer;list-style:none;font-family:var(--ck-sans);font-size:15px;font-weight:600;color:#fff}
- body.featured-area-intro .ckg-toc-m summary::-webkit-details-marker{display:none}
- body.featured-area-intro .ckg-toc-m summary::after{content:"";width:9px;height:9px;border-right:2px solid #dfb766;border-bottom:2px solid #dfb766;transform:rotate(45deg) translateY(-3px)}
- body.featured-area-intro .ckg-toc-m[open] summary::after{transform:rotate(-135deg) translateY(-3px)}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-city-cta{height:auto;min-height:146px;gap:12px;margin:24px 0 0}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:170px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-city-btns .ckg-btn{height:52px;padding:0 28px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-office{height:22px;overflow:hidden}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-m{display:block;width:100%;max-width:440px;margin:0 auto;position:relative;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:10px;text-align:left}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-m summary{height:46px;display:flex;align-items:center;justify-content:space-between;padding:0 16px;cursor:pointer;list-style:none;font-family:var(--ck-sans);font-size:15px;font-weight:600;color:#fff}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-m summary::-webkit-details-marker{display:none}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-m summary::after{content:"";width:9px;height:9px;border-right:2px solid #dfb766;border-bottom:2px solid #dfb766;transform:rotate(45deg) translateY(-3px)}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-m[open] summary::after{transform:rotate(-135deg) translateY(-3px)}
  /* desktop: list opens as an overlay so the hero doesn't grow */
- body.featured-area-intro .ckg-toc-m-list{position:absolute;left:-1px;right:-1px;top:100%;z-index:20;display:flex;flex-direction:column;padding:6px 8px 10px;background:#2a3d58;border:1px solid rgba(255,255,255,.25);border-top:0;border-radius:0 0 10px 10px;box-shadow:0 12px 24px rgba(0,0,0,.25)}
- body.featured-area-intro .ckg-toc-m[open]{border-radius:10px 10px 0 0}
- body.featured-area-intro .ckg-toc-m-list a{font-family:var(--ck-sans)!important;font-size:15px!important;line-height:20px;color:#fff!important;text-decoration:none!important;padding:9px 8px;border-top:1px solid rgba(255,255,255,.12)}
- body.featured-area-intro .ckg-toc-m-list a:first-child{border-top:0}
- body.featured-area-intro .ckg-toc-m-list a:hover{color:#dfb766!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-m-list{position:absolute;left:-1px;right:-1px;top:100%;z-index:20;display:flex;flex-direction:column;padding:6px 8px 10px;background:#2a3d58;border:1px solid rgba(255,255,255,.25);border-top:0;border-radius:0 0 10px 10px;box-shadow:0 12px 24px rgba(0,0,0,.25)}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-m[open]{border-radius:10px 10px 0 0}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-m-list a{font-family:var(--ck-sans)!important;font-size:15px!important;line-height:20px;color:#fff!important;text-decoration:none!important;padding:9px 8px;border-top:1px solid rgba(255,255,255,.12)}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-m-list a:first-child{border-top:0}
+ body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc-m-list a:hover{color:#dfb766!important}
 }
-@media(max-width:639px){body.featured-area-intro .ckg-office-short{display:inline}}
+@media(max-width:639px){body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-office-short{display:inline}}
 /* Reservation must include the stats' own top margin (it collapses into the reserved margin before injection): phone 24+218+24, desktop 24+146+40 */
-@media(max-width:639px){body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:266px!important}}
-@media(min-width:640px){body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:210px!important}}
+@media(max-width:639px){body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:266px!important}}
+@media(min-width:640px){body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:210px!important}}
 
 /* ===== §12f Nov 1 (v3): nothing is injected into the hero any more (Lofty re-renders md-nbr-info ~2s after load and wiped script-added nodes: flicker + dead dropdown). Hero = H1 + full intro + stats, all Lofty's own markup, no fold. Buttons + "On This Page" box live in an Embed block right after the hero (in the page HTML, readable by Google). ===== */
-body.featured-area-intro .md-nbr-info .view-more .view-more-content>*{display:block!important}
-body.featured-area-intro .md-nbr-info .view-more .view-more-content>p:first-of-type{display:block!important;-webkit-line-clamp:unset!important;overflow:visible!important}
-body.featured-area-intro .md-nbr-info .more-btn,body.featured-area-intro .ckg-readmore,body.featured-area-intro .ckg-city-cta,body.featured-area-intro .ckg-toc{display:none!important}
-body.featured-area-intro .md-nbr-info .nbr-desc,body.featured-area-intro .md-nbr-info .nbr-desc:has(.view-more-content>p){padding-bottom:0!important;margin-bottom:0!important}
-body.featured-area-intro .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:0!important}
-body.featured-area-intro .md-nbr-info .nbr-desc p:last-child{margin-bottom:0!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .view-more .view-more-content>*{display:block!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .view-more .view-more-content>p:first-of-type{display:block!important;-webkit-line-clamp:unset!important;overflow:visible!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .more-btn,body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-readmore,body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-city-cta,body:is(.featured-area-intro,.featured-area-intro-v2) .ckg-toc{display:none!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-desc,body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-desc:has(.view-more-content>p){padding-bottom:0!important;margin-bottom:0!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info__box:not(:has(.ckg-city-cta)) .nbr-desc{margin-bottom:0!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .md-nbr-info .nbr-desc p:last-child{margin-bottom:0!important}
 /* hero's bottom padding moves to the jump block so they read as one band */
-body:is(.featured-area-intro,:has(.ckg-fk)) .page-content>.md-nbr-info:has(+.md-custom-code .ckg-jump){padding-bottom:0!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-jump{background:var(--ck-grad);padding:32px 0 56px}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-jump-wrap{max-width:960px;margin:0 auto;padding:0 16px;box-sizing:border-box}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-jump-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-jump-cta .ckg-btn{padding:12px 28px!important;font-size:17px!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-jump-office,body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-jump-office a{font-family:var(--ck-sans)!important;font-size:15px!important;line-height:22px!important;color:rgba(255,255,255,.8)!important;text-align:center!important;margin:14px 0 0!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-jump-office a{color:#dfb766!important;text-decoration:underline!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-tocbox{background:#fff;border-radius:14px;border-top:4px solid #dfb766;box-shadow:0 10px 30px rgba(0,0,0,.25);padding:24px 28px;margin:32px auto 0;max-width:760px;text-align:left}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-tocbox .ckg-tocbox-title{font-family:var(--ck-head)!important;font-size:22px!important;line-height:28px!important;font-weight:700!important;color:#22334b!important;margin:0 0 14px!important;text-align:left!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-tocbox ol{list-style:none;counter-reset:toc;margin:0;padding:0;columns:2;column-gap:32px}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-tocbox li{counter-increment:toc;break-inside:avoid;margin:0;padding:0}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-tocbox li a{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid #f0ede8;font-family:var(--ck-sans)!important;font-size:16px!important;line-height:22px!important;color:#22334b!important;text-decoration:none!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-tocbox li a::before{content:counter(toc);flex:0 0 22px;height:22px;border-radius:50%;background:#f4f3f2;color:#b8913f;font-size:12px;font-weight:700;line-height:22px;text-align:center}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-tocbox li a:hover{color:#b8913f!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .page-content>.md-nbr-info:has(+.md-custom-code .ckg-jump){padding-bottom:0!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-jump{background:var(--ck-grad);padding:32px 0 56px}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-jump-wrap{max-width:960px;margin:0 auto;padding:0 16px;box-sizing:border-box}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-jump-cta{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-jump-cta .ckg-btn{padding:12px 28px!important;font-size:17px!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-jump-office,body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-jump-office a{font-family:var(--ck-sans)!important;font-size:15px!important;line-height:22px!important;color:rgba(255,255,255,.8)!important;text-align:center!important;margin:14px 0 0!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-jump-office a{color:#dfb766!important;text-decoration:underline!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-tocbox{background:#fff;border-radius:14px;border-top:4px solid #dfb766;box-shadow:0 10px 30px rgba(0,0,0,.25);padding:24px 28px;margin:32px auto 0;max-width:760px;text-align:left}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-tocbox .ckg-tocbox-title{font-family:var(--ck-head)!important;font-size:22px!important;line-height:28px!important;font-weight:700!important;color:#22334b!important;margin:0 0 14px!important;text-align:left!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-tocbox ol{list-style:none;counter-reset:toc;margin:0;padding:0;columns:2;column-gap:32px}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-tocbox li{counter-increment:toc;break-inside:avoid;margin:0;padding:0}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-tocbox li a{display:flex;gap:10px;align-items:baseline;padding:8px 0;border-bottom:1px solid #f0ede8;font-family:var(--ck-sans)!important;font-size:16px!important;line-height:22px!important;color:#22334b!important;text-decoration:none!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-tocbox li a::before{content:counter(toc);flex:0 0 22px;height:22px;border-radius:50%;background:#f4f3f2;color:#b8913f;font-size:12px;font-weight:700;line-height:22px;text-align:center}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-tocbox li a:hover{color:#b8913f!important}
 @media(max-width:639px){
- body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-jump{padding:24px 0 40px}
- body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-jump-cta{flex-direction:column;gap:10px}
- body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-jump-cta .ckg-btn{width:100%;font-size:16px!important}
- body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-jump-office,body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-jump-office a{font-size:14px!important;line-height:20px!important}
- body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-tocbox{padding:20px 18px;margin-top:24px}
- body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-tocbox ol{columns:1}
- body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-tocbox li a{padding:10px 0}
+ body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-jump{padding:24px 0 40px}
+ body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-jump-cta{flex-direction:column;gap:10px}
+ body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-jump-cta .ckg-btn{width:100%;font-size:16px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-jump-office,body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-jump-office a{font-size:14px!important;line-height:20px!important}
+ body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-tocbox{padding:20px 18px;margin-top:24px}
+ body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-tocbox ol{columns:1}
+ body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-tocbox li a{padding:10px 0}
 }
 /* Lofty stores some city-block titles in lowercase ("housing detail", "demographics") and the housing-detail title isn't editable; our headings drop Lofty's uppercase transform, so capitalize these */
-body.featured-area-intro .page-content>:is(.md-house-detail,.md-nbr-demographics) :is(.mg-title,.site-title) h2{text-transform:capitalize!important}
+body:is(.featured-area-intro,.featured-area-intro-v2) .page-content>:is(.md-house-detail,.md-nbr-demographics) :is(.mg-title,.site-title) h2{text-transform:capitalize!important}
 /* Lofty "layout4" lead form (city pages) shows each field twice: a label above and the same word as a bold placeholder inside. Keep the labels (required asterisks, accessibility), hide the duplicate placeholders. */
 .md-form.layout4 input::placeholder,.md-form.layout4 textarea::placeholder{color:transparent!important;opacity:0!important}
 /* ...and make the fields read as fields: navy labels, white boxed inputs (were faint labels over a thin underline) */
@@ -807,10 +807,10 @@ body:has(.ckg-fk) .ckg-fk-steps>li::after{content:"";position:absolute;left:19px
 body:has(.ckg-fk) .ckg-fk-steps h3{margin:6px 0 6px!important;font-size:20px!important}
 /* guides grid */
 .ckg-fk-guides{display:grid;grid-template-columns:1fr;gap:10px;margin:8px 0 0;padding:0;list-style:none}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-fk-guides li{margin:0!important;padding:0!important;list-style:none}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-fk-guides li::before{display:none!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-fk-guides a{display:block;background:#fff;border:1px solid #ece9e4;border-radius:10px;padding:14px 16px;font-family:var(--ck-sans)!important;font-size:16px!important;font-weight:600;color:#22334b!important;text-decoration:none!important}
-body:is(.featured-area-intro,:has(.ckg-fk)) .ckg-fk-guides a:hover{border-color:#dfb766;color:#b8913f!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-fk-guides li{margin:0!important;padding:0!important;list-style:none}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-fk-guides li::before{display:none!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-fk-guides a{display:block;background:#fff;border:1px solid #ece9e4;border-radius:10px;padding:14px 16px;font-family:var(--ck-sans)!important;font-size:16px!important;font-weight:600;color:#22334b!important;text-decoration:none!important}
+body:is(.featured-area-intro,.featured-area-intro-v2,:has(.ckg-fk)) .ckg-fk-guides a:hover{border-color:#dfb766;color:#b8913f!important}
 .ckg-fk-note{background:#fff8e8;border-left:4px solid #dfb766;border-radius:8px;padding:14px 18px;margin:8px 0 18px}
 body:has(.ckg-fk) .ckg-fk-note p{margin:0!important;font-size:16px!important}
 /* CTA band */
@@ -834,3 +834,15 @@ body:has(.ckg-fk) .ckg-fk-cta p{color:rgba(255,255,255,.9)!important;font-size:1
 body:has(.ckg-fk) .ckg-fk-top{background:var(--ck-grad)}
 body:has(.ckg-fk) .ckg-fk-top>.ckg-fk-hero,body:has(.ckg-fk) .ckg-fk-top>.ckg-jump{background:transparent!important}
 body:has(.ckg-fk) .ckg-cream .ckg-agent{background:#fff}
+
+/* §14 Newer Lofty area template (body.featured-area-intro-v2, md-area-overview hero) — match the navy town hero */
+body.featured-area-intro-v2 .md-area-overview .banner{background:var(--ck-grad,#22334b)!important;height:auto!important;min-height:0!important;padding:72px 16px 56px!important}
+body.featured-area-intro-v2 .md-area-overview .single-picture,body.featured-area-intro-v2 .md-area-overview .banner-mask,body.featured-area-intro-v2 .md-area-overview .media-shadow,body.featured-area-intro-v2 .md-area-overview div.site-title,body.featured-area-intro-v2 .md-area-overview .more-btn{display:none!important}
+body.featured-area-intro-v2 .md-area-overview .media-content-v2{position:relative!important;inset:auto!important;transform:none!important;height:auto!important;max-width:900px;margin:0 auto!important}
+body.featured-area-intro-v2 .md-area-overview .view-more,body.featured-area-intro-v2 .md-area-overview .view-more-content{position:static!important;max-height:none!important;height:auto!important;overflow:visible!important;-webkit-line-clamp:unset!important;display:block!important}
+body.featured-area-intro-v2 .md-area-overview p.site-title{font-family:var(--ck-sans)!important;font-size:13px!important;letter-spacing:.18em!important;text-transform:uppercase!important;color:#dfb766!important;font-weight:600!important;margin:0 0 14px!important;text-align:center!important}
+body.featured-area-intro-v2 .md-area-overview h1{font-family:var(--ck-head)!important;font-size:44px!important;line-height:1.15!important;font-weight:800!important;color:#fff!important;text-align:center!important;margin:0 auto 18px!important}
+body.featured-area-intro-v2 .md-area-overview h1 *{color:#fff!important;font-size:inherit!important;font-family:inherit!important}
+body.featured-area-intro-v2 .md-area-overview .view-more-content p,body.featured-area-intro-v2 .md-area-overview .view-more-content p *{font-family:var(--ck-sans)!important;font-size:18px!important;line-height:1.65!important;color:rgba(255,255,255,.88)!important;text-align:center!important}
+body.featured-area-intro-v2 .md-area-overview .view-more-content p{max-width:820px;margin:0 auto!important}
+@media (max-width:640px){body.featured-area-intro-v2 .md-area-overview .banner{padding:48px 16px 40px!important}body.featured-area-intro-v2 .md-area-overview h1{font-size:30px!important}body.featured-area-intro-v2 .md-area-overview .view-more-content p{font-size:16px!important}}
