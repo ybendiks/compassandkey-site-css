@@ -157,7 +157,7 @@
 })();
 /* City pages (body.featured-area-intro, all Lofty area intro pages): hero contact buttons + office line, on-page table of contents, agent card, RealEstateAgent schema with the city as areaServed. City name comes from the URL (/vine-grove-KY -> Vine Grove). */
 (function(){
-  var b=document.body;if(!b||!b.classList.contains('featured-area-intro'))return;
+  var b=document.body;if(!b||!(b.classList.contains('featured-area-intro')||b.classList.contains('featured-area-intro-v2')))return;
   var m=location.pathname.match(/^\/([A-Za-z-]+)-KY\/?$/);if(!m)return;
   var CITY=m[1].split('-').map(function(w){return w.charAt(0).toUpperCase()+w.slice(1).toLowerCase();}).join(' ');
   var ETOWN=CITY==='Elizabethtown';
