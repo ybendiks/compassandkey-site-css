@@ -202,7 +202,7 @@
   if(location.hash&&location.hash.length>1){var h0=decodeURIComponent(location.hash.slice(1));setTimeout(function(){if(document.querySelector('.ckg-tocbox a[href="#'+h0+'"]'))go(h0);},1200);}
   function agent(){
     if(document.querySelector('.ckg-agent'))return;
-    var host=document.querySelector('.page-content>.md-content.richtext .mg-container')||document.querySelector('.page-content>.md-house .mg-container');if(!host)return;
+    var host=document.querySelector('.page-content>.md-content.richtext .mg-container')||document.querySelector('.page-content>.md-house .mg-container')||document.querySelector('.page-content>.md-house>.f-col');if(!host)return;
     var d=document.createElement('aside');d.className='ckg-agent';d.id='ckg-agent';
     d.innerHTML='<img src="'+BASE+'img/team/austin-kutz.webp" width="160" height="160" alt="Austin Kutz, Owner / Realtor, Compass and Key Group" loading="lazy">'+
       '<div class="ckg-agent-body"><p class="ckg-agent-kicker">Your '+esc(CITY)+' Realtor</p><p class="ckg-agent-name">Austin Kutz</p>'+
