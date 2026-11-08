@@ -21,6 +21,6 @@ Raw SERP summary (DataForSEO, location "Kentucky,United States"): /home/claude/c
 - FLAG: Boston School's high school (Thomas Nelson) comes from Wikipedia's feeder list. Confirm with Nelson County Schools.
 - FLAG: No Elizabethtown mileage was verified, so the copy says only "west on US-62." Bardstown's "about 12 miles" is from Kentucky Atlas.
 - FLAG: "Homes are mostly rural properties" and the septic, water and flood checks are inferences from a small rural CDP on Lick Creek near the Rolling Fork, not from a housing-stock source.
-- FLAG: The Booker Noe expansion and Beam's Clermont pause (Wikipedia, Dec 2025) were left out because they're time-sensitive and include dollar and job figures. Also check whether the "Beam Suntory" branding is current, since the company now markets as Suntory Global Spirits.
+- FLAG: The Booker Noe expansion and Beam's Clermont pause (Wikipedia, Dec 2025) were left out because they're time-sensitive and include dollar and job figures. Copy avoids the corporate parent name (Beam Suntory, now marketed as Suntory Global Spirits) and calls it "a Jim Beam bourbon distillery". Confirm that wording.
 - Left out: population and area (banned or not useful); Beallsborough history (it's a separate nearby town); Bernheim Forest (the AI overview mentioned it, but no distance from Boston was verified).
 - Not opened (permission timeout): the state economic development press release on Booker Noe (newkentuckyhome.ky.gov) and nelsonsheriff.com.
