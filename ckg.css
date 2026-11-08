@@ -862,3 +862,4 @@ body.landing-page .md-lead-form .lead-form:has(> button.submit.submit-disabled):
 body.landing-page .md-lead-form .lead-form .disclaimer-wrap{order:2}
 body.landing-page .md-lead-form button.submit:not(.submit-disabled){background:#dfb766!important;border-color:#dfb766!important}
 body.landing-page .md-lead-form button.submit:not(.submit-disabled),body.landing-page .md-lead-form button.submit:not(.submit-disabled) *{color:#fff!important}
+body.landing-page .md-lead-form .media-title,body.landing-page .md-lead-form .media-title *,body.landing-page .md-lead-form .media-subtitle,body.landing-page .md-lead-form .media-subtitle *,body.landing-page .md-lead-form .disclaimer-wrap,body.landing-page .md-lead-form .disclaimer-wrap *{-webkit-text-fill-color:#fff!important}
