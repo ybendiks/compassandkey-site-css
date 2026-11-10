@@ -863,3 +863,13 @@ body.landing-page .md-lead-form .lead-form .disclaimer-wrap{order:2}
 body.landing-page .md-lead-form button.submit:not(.submit-disabled){background:#dfb766!important;border-color:#dfb766!important}
 body.landing-page .md-lead-form button.submit:not(.submit-disabled),body.landing-page .md-lead-form button.submit:not(.submit-disabled) *{color:#fff!important}
 body.landing-page .md-lead-form .media-title,body.landing-page .md-lead-form .media-title *,body.landing-page .md-lead-form .media-subtitle,body.landing-page .md-lead-form .media-subtitle *,body.landing-page .md-lead-form .disclaimer-wrap,body.landing-page .md-lead-form .disclaimer-wrap *{-webkit-text-fill-color:#fff!important}
+/* §17 Lofty md-banner hero blocks (/reviews, /myteam, /the-ultimate-homebuyer-checklist): dark overlay + white text from first paint (Style-field navy outranks `color`, so use text-fill) */
+.page-content>.md-banner .banner{position:relative}
+.page-content>.md-banner .banner::before{content:"";position:absolute;inset:0;background:rgba(17,24,39,.55);z-index:1;pointer-events:none}
+.page-content>.md-banner .title-container{position:relative;z-index:2}
+.page-content>.md-banner .title-container,.page-content>.md-banner .title-container *{color:#fff!important;-webkit-text-fill-color:#fff!important;text-shadow:0 2px 12px rgba(0,0,0,.3)}
+.page-content>.md-banner .title.after-line::after{background:#dfb766!important}
+/* Lofty's mobile 'Closely App' install bar (already hidden on the homepage header) */
+.intall-closely-plugin{display:none!important}
+/* /reviews: the contact block repeats Austin's recruiting blurb; not relevant on a reviews page */
+body.reviews .md-form .info-agent .desc{display:none!important}
