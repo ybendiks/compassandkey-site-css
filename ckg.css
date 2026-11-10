@@ -877,3 +877,4 @@ body.reviews .md-form .info-agent .desc{display:none!important}
 body.agent-detail .md-agent-banner .desc,body.agent-detail .md-agent-banner .desc .text{height:auto!important;max-height:none!important;overflow:visible!important}
 body.agent-detail .md-agent-banner .agent-info.mobile .desc{width:100%!important;margin-top:16px!important}
 body.agent-detail .md-agent-banner .read-more{display:none!important}
+body.agent-detail .md-agent-banner .agent-info,body.agent-detail .md-agent-banner .info,body.agent-detail .md-agent-banner .f-col{height:auto!important;max-height:none!important}
