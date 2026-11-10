@@ -873,3 +873,7 @@ body.landing-page .md-lead-form .media-title,body.landing-page .md-lead-form .me
 .intall-closely-plugin{display:none!important}
 /* /reviews: the contact block repeats Austin's recruiting blurb; not relevant on a reviews page */
 body.reviews .md-form .info-agent .desc{display:none!important}
+/* §18 Agent profile pages (/agents/*): Lofty SSRs the bio at height:0 (desktop layout) and collapses it to a 200px "Read More" box after hydration on phones, shoving the listings below (CLS 0.135 on Steve's page). Show the full bio from first paint, full width, no toggle. */
+body.agent-detail .md-agent-banner .desc{height:auto!important;max-height:none!important;overflow:visible!important}
+body.agent-detail .md-agent-banner .agent-info.mobile .desc{width:100%!important;margin-top:16px!important}
+body.agent-detail .md-agent-banner .read-more{display:none!important}
