@@ -136,6 +136,9 @@
   /* Agent lead-form landing pages (/austin- etc.): the site's Style-field heading/link colour (navy) outranks stylesheet rules, so set readable colours inline */
   function landingText(){if(!document.body.classList.contains('landing-page'))return;document.querySelectorAll('.md-lead-form .media-title, .md-lead-form .media-title *, .md-lead-form .media-subtitle, .md-lead-form .media-subtitle *, .md-lead-form .disclaimer-wrap, .md-lead-form .disclaimer-wrap *').forEach(function(e){e.style.setProperty('color','#fff','important');});}
   landingText();setTimeout(landingText,1500);
+  /* Blog index: H1 + intro inside the navy band that ckg.css §19 reserves above the post list */
+  function blogHero(){if(!document.body.classList.contains('blog'))return;var b=document.querySelector('.md-blog-list');if(!b||b.querySelector('.ckg-blog-hero')||document.querySelector('h1'))return;var d=document.createElement('div');d.className='ckg-blog-hero';d.innerHTML='<h1>Real Estate Blog</h1><p>Local guides to buying, selling and living in Elizabethtown, Fort Knox and Central Kentucky.</p>';b.insertBefore(d,b.firstChild);}
+  blogHero();setTimeout(blogHero,1500);
   /* pop-up forms (Register, Sign In, lead forms) render later: re-run phones() and landingText() when new nodes appear */
   try{var pt=0;new MutationObserver(function(){clearTimeout(pt);pt=setTimeout(function(){phones();landingText();},250);}).observe(document.body,{childList:true,subtree:true});}catch(e){}
   headerPhone();var ht=0,hiv=setInterval(function(){headerPhone();if(++ht>20)clearInterval(hiv);},250);
