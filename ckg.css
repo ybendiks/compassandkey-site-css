@@ -880,10 +880,10 @@ body.agent-detail .md-agent-banner .agent-info{display:flow-root!important}
 body.agent-detail .md-agent-banner .read-more{display:none!important}
 body.agent-detail .md-agent-banner .agent-info,body.agent-detail .md-agent-banner .info,body.agent-detail .md-agent-banner .f-col{height:auto!important;max-height:none!important}
 /* §19 Blog index (body.blog): replace the stock "Contact" typewriter banner with a navy band; ckg.js puts the H1 + intro inside the reserved band (absolute, so no layout shift) */
-body.blog .md-blog-list{position:relative;padding-top:200px!important}
+body.blog .page-content>.md-blog-list{position:relative;padding-top:240px!important}
 body.blog .md-blog-list .blog-banner{display:none!important}
 body.blog .md-blog-list::before{content:"";position:absolute;top:0;left:0;right:0;height:200px;background:var(--ck-grad,#22334b)}
 body.blog .ckg-blog-hero{position:absolute;top:0;left:0;right:0;height:200px;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 16px;text-align:center}
 body.blog .ckg-blog-hero h1{margin:0 0 10px!important;font-family:var(--ck-head,system-ui)!important;font-size:40px!important;line-height:1.15!important;font-weight:800!important;color:#fff!important;-webkit-text-fill-color:#fff!important}
 body.blog .ckg-blog-hero p{margin:0!important;max-width:720px;font-family:var(--ck-sans,system-ui)!important;font-size:17px!important;line-height:1.5!important;color:rgba(255,255,255,.88)!important;-webkit-text-fill-color:rgba(255,255,255,.88)!important}
-@media (max-width:640px){body.blog .md-blog-list{padding-top:170px!important}body.blog .md-blog-list::before,body.blog .ckg-blog-hero{height:170px}body.blog .ckg-blog-hero h1{font-size:28px!important}body.blog .ckg-blog-hero p{font-size:15px!important}}
+@media (max-width:640px){body.blog .page-content>.md-blog-list{padding-top:200px!important}body.blog .md-blog-list::before,body.blog .ckg-blog-hero{height:170px}body.blog .ckg-blog-hero h1{font-size:28px!important}body.blog .ckg-blog-hero p{font-size:15px!important}}
