@@ -13,6 +13,26 @@
     /* Nov 10: Lofty's 'Mount Washington' boundary area finds only a few listings; the MLS city name is 'Mt Washington' */
     '/mount-washington-ky/listings':'/mt-washington-KY/listings',
     '/mount-washington-ky/market':'/mt-washington-KY/market',
+    /* Nov 10: single-property pages exist once per MLS feed; keep the Heart of Kentucky MLS page, send the Greater Louisville MLS copy to it (verified by page title, 17 pairs) */
+    '/337-vineland-place-dr-dr':'/337-vineland-place-drive',
+    '/2014-oak-meadow-dr-dr1':'/2014-oak-meadow-drive2',
+    '/330-cedar-ridge-rd-rd2':'/330-cedar-ridge-rd4',
+    '/400-sandy-circle-cir4':'/400-sandy-circle3',
+    '/2110-eveleigh-rd':'/2110-eveleigh-road',
+    '/401-sandy-circle-cir1':'/401-sandy-circle3',
+    '/404-sandy-circle-cir2':'/404-sandy-circle2',
+    '/432-sandy-circle-cir2':'/432-sandy-circle2',
+    '/216-ascension-way-way1':'/216-ascension-way1',
+    '/81-jo-jo-lane-ln':'/81-jo-jo-lane',
+    '/605-ashwood-ave1':'/605-ashwood-avenue1',
+    '/105-oberon-ct':'/105-oberon-ct1',
+    '/116-calumet-loop4':'/116-calumet-loop5',
+    '/505-ashwood-ave2':'/505-ashwood-avenue1',
+    '/504-ashwood-ave2':'/504-ashwood-avenue2',
+    '/821-rocky-hill-rd':'/821-rocky-hill-road',
+    '/220-ascension-way2':'/220-ascension-way3',
+    /* Nov 10: dated 2025 price-range post, 2 impressions in 90 days */
+    '/blog/i65-corridor-home-prices':'/blog/commuting-i65-corridor-louisville-elizabethtown',
     /* Nov 2026: stale one-off posts (sold single-listing promos, dated weekly newsletter); 0 GSC clicks */
     '/blog/discover-your-dream-home-at-216-ascension-way--a-modern-ranch-with-room-to-grow':'/elizabethtown-KY',
     '/blog/discover-your-dream-home-at-405-sandy-circle--a-perfect-blend-of-style--comfort--and-functionality':'/elizabethtown-KY',
