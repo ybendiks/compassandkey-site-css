@@ -10,6 +10,9 @@
     /* Nov 8: past event pages (Pie Day 404s; New Year showcase is a dated event) */
     '/pie-day':'/',
     '/new-year-home-showcase':'/buy',
+    /* Nov 10: Lofty's 'Mount Washington' boundary area finds only a few listings; the MLS city name is 'Mt Washington' */
+    '/mount-washington-ky/listings':'/mt-washington-KY/listings',
+    '/mount-washington-ky/market':'/mt-washington-KY/market',
     /* Nov 2026: stale one-off posts (sold single-listing promos, dated weekly newsletter); 0 GSC clicks */
     '/blog/discover-your-dream-home-at-216-ascension-way--a-modern-ranch-with-room-to-grow':'/elizabethtown-KY',
     '/blog/discover-your-dream-home-at-405-sandy-circle--a-perfect-blend-of-style--comfort--and-functionality':'/elizabethtown-KY',
