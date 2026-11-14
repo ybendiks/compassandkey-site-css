@@ -891,3 +891,6 @@ body.blog .ckg-blog-hero p{margin:0!important;max-width:720px;font-family:var(--
 .md-header:not(.mobile) .header-container .submenu .menu-item{height:auto!important;min-height:0!important}
 .md-header:not(.mobile) .header-container .submenu .menu-item>a{padding:10px 18px!important;line-height:1.4!important;width:100%}
 .md-header:not(.mobile) .header-container .submenu{padding:6px 0!important}
+/* §21 IDX search pages (/listing, /sold-listing, area /listings): site-wide 56px block padding left a white band under the header; listing-row addresses were 20px Playfair (heavy in a data table) */
+body .page-content>.md-search{padding-top:16px!important}
+.md-search .house-address,.md-search .house-address a{font-family:var(--ck-sans,system-ui)!important;font-size:16px!important;font-weight:600!important;line-height:1.35!important}
