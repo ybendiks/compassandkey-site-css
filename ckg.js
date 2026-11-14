@@ -16,6 +16,17 @@
     /* Nov 14: the 17 single-property redirects were removed. Lofty had already dropped most of these pages (both copies 404), and for 821 Rocky Hill and 220 Ascension the surviving page was the one being redirected. */
     /* Nov 10: dated 2025 price-range post, 2 impressions in 90 days */
     '/blog/i65-corridor-home-prices':'/blog/commuting-i65-corridor-louisville-elizabethtown',
+    /* Nov 14: town-page consolidation (tracker city-pages, same plan as Elizabethtown list A): same-intent posts (agency, living, housing market) folded into their town page. All had 0-1 GSC clicks in 6 months; town FAQs already answer 'is <town> a good place to live'. */
+    '/blog/who-are-the-top-real-estate-agents-in-radcliff-ky':'/radcliff-KY',
+    '/blog/radcliff-ky-housing-market':'/radcliff-KY',
+    '/blog/radcliff-ky-guide-living-near-fort-knox':'/radcliff-KY',
+    '/blog/vine-grove-ky-housing-market':'/vine-grove-KY',
+    '/blog/why-families-choosing-vine-grove-ky':'/vine-grove-KY',
+    '/blog/small-town-living-vine-grove-ky':'/vine-grove-KY',
+    '/blog/bardstown-ky-real-estate-market':'/bardstown-KY',
+    '/blog/living-in-bardstown-ky':'/bardstown-KY',
+    '/blog/louisville-ky-housing-market':'/louisville-KY',
+    '/blog/shepherdsville-bullitt-county-living':'/shepherdsville-KY',
     /* Nov 2026: stale one-off posts (sold single-listing promos, dated weekly newsletter); 0 GSC clicks */
     '/blog/discover-your-dream-home-at-216-ascension-way--a-modern-ranch-with-room-to-grow':'/elizabethtown-KY',
     '/blog/discover-your-dream-home-at-405-sandy-circle--a-perfect-blend-of-style--comfort--and-functionality':'/elizabethtown-KY',
