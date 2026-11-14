@@ -894,3 +894,8 @@ body.blog .ckg-blog-hero p{margin:0!important;max-width:720px;font-family:var(--
 /* §21 IDX search pages (/listing, /sold-listing, area /listings): site-wide 56px block padding left a white band under the header; listing-row addresses were 20px Playfair (heavy in a data table) */
 body .page-content>.md-search.layout1:not(.md-hero){padding-top:16px!important}
 .md-search .house-address,.md-search .house-address a{font-family:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif!important;font-size:16px!important;font-weight:600!important;line-height:1.35!important}
+/* §22 City /listings and /market templates (featured-area-search, featured-area-market): tighten the 56px+56px gap around the breadcrumb block, larger page title */
+body:is(.featured-area-market,.featured-area-search) .page-content>.md-feature-area-crumb:not(.md-hero){padding:24px 0 8px!important}
+body:is(.featured-area-market,.featured-area-search) .page-content>.md-feature-area-crumb+[class*=md-]:not(.md-hero){padding-top:24px!important}
+body.featured-area-market .md-feature-area-crumb h1.name{font-size:32px!important;line-height:1.2!important}
+@media (max-width:640px){body.featured-area-market .md-feature-area-crumb h1.name{font-size:26px!important}}

@@ -122,6 +122,9 @@
   /* Blog index: H1 + intro inside the navy band that ckg.css §19 reserves above the post list */
   function blogHero(){if(!document.body.classList.contains('blog'))return;var b=document.querySelector('.md-blog-list');if(!b||b.querySelector('.ckg-blog-hero')||document.querySelector('h1'))return;var d=document.createElement('div');d.className='ckg-blog-hero';d.innerHTML='<h1>Real Estate Blog</h1><p>Local guides to buying, selling and living in Elizabethtown, Fort Knox and Central Kentucky.</p>';b.insertBefore(d,b.firstChild);}
   blogHero();setTimeout(blogHero,1500);
+  /* City market pages (body.featured-area-market): Lofty's H1 is just the city name ("Radcliff"); make it describe the page. Lofty may re-render the crumb, so re-check a few times. */
+  function marketH1(){if(!document.body.classList.contains('featured-area-market'))return;var h=document.querySelector('.md-feature-area-crumb h1.name');if(!h)return;var t=h.textContent.trim();if(!t||/market/i.test(t)||t.indexOf(',')>-1)return;h.textContent=t+', KY Real Estate Market';}
+  marketH1();setTimeout(marketH1,1500);setTimeout(marketH1,4000);
   /* pop-up forms (Register, Sign In, lead forms) render later: re-run phones() and landingText() when new nodes appear */
   try{var pt=0;new MutationObserver(function(){clearTimeout(pt);pt=setTimeout(function(){phones();landingText();},250);}).observe(document.body,{childList:true,subtree:true});}catch(e){}
   headerPhone();var ht=0,hiv=setInterval(function(){headerPhone();if(++ht>20)clearInterval(hiv);},250);
