@@ -971,3 +971,5 @@ body .md-testimonial .reviews-container .swiper-slide .review-slider-item{border
 .ckg-step,.ckg-pstep{background:#fff;padding:24px!important}
 /* Phones: listing cards inset 16px from the screen edge (were edge to edge) */
 @media(max-width:767px){.md-house .house-grid-item.template4,.md-house .house-grid-item.broker{width:calc(100% - 32px)!important;margin-left:16px!important;margin-right:16px!important;box-sizing:border-box}}
+/* §23 fix: the badge sits inside .house-detail, so the dark-text rule above out-ranked its white text */
+body .md-house .house-grid-item.template4 .mask .house-detail .house-status,body .md-house .house-grid-item.template4 .mask .house-detail .house-status *{color:#fff!important;-webkit-text-fill-color:#fff!important}
