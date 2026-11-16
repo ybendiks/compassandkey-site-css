@@ -973,3 +973,5 @@ body .md-testimonial .reviews-container .swiper-slide .review-slider-item{border
 @media(max-width:767px){.md-house .house-grid-item.template4,.md-house .house-grid-item.broker{width:calc(100% - 32px)!important;margin-left:16px!important;margin-right:16px!important;box-sizing:border-box}}
 /* §23 fix: the badge sits inside .house-detail, so the dark-text rule above out-ranked its white text */
 body .md-house .house-grid-item.template4 .mask .house-detail .house-status,body .md-house .house-grid-item.template4 .mask .house-detail .house-status *{color:#fff!important;-webkit-text-fill-color:#fff!important}
+/* §24 The §4 header bar is 100vw wide (it must stay full width: Lofty's menu split measures it), which includes the desktop scrollbar, so some pages scrolled ~8px sideways. Clip horizontal overflow at the root; overflow-x:clip does not create a scroll container, so fixed/sticky headers are unaffected. */
+html{overflow-x:clip}
