@@ -134,7 +134,25 @@
   function blogHero(){if(!document.body.classList.contains('blog'))return;var b=document.querySelector('.md-blog-list');if(!b||b.querySelector('.ckg-blog-hero')||document.querySelector('h1'))return;var d=document.createElement('div');d.className='ckg-blog-hero';d.innerHTML='<h1>Real Estate Blog</h1><p>Local guides to buying, selling and living in Elizabethtown, Fort Knox and Central Kentucky.</p>';b.insertBefore(d,b.firstChild);}
   blogHero();setTimeout(blogHero,1500);
   /* City market pages (body.featured-area-market): Lofty's H1 is just the city name ("Radcliff"); make it describe the page. Lofty may re-render the crumb, so re-check a few times. */
-  function marketH1(){if(!document.body.classList.contains('featured-area-market'))return;var h=document.querySelector('.md-feature-area-crumb h1.name');if(!h)return;var t=h.textContent.trim();if(!t||/market/i.test(t)||t.indexOf(',')>-1)return;h.textContent=t+', KY Real Estate Market';}
+  // Nov 16: auto-generated /area/ pages (MLS subdivisions + non-featured cities) use Lofty's fixed template:
+  // lowercase names from the URL + "Compass and Key Group - Real Broker" + agent name. Rewrite title/meta/og.
+  var AREA=(function(){var m=location.pathname.match(/^\/area\/([^\/]+?)-ky(?:\/([^\/]+))?(?:\/(listings|market))?\/?$/i);if(!m)return null;
+    if(m[2]&&/^(listings|market)$/i.test(m[2])&&!m[3]){m[3]=m[2];m[2]=null;}
+    var sm={at:1,of:1,the:1,and:1,'in':1,on:1};
+    function tc(s){return decodeURIComponent(s).split(/[-\s]+/).filter(Boolean).map(function(w,i){var l=w.toLowerCase();if(i&&sm[l])return l;return /^[a-z]+$/.test(w)||w===w.toLowerCase()?l.charAt(0).toUpperCase()+l.slice(1):w.charAt(0).toUpperCase()+w.slice(1);}).join(' ');}
+    return {city:tc(m[1]),sub:m[2]?tc(m[2]):null,type:(m[3]||'intro').toLowerCase()};})();
+  function setMeta(sel,attr,val){var e=document.querySelector(sel);if(e)e.setAttribute(attr,val);}
+  function areaMeta(){if(!AREA||document.body.classList.contains('unfind'))return;
+    var t0=document.title,d0=(document.querySelector('meta[name=description]')||{}).content||'';
+    var stale=/Real Broker/.test(t0+d0)||/^Discover [a-z]/.test(t0)||/^[a-z]/.test(t0);
+    var B=' | Compass and Key Group',c=AREA.city,s=AREA.sub,place=(s?s+', ':'')+c+', KY',t,d,h1;
+    if(AREA.type==='listings'){t=(s?place+' Homes for Sale':'Homes for Sale in '+place)+B;d='Browse homes for sale in '+place+'. See listing photos and details, save your search for new-listing alerts, and talk with a local agent at Compass and Key Group.';}
+    else if(AREA.type==='market'){t=place+' Real Estate Market'+B;d='Recent sales, average prices, days on market and 12-month trends for '+(s?s+' in '+c+', KY':place)+', from Compass and Key Group.';if(s)h1=place+' Real Estate Market';}
+    else {if(s)return;t=c+', KY Neighborhoods, Schools & Homes'+B;d='Explore '+place+' with Compass and Key Group: area boundaries, schools, homes for sale and local demographics.';}
+    if(stale){document.title=t;setMeta('meta[name=description]','content',d);setMeta('meta[property="og:title"]','content',t);setMeta('meta[property="og:description"]','content',d);setMeta('meta[name="twitter:title"]','content',t);setMeta('meta[name="twitter:description"]','content',d);}
+    if(h1){var h=document.querySelector('.md-feature-area-crumb h1.name');if(h&&h.textContent.trim()!==h1)h.textContent=h1;}}
+  areaMeta();setTimeout(areaMeta,1500);setTimeout(areaMeta,4000);
+  function marketH1(){if(!document.body.classList.contains('featured-area-market'))return;if(AREA&&AREA.sub)return;var h=document.querySelector('.md-feature-area-crumb h1.name');if(!h)return;var t=h.textContent.trim();if(!t||/market/i.test(t)||t.indexOf(',')>-1)return;h.textContent=t+', KY Real Estate Market';}
   marketH1();setTimeout(marketH1,1500);setTimeout(marketH1,4000);
   /* pop-up forms (Register, Sign In, lead forms) render later: re-run phones() and landingText() when new nodes appear */
   try{var pt=0;new MutationObserver(function(){clearTimeout(pt);pt=setTimeout(function(){phones();landingText();},250);}).observe(document.body,{childList:true,subtree:true});}catch(e){}
